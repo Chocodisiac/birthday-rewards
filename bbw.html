@@ -1,0 +1,669 @@
+
+
+        <!doctype html>
+        <html id="Atom">
+        <head>
+            <title>cheers! It's your birthday. 🥂</title>
+            <meta name="oath:guce:consent-host" content="guce.yahoo.com"/>
+            <meta name="conf:cjs:locale" content="en-US"/>
+            <script nonce="nuOGAVNIZgbhffI88YCEmEzA9Ra7/iEBByUtQjUuhc9WgxQI">
+                window.ymailAssetHost="https://s.yimg.com/nq/nv/";
+                window.BrowserLoggerParams={"appName":"cld_novation_app","cldmbx":1,"yid":"harajuku.lovers","farm":"23520123","shardId":"123955_ZbE2naQh4_WdDtTo1Ukz6A","os":"Mac OS 10.15.7","browser":"Chrome 153.0.0.0","partner":"","partnr":"","cbe":"","buckets":"ComAud_TOM_Cashback_Credit_Card_Desktop::YMail_XStreaks_A_T01::ymailoasis_checkoutwidget_t01::oasis_LMV3contactsAPI_t0::ComAud_TOM_GLP_Kima_Desktop::ComAud_TOM_Chase_Sapphire_AIQ_Desktop::ComAud_Fin_And_Ins_Cash_CC_AIQ_Desktop::ComAud_TOM_GLP_Kima_Refined1_Desktop::ComAud_TOM_GLP_Kima_Refined2_Desktop::ay-growthcode-mail-test::UG_GmailAdsFree_T02_30d::oasis_us_y2yimap_eol_t::ymailoasis_subhub_t01::mailintel_ondemandtldr_list::unsub_oasis_control::moqr_control::ComAud_TOM_AIQ_Peptides_Desktop::YMail_XChallenges_T01::production::oasis_contactsAPI_v2_t1::oasis_trackb_ad_rotation_c01::uss-web-us-test::basic_mail_eol_us_ca_c01::ymail_oasis_20sadrotation_r01::ymail_novation_gam_gcp_r1::ComAud_TOM_KimaTravelIntend_Desktop::ComAud_TOM_StudentLoans_AIQ_Desktop::cal_rightrail_ramp::mail-web-ga-test-v2","rid":"2pf6p09lb8c2p","locale":"en-US","platform":"browser","app":"cld_novation_app","env":"production","colo":"gq1","cldRegion":"us-west2","region":"us","bldVer":"1.0.4577","buildNumber":"1.0.4577","prdct":"novation_cld"};
+                window.loggerEndpoint="/n/log";
+                window.AppBootstrapData={"appId":"YMailCLDNovation","appName":"CLD_NOVATION_APP","buildNumber":"1.0.4577","bldVer":"1.0.4577","guidHash":"eaffd96d01d9fe2a841eaa52635ce60e"};
+
+                // Add event listeners
+                window.addEventListener('afterprint', function handlePrintSuccess() {
+  const pathname = window.location.pathname;
+  let printType = 'contacts';
+  let mKey = 'CONTACTS_PRINT_SUCCEEDED';
+
+  if (pathname.includes('/print/message/')) {
+    printType = 'message';
+    mKey = 'MESSAGE_PRINT_SUCCEEDED';
+  }
+
+  const loggerParams = window.BrowserLoggerParams;
+  const appName =
+  loggerParams && typeof loggerParams.appName === 'string' && loggerParams.appName ?
+  loggerParams.appName :
+  'novation_app';
+
+  const eventData = {
+    type: 'feature',
+    featureEvent: 'success',
+    featureName: 'print_preview',
+    component: 'norrin/info',
+    message: 'feature_success',
+    app: appName,
+    platform: 'browser',
+    data: {
+      mKey,
+      intrctn: 'view',
+      pathname,
+      eventType: 'print_success',
+      printType
+    }
+  };
+
+  if (loggerParams && window.loggerEndpoint) {
+    const payload = {
+      meta: loggerParams,
+      events: [eventData]
+    };
+
+    fetch(window.loggerEndpoint + '?appid=' + appName, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(payload),
+      // Survive the tab closing right after afterprint
+      keepalive: true
+    });
+  }
+});
+                window.addEventListener('beforeunload', function handlePrintClose() {
+  const pathname = window.location.pathname;
+  let printType = 'contacts';
+  let mKey = 'CONTACTS_PRINT_CLOSED';
+
+  if (pathname.includes('/print/message/')) {
+    printType = 'message';
+    mKey = 'MESSAGE_PRINT_CLOSED';
+  }
+
+  const loggerParams = window.BrowserLoggerParams;
+  const appName =
+  loggerParams && typeof loggerParams.appName === 'string' && loggerParams.appName ?
+  loggerParams.appName :
+  'novation_app';
+
+  const eventData = {
+    type: 'feature',
+    featureEvent: 'success',
+    featureName: 'print_preview',
+    component: 'norrin/info',
+    message: 'feature_success',
+    app: appName,
+    platform: 'browser',
+    data: {
+      mKey,
+      pathname,
+      eventType: 'print_close',
+      printType
+    }
+  };
+
+  if (loggerParams && window.loggerEndpoint) {
+    const payload = {
+      meta: loggerParams,
+      events: [eventData]
+    };
+
+    fetch(window.loggerEndpoint + '?appid=' + appName, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(payload),
+      // Fires during beforeunload — keepalive lets it survive the page teardown
+      keepalive: true
+    });
+  }
+});
+
+                // Close the tab once the print dialog is dismissed. Registered after the
+                // success handler so its logging fetch (keepalive) is dispatched first.
+                // window.close() is a no-op if this page was not opened via window.open.
+                window.addEventListener('afterprint', () => {
+                    window.close();
+                });
+
+</script>
+            <link id="mail-css" rel="stylesheet" type="text/css" href="https://s.yimg.com/nq/nv/css/ltr/novation_app_EGBpOL2nP-PJZl5vWKwJv96BthH_LIcXA3uKb9m1sYg_v1.css" />
+            <style>
+                .body {
+                    overflow: auto;
+                    font-family: "Yahoo Product Sans VF", apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+                    direction: ltr;
+                }
+            </style>
+        </head>
+        <body id="Atom" class="body">
+            <div><div data-test-id="print-message-view" data-test-expanded="true" tabindex="-1" data-iskeynav="true"><header class="print-header P_S9pNs M_2ae0fr m_Z14vXdP" data-test-id="print-header"><div class="D_F el_EZ jb_6Eb4 U_eo6 m_Z14vXdP"><span data-test-id="message-subject" class="C_Z281SGl A_6FsP i_6FIA c1AVi73_6LUG c1AVi7H_6MWH y_jyw3a">cheers! It&#x27;s your birthday. 🥂</span></div><div class="D_FY"><div class="D_GE"><span class="C_Z1YRXYn D_FZ je_fq7">From:</span><span data-test-id="message-from" class="C_Z281SGl D_FZ X_fq7 je_fq7">My Bath &amp; Body Works Rewards (bathandbodyworks@e2.bathandbodyworks.com)</span></div><div class="D_GE"><span class="C_Z1YRXYn D_FZ je_fq7">To:</span><span data-test-id="message-to" class="C_Z281SGl D_FZ X_fq7 je_fq7">harajuku.lovers@yahoo.com</span></div><div class="D_GE" data-test-id="message-date"><span class="C_Z1YRXYn D_FZ je_fq7">Date:</span><span class="C_Z281SGl D_FZ X_fq7 je_fq7">Monday, September 21, 2026 at 08:23 AM PDT</span></div></div></header><div><div data-test-id="message-view-body" class="I_ZiTj5d C_1GbO8e W_A D_B ek_BB z_82XEY m_22RyjK em_N O_N ah_n ai_0 P_1r8DAc" role="region" aria-labelledby="message-view-body-landmark"><div class="msg-body mq_AS iy_q s_0 P_0" data-test-id="message-view-body-content"><div><div class=""><div><div id="yiv7514150381"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<html lang="en"> 
+  <head>
+    <title>Bath &amp; Body Works
+    </title>
+    
+     
+    
+    
+    
+    
+    
+    
+    <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width:100%;" class="yiv7514150381stylingblock-content-wrapper"><tr><td class="yiv7514150381stylingblock-content-wrapper yiv7514150381camarker-inner">
+
+
+
+<style type="text/css">
+#yiv7514150381 
+#yiv7514150381 .yiv7514150381ReadMsgBody {width:100%;}
+#yiv7514150381 .yiv7514150381ExternalClass {width:100%;}
+#yiv7514150381 .yiv7514150381applelinks a {color:inherit;text-decoration:none;}
+#yiv7514150381 a .yiv7514150381filtered99999  {
+color:inherit !important;text-decoration:none !important;font-size:inherit !important;font-family:inherit !important;font-weight:inherit !important;line-height:inherit !important;}
+#yiv7514150381 u + #yiv7514150381body a, 
+#yiv7514150381 u + #yiv7514150381body a:hover, 
+#yiv7514150381 u + #yiv7514150381body a:visited{
+color:inherit;text-decoration:none;font-size:inherit;font-family:inherit;font-weight:inherit;line-height:inherit;}
+#yiv7514150381 .yiv7514150381bg-page {background-color:#f9f5f1 !important;}
+#yiv7514150381 .yiv7514150381bg-white {background-color:#ffffff !important;}
+#yiv7514150381 .yiv7514150381bg-offwhite {background-color:#f9f5f1 !important;}
+#yiv7514150381 .yiv7514150381bg-blue {background-color:#0a1d79 !important;}
+#yiv7514150381 .yiv7514150381c-text {color:#270101 !important;}
+#yiv7514150381 .yiv7514150381c-blue {color:#0a1d79 !important;}
+#yiv7514150381 .yiv7514150381c-white {color:#D8E3C8 !important;}
+#yiv7514150381 .yiv7514150381c-black {color:#000000 !important;}
+#yiv7514150381 .yiv7514150381c-muted {color:#6f625f !important;}
+#yiv7514150381 .yiv7514150381font-main {font-family:"Helvetica Neue", Helvetica, Arial, sans-serif !important;}
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+#yiv7514150381 .yiv7514150381email-container {
+width:100% !important;max-width:600px !important;}
+
+#yiv7514150381 .yiv7514150381mobile-padding {
+padding-left:16px !important;padding-right:16px !important;}
+
+#yiv7514150381 .yiv7514150381logo-image {
+width:100% !important;max-width:460px !important;height:auto !important;}
+
+#yiv7514150381 .yiv7514150381nav-link {
+font-size:14px !important;}
+}
+
+@media screen and (max-width:380px) {
+#yiv7514150381 .yiv7514150381mobile-padding {
+padding-left:8px !important;padding-right:8px !important;}
+
+#yiv7514150381 .yiv7514150381nav-link {
+font-size:14px !important;letter-spacing:0 !important;}
+
+#yiv7514150381 .yiv7514150381nav-divider {
+font-size:14px !important;}
+}
+</style> </td></tr></table>
+  </head> 
+  
+  <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width:100%;" class="yiv7514150381stylingblock-content-wrapper"><tr><td class="yiv7514150381stylingblock-content-wrapper yiv7514150381camarker-inner"><style type="text/css">#yiv7514150381 </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+</td></tr></table>
+  
+  
+  <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width:100%;" class="yiv7514150381stylingblock-content-wrapper"><tr><td class="yiv7514150381stylingblock-content-wrapper yiv7514150381camarker-inner">
+</td></tr></table>
+  
+  
+  <div>
+<table border="0" cellpadding="0" cellspacing="0" width="0" height="0" style="line-height:0;font-size:0;"><tr><td><img src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fclick.e2.bathandbodyworks.com%2Fopen.aspx%3FPWE2TIJYATTEFKT2KH6JTSVBFA.70248%26d%3D70248%26bmt%3D0&t=1790193754&ymreqid=eaffd96d-01d9-fe2a-1c14-af0001019100&sig=TPPv2bA8AobB1VIfaiGI9w--~D" width="1" height="1" alt=""></td></tr></table>
+      
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" lang="en" align="center" style="width:100%;">
+        <tr>
+          <td bgcolor="#ffffff" align="center">
+            
+            <table border="0" cellpadding="0" cellspacing="0" role="presentation" align="center" style="width:600px;">
+              <tr>
+                <td align="left" valign="top" style="width:600px;padding:0px 0px;">
+                  <table border="0" cellpadding="0" cellspacing="0" role="presentation" align="center" style="width:600px;">
+                    <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width:100%;" class="yiv7514150381stylingblock-content-wrapper"><tr><td class="yiv7514150381stylingblock-content-wrapper yiv7514150381camarker-inner">
+
+<div style="display:none;max-height:0px;overflow:hidden;">
+  &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy;&#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy;&#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199;
+ &shy; &#847; &zwnj; &nbsp; &#8199; &shy;&#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy;&#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy;&#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp;
+ &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy;&#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy;&#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj;
+ &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy;&#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy;&#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847;
+ &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy;&#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy;&#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy;&#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy;
+ &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy;&#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy;&#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy;&#847; &zwnj; &nbsp; &#8199;
+ &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy;&#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp;
+ &#8199; &shy;&#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy;&#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy; &#847; &zwnj; &nbsp; &#8199; &shy;
+</div>
+
+        
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;">
+            <tr>
+              <td align="center" bgcolor="#ffffff" style="padding:20px 0;background-color:#ffffff;font-size:0;line-height:0;">
+                <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.e2.bathandbodyworks.com/u/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtlJT_xP92y5AEsGpyyceo0hk7SRiwAx1K-I1BYl_8r4bPpFf0t2Tb2FLMVi90ZAv41xk3UoCxY892AJdfUNQ1bCxEfcmSR8RQ0HEg" style="display:inline-block;text-decoration:none;">
+                  <img src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fimage.e2.bathandbodyworks.com%2Flib%2Ffe9213737561047a72%2Fm%2F1%2Fe37ba818-efe7-426a-9686-ad819471f91f.jpg&t=1790193754&ymreqid=eaffd96d-01d9-fe2a-1c14-af0001019100&sig=wDZO_RksZuOZTPg9Luo6oQ--~D" width="396" alt="Bath &amp; Body Works" border="0" style="display:block;width:396px;max-width:100%;height:auto;margin:0 auto;border:0;outline:none;text-decoration:none;background-color:#ffffff;" class="yiv7514150381logo-image">
+                </a>
+              </td>
+            </tr>
+          </table>
+
+          
+
+          
+          <table align="center" role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;width:100%;max-width:600px;">
+            <tr>
+              <td align="center" bgcolor="#ffffff" style="padding:0 0 25px 0;background-color:#ffffff;">
+                <table align="center" role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;width:100%;max-width:600px;">
+                  <tr>
+                    
+                    <td width="33.33%" align="center" valign="middle" style="padding:0;">
+                      <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.e2.bathandbodyworks.com/u/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtlJT_xQIh4Rmc6oceiiB_XVXwtnJICQAuz7-pzljk1YNKaqm0JOTBXf78tEylKGaPldDcMMrH-6C62wBFRYrGIsyy34oMVzyqeX8Q" style="display:block;color:#270101;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:20px;font-weight:400;line-height:20px;letter-spacing:0;text-align:center;text-decoration:none;white-space:nowrap;min-height:16px;margin-top:0px;" class="yiv7514150381nav-link">New arrivals</a>
+                    </td>
+
+                    
+                    <td width="1" align="center" valign="middle" style="width:2px;padding:0;color:#270101;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:20px;font-weight:300;line-height:24px;" class="yiv7514150381nav-divider">|</td>
+
+                    
+                    <td width="33.33%" align="center" valign="middle" style="padding:0;">
+                      <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.e2.bathandbodyworks.com/u/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtlJT_xRlr3SkNdsOxmiTbT4ozG4oCQuomr6Yd4duLm_90fKbFfwtAnS0-oO6sXgflxtePwXhTL-A4MEULDeHsB4ytjrSpE2wWvnlw" style="display:block;color:#270101;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:20px;font-weight:400;line-height:20px;letter-spacing:0;text-align:center;text-decoration:none;white-space:nowrap;" class="yiv7514150381nav-link">Top offers</a>
+                    </td>
+
+                    
+                    <td width="1" align="center" valign="middle" style="width:2px;padding:0;color:#270101;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:20px;font-weight:300;line-height:24px;" class="yiv7514150381nav-divider">|</td>
+
+                    
+                    <td width="33.33%" align="center" valign="middle" style="padding:0;">
+       
+                       
+       <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.e2.bathandbodyworks.com/u/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtlJT_xS1ODTkdn7qirBvzUYzA_ZUKUW9XQDW_AXkZtahLaaxLgz17dyrTOpTViYF43LF9GLzbyk7QHvI-1znzM6HX_bdGt58fuhxg" style="display:block;color:#270101;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:20px;font-weight:400;line-height:20px;letter-spacing:0;text-align:center;text-decoration:none;white-space:nowrap;" class="yiv7514150381nav-link">Hand soaps</a> 
+       
+       
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+
+          
+
+        
+      
+      </td></tr></table>
+                    <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width:100%;" class="yiv7514150381stylingblock-content-wrapper"><tr><td class="yiv7514150381stylingblock-content-wrapper yiv7514150381camarker-inner">
+
+
+
+</td></tr></table>
+                    <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width:100%;" class="yiv7514150381stylingblock-content-wrapper"><tr><td class="yiv7514150381stylingblock-content-wrapper yiv7514150381camarker-inner"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+ 
+  <tr>
+   <td align="center" valign="top" width="600">
+    <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.e2.bathandbodyworks.com/u/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtlJT_xTZLFiJB08zNifO1Wot7ol_WxIpwInsxH4oTQX_60cSxD7qFEJ4SrXGkEKJU6V4qmnGEfzShFZ82eS5yRC2gJhKAJW_YOdhw" style="display:block;"><img alt="Rewards - Shop. Earn. Discover. Pour on the birthday fun -  Get your free birthday gift - P.S. Pick a favorite (up to a $9.95 value*) with any purchase. - Shop now" border="0" src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fimage.e2.bathandbodyworks.com%2Flib%2Ffe9213737561047a72%2Fm%2F1%2F4fa7c24a-68ab-419a-a18e-28915c1e31dd.png&t=1790193754&ymreqid=eaffd96d-01d9-fe2a-1c14-af0001019100&sig=2JWvF_lJ8ckGyHYxz4hz.Q--~D" style="border:0;display:block;" width="600"></a>
+    </td>
+  </tr>
+</table></td></tr></table>
+                    
+                    <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width:100%;" class="yiv7514150381stylingblock-content-wrapper"><tr><td class="yiv7514150381stylingblock-content-wrapper yiv7514150381camarker-inner">
+      
+      
+      
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" align="center" style="width:600px;">
+        <tr>
+          <td>
+            
+            
+            <table role="presentation" width="100%" height="195" cellpadding="0" cellspacing="0" border="0" background="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fimage.e2.bathandbodyworks.com%2Flib%2Ffe9213737561047a72%2Fm%2F1%2Fa7e66d14-0642-4cb4-8e8e-887bc4592340.png&t=1790193754&ymreqid=eaffd96d-01d9-fe2a-1c14-af0001019100&sig=avoruTQ9IVc58SEO_yoCTg--~D" style="width:100%;background-color:#F9F5F1;background-image:url('https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fimage.e2.bathandbodyworks.com%2Flib%2Ffe9213737561047a72%2Fm%2F1%2Fa7e66d14-0642-4cb4-8e8e-887bc4592340.png&amp;t=1790193754&amp;ymreqid=eaffd96d-01d9-fe2a-1c14-af0001019100&amp;sig=avoruTQ9IVc58SEO_yoCTg--~D');background-repeat:no-repeat;background-position:center center;background-size:cover;min-height:195px;">
+              <tr>
+                <td valign="top" height="140" style="min-height:140px;padding:40px 40px 40px 40px;" class="yiv7514150381mobile-px-16">
+                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td align="left">
+                        <div style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:34px;line-height:34px;font-weight:300;color:#F9F5F1;">
+                          <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.e2.bathandbodyworks.com/u/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtlJT_xUs9JycDoGWWKCXUtvzvqn8diIrn6Jj5zXKL07Z4WEluR94aGBDp2Ld4QuMcVk39Weqr7iG3ftnsSLPwDUcGY47MVGZG2MiQ" style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;color:#270101;text-decoration:none;">Our feel good formula
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="left" style="padding-top:17px;">
+                        <div style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:20px;line-height:21px;font-weight:300;color:#F9F5F1;max-width:495px;">
+                                                    <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.e2.bathandbodyworks.com/u/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtlJT_xVNEWQ-vrcV3vEQliL0EUPNRKC-Oyj24jqI8Y4of_imqLWajuK0gZLWi3pcJcYmgD9QQE8le_IZqktrovtmc6Y0kRhsQMzzw" style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;color:#270101;text-decoration:none;">
+                          It’s quality you can trust that’s safe, effective and smells good. We’re here to clear the air.
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="left" style="padding-top:17px;">
+                        <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.e2.bathandbodyworks.com/u/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtlJT_xWhYqqad5GMkuXDN7UvcsmUoAKzq5YQYKJiPALEvKBfjqaRwH6Kko7vMnS_cFRVvJ93DTxwN3XZ6A3NmncA-bh1Yquxsivug" style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:20px;line-height:21px;font-weight:300;color:#270101;text-decoration:underline;">
+                          Learn more
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            
+          </td>
+        </tr>
+      </table>             
+      
+      
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+        <tr>
+          <td align="center" style="padding:0 0px 0px;">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width:600px;background-color:#F9F5F1;">
+              <tr>
+                <td style="padding:40px;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;color:#270101;">
+                  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td style="padding-bottom:28px;">
+                        <div style="font-size:34px;line-height:34px;font-weight:300;color:#270101;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;">
+                          More to love
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                  
+                  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td width="40" valign="middle" style="padding:0 22px 28px 0;">
+                        <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.e2.bathandbodyworks.com/u/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtlJT_xX49KU98NyJrV4MHAVvKaEU8p7KUohhBBgzyAYLdFpSodvVC2JAelRAHreaK0ZreSD23GznQyb3HF9CcSoe6UAABazGZ0m2g">
+                          <img src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fimage.e2.bathandbodyworks.com%2Flib%2Ffe9213737561047a72%2Fm%2F1%2F00a9ac12-8940-4f37-9570-9b23c6fb7b9c.png&t=1790193754&ymreqid=eaffd96d-01d9-fe2a-1c14-af0001019100&sig=VwYQYlWghACrImDHgbGQZQ--~D" alt="" width="38" border="0" style="display:block;">
+                        </a>
+                      </td>
+                      <td valign="middle" style="padding:0 0 28px;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;">
+                        <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.e2.bathandbodyworks.com/u/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtlJT_xYXto5_9aPArNGtqNgTGIeON3O8CJYF2WDXbl9zu7VL-YzU17YxK3ZvCViDtjeJvj37dwBBNQidxj_IbPb81X_KdTC9CAUaQ" style="font-size:20px;line-height:21px;color:#270101;text-decoration:underline;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-weight:300;">
+                          Sign up for texts
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                  
+                  
+                  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td width="40" valign="middle" style="padding:0 22px 0 0;">
+                        <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.e2.bathandbodyworks.com/u/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtlJT_xZa-tnDJCy_EO4apUkTT6LPBk2zogz_AcoQzZIA2yfV3yWdHsSVDmBd0mE63EyuFdVrrr-Mp_iH_OCrFmiqKpi2Fxx9NhBRQ">
+                          <img src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fimage.e2.bathandbodyworks.com%2Flib%2Ffe9213737561047a72%2Fm%2F1%2F7b7c94ef-aaa3-42f7-8531-38bf7f901ae6.png&t=1790193754&ymreqid=eaffd96d-01d9-fe2a-1c14-af0001019100&sig=BvPEax1D6M5WXg3tAQ_xXA--~D" alt="" width="38" border="0" style="display:block;">
+                        </a>
+                      </td>
+                      <td valign="middle" style="padding:0;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;">
+                        <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.e2.bathandbodyworks.com/u/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtlJT_xasbcrkJI4JdzW2npoByP_GnOiZj6yVQPKI1ZT2wkwMY_R20CBu-NT7hlvOl5dihNLGpel7JhEcr3mWptqFEHDnxrq1sHPPQ" style="font-size:20px;line-height:21px;color:#270101;text-decoration:underline;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-weight:300;">
+                          Buy online, pick up in store
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                  
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+
+<table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width:100%;" class="yiv7514150381stylingblock-content-wrapper"><tr><td class="yiv7514150381stylingblock-content-wrapper yiv7514150381camarker-inner"> 
+
+
+
+
+
+
+
+
+
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" align="center" width="600" style="width:600px;max-width:600px;background-color:#0A1D79;">
+  <tr>
+    <td align="center" style="padding:40px 0px;">
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+        
+        <tr>
+          <td align="left" style="font-family:Helvetica Neue, Helvetica, sans-serif, Arial;font-size:34px;font-weight:300;color:#FFFFFF;padding-bottom:14px;padding-left:40px;line-height:34px;padding-right:40px;">
+            <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.e2.bathandbodyworks.com/u/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtlJT_xbHQz_eZHG7jUY6p5JSIhcZPTJrIscFSafbGHLM--ZrBgkvSRjH9YB7IYM-XwWfjOjopUaqZZi-M8eQ-HAyqrTAWwNGO_lHw" style="color:#FFFFFF;text-decoration:none !important;">Visit us at The Shops At Riverwalk</a>
+          </td>
+        </tr>
+     
+        <tr>
+          <td align="left" style="font-family:Helvetica Neue, Helvetica, sans-serif, Arial;font-size:16px;font-weight:300;color:#FFFFFF;padding-bottom:14px;padding-left:40px;line-height:19px;padding-right:40px;">
+            <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.e2.bathandbodyworks.com/u/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtlJT_xci5oMA2otaat4fryyd29mH6Ziv5qLOyDPlrfe3P6heb3AbFCxQu2plBP-E7w_aCTF6mbMyQMrZjmNkrufFjOvZLCPvQZtLw" style="color:#FFFFFF;text-decoration:none !important;">10730 Stockdale Hwy, Space # L1-b, Bakersfield, California, 93312</a>
+          </td>
+        </tr>
+        
+        <tr>
+          <td align="left" style="font-family:Helvetica Neue, Helvetica, sans-serif, Arial;font-size:20px;font-weight:300;color:#FFFFFF;text-decoration:underline;line-height:16px;padding-left:40px;padding-right:40px;">
+            <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.e2.bathandbodyworks.com/u/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtlJT_xdGiB1lK16Oh37pCOJ8JTff3m4w1P7GDXbzn6gQbN_j-AjQavQthJVmmMA1txz6cQyePblRIMY58_G_E05XfW3d99289Zsyg" style="color:#FFFFFF;text-decoration:underline;">Find a store</a>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+</td></tr></table>
+</td></tr></table>
+                  </table>
+                   
+                    <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width:100%;" class="yiv7514150381stylingblock-content-wrapper"><tr><td class="yiv7514150381stylingblock-content-wrapper yiv7514150381camarker-inner">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;background-color:#ffffff;margin:0;padding:0;" width="100%">
+  <tr>
+    <td align="center" style="padding:0;margin:0;">
+      
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;max-width:600px;background-color:#ffffff;" width="600">
+        
+        <tr>
+          <td height="40" style="min-height:40px;line-height:40px;font-size:0;">
+            &nbsp;
+          </td>
+        </tr>
+        
+        <tr>
+          <td align="left" style="padding:0 40px 45px 40px;">
+            <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.e2.bathandbodyworks.com/u/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtlJT_xerM04rWMTp-CNcHL8C_URpiuhfxXlmbhGlPAa3dTLQBZb8_pCHzoguTDc4U4L3Kp5xfRnsH6s5Z-FPX8PWT9gpjh6CtNFqw" style="text-decoration:none;"><img alt="Bath &amp; Body Works" src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fimage.e2.bathandbodyworks.com%2Flib%2Ffe9213737561047a72%2Fm%2F1%2F59350a78-6484-4621-afdb-f1f1c01cf868.png&t=1790193754&ymreqid=eaffd96d-01d9-fe2a-1c14-af0001019100&sig=YOzTXwAYd8B3OB1DARQ7hg--~D" style="display:block;border:0;width:70px;max-width:100%;height:auto;" width="70"> </a>
+          </td>
+        </tr>
+        
+        <tr>
+          <td align="left" style="padding:0 40px 42px 40px;">
+            <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+              <tr>
+                <td style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:16px;line-height:20px;color:#270101;font-weight:400;white-space:nowrap;">
+                  <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.e2.bathandbodyworks.com/u/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtlJT_xf_eMkT6LcJh-tnZvGCu3O01E_wvoSUqu0DymdqmsZJYq8MJz-hdgPcDLSD0QiD7tBE2P2jIdtMiS93lx4h8u6yv7uqEzoUA" style="color:#270101;text-decoration:none;">My account</a>
+                </td>
+                <td align="center" style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:16px;line-height:20px;color:#270101;font-weight:400;padding:0 52px;white-space:nowrap;">
+                  |
+                </td>
+                <td style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:16px;line-height:20px;color:#270101;font-weight:400;white-space:nowrap;">
+                  <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.e2.bathandbodyworks.com/u/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtlJT_xgEWFMvOlQtNqhsBHW2AxQY2g9NlODub-iHlWNcfbkkvftSMCzUu48NPqd7Y7cQ21HpKAX-MNOchpTOIbaZyt2VtBHif3Mjg" style="color:#270101;text-decoration:none;">Customer care</a>
+                </td>
+                <td align="center" style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:16px;line-height:20px;color:#270101;font-weight:400;padding:0 52px;white-space:nowrap;">
+                  |
+                </td>
+                <td style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:16px;line-height:20px;color:#270101;font-weight:400;white-space:nowrap;">
+                  <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.e2.bathandbodyworks.com/u/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtlJT_xhQJDHiBePm-Bh2CHvImE5hrYdJ1w5yoDjDSeT4STU-c2HSVX3pHzGj-GfFPvoD1LFwBz-RvqxZjE7cdVmnG19ntWJsXb7BQ" style="color:#270101;text-decoration:none;">Returns</a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        
+        <tr>
+        <td align="left" style="padding:0 40px 39px 40px;">
+          <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+            <tr>
+              <td align="center" style="padding:0 24px 0 0;">
+                <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.e2.bathandbodyworks.com/u/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtlJT_xigPZ7ydvDXx_0VGgAiVPXYTfeJrtH2L7GJJ3Hei1FVxNCkaqD09lnRBvEdzpdJQoxd9w3Lq3WJ4wkyCl3g7QXW0MjgC-jWA"><img alt="Facebook" height="36" src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fimage.e2.bathandbodyworks.com%2Flib%2Ffe9213737561047a72%2Fm%2F1%2F1c97cc69-4c9e-44eb-a474-fa228628de68.png&t=1790193754&ymreqid=eaffd96d-01d9-fe2a-1c14-af0001019100&sig=i3_ompwXx1zKh6d1ru9RXA--~D" style="display:block;border:0;width:36px;min-height:36px;" width="36"> </a>
+              </td>
+              <td align="center" style="padding:0 24px;">
+                <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.e2.bathandbodyworks.com/u/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtlJT_xjuQY6KCQMqnMZ-XVqq6kmgjrWjHFAUd9ygfx2l7gDqaOrxWX_wfhlN7NMMLLlVpx8EloSfXaTqIbsdl1i8uwTsfL_vNaIUg"><img alt="Instagram" height="36" src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fimage.e2.bathandbodyworks.com%2Flib%2Ffe9213737561047a72%2Fm%2F1%2F45ea2b77-cee1-483e-8566-fc0ffbd5ec76.png&t=1790193754&ymreqid=eaffd96d-01d9-fe2a-1c14-af0001019100&sig=kcWlLVJVLtV0etYu8QiFEg--~D" style="display:block;border:0;width:36px;min-height:36px;" width="36"> </a>
+              </td>
+              <td align="center" style="padding:0 24px;">
+                <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.e2.bathandbodyworks.com/u/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtlJT_xkGy81oJrPKv3kjOmn0UkXfZkch9VCP03sC7I_RFmlDRqqhKkUMgvQlsLgK_x5hEApXTB-sHeS6maNxL2tVAxuHoz3xI9N3w"><img alt="TikTok" height="36" src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fimage.e2.bathandbodyworks.com%2Flib%2Ffe9213737561047a72%2Fm%2F1%2F8eac58e0-651e-4493-ab4a-93ecca07fee1.png&t=1790193754&ymreqid=eaffd96d-01d9-fe2a-1c14-af0001019100&sig=IrDFFQgNr5ZHNEY3G_KUuQ--~D" style="display:block;border:0;width:36px;min-height:36px;" width="36"> </a>
+              </td>
+              <td align="center" style="padding:0 24px;">
+                <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.e2.bathandbodyworks.com/u/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtlJT_xls2LU3Ex1NEWDQrH1ZpU8PkvmEhAzTVw_jfwR6suETrKFzxFYz10_0EQbwywGp0kMO5OcANGZS8pnyphfHaSZjoXlU5ay4Q"><img alt="YouTube" height="36" src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fimage.e2.bathandbodyworks.com%2Flib%2Ffe9213737561047a72%2Fm%2F1%2F154dad73-4740-4747-80a5-750d2018693b.png&t=1790193754&ymreqid=eaffd96d-01d9-fe2a-1c14-af0001019100&sig=kXw4bA3DeSfwU9WxIix4Rg--~D" style="display:block;border:0;width:36px;min-height:36px;" width="36"> </a>
+              </td>
+              <td align="center" style="padding:0 0 0 24px;">
+                <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.e2.bathandbodyworks.com/u/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtlJT_xmre89Bc0_eJvHDw1ighPwnjGXnvKuFEaa-5xHnsJb1N9GXEjXLSitpwMzX7bAQPRSW-LLOeWcyBlWzwJ6vEh4EtscO6roVQ"><img alt="Pinterest" height="36" src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fimage.e2.bathandbodyworks.com%2Flib%2Ffe9213737561047a72%2Fm%2F1%2F81e63aa7-2cf6-4082-8320-4f2006b30e1e.png&t=1790193754&ymreqid=eaffd96d-01d9-fe2a-1c14-af0001019100&sig=0Tp57UiMcb9xl6RvseohSA--~D" style="display:block;border:0;width:36px;min-height:36px;" width="36"> </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+        </tr>
+        
+        <tr>
+          <td align="left" style="padding:0 40px 36px 40px;">
+            <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+              <tr>
+                <td style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:10px;line-height:12px;color:#270101;font-weight:500;white-space:nowrap;">
+                  <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.e2.bathandbodyworks.com/u/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtlJT_xnOmvjcBv7kKtMbpiCZepRT-n-HmQPYL0NeixYWIAxizmALhMJx4YDcf_GB53yC5XosrkB6dhMorS-_NuXZola2aCdj0GiqA" style="color:#270101;text-decoration:none;">Privacy policy</a>
+                </td>
+                <td align="center" style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:16px;line-height:16px;color:#270101;font-weight:500;padding:0 30px;white-space:nowrap;">
+                  |
+                </td>
+                <td style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:10px;line-height:12px;color:#270101;font-weight:500;white-space:nowrap;">
+                  <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.e2.bathandbodyworks.com/u/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtlJT_xoC3GnLDmrcrjGhJZtIFDGEBc8rh3dsmMirEdaGfPLPHNq5MrAqcO-pgUMoCd_pMKfNEo_tXme7kTuK-94rEEikCTzaG_osg" style="color:#270101;text-decoration:none;">Help &amp; FAQs</a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        
+        <tr>
+          <td style="padding:0 40px 20px 40px;">
+            <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+              <tr>
+                <td height="2" style="min-height:2px;line-height:2px;font-size:0;background-color:#270101;">
+                  &nbsp;
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+       
+        
+      </table>
+    </td>
+  </tr>
+</table>
+
+
+</td></tr></table>               
+                    
+                    <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width:100%;" class="yiv7514150381stylingblock-content-wrapper"><tr><td class="yiv7514150381stylingblock-content-wrapper yiv7514150381camarker-inner"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;background-color:#ffffff;margin:0;padding:0;" width="100%">
+ 
+  <tr>
+   <td align="center" style="padding:0;margin:0;">
+    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;max-width:600px;background-color:#ffffff;" width="600">
+     
+      <tr>
+       <td align="left" style="padding:0 40px 12px 40px;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:11px;line-height:13px;font-weight:400;color:#270101;">
+
+
+
+<b>*My Bath &amp; Body Works Birthday Reward! In Stores &amp; Online - Free Item (up to $9.95 value) with any purchase. Valid 30 days from date issued. Refer to Rewards tab in app for your expiration date.</b>
+ 
+
+<br><br>
+
+     
+
+<b>Stores:</b> Display barcode from Rewards tab in app or online account at U.S. Bath &amp; Body Works stores.
+      
+
+<br><br>
+
+
+
+<b>Online/Buy Online, Pick Up In Store:</b> Valid on <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.e2.bathandbodyworks.com/u/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtlJT_xp8YSY0KfVbbynVIf_3DWgTgRhXFphCoHxsRaxfnEsWcHXG3hY_2QtTZbwVZFlOkG0MtHATYhqUGXN1oICdvogbi5ANZR9Ng" style="color:#270101;text-decoration:underline;font-weight:700;" title="">BathandBodyWorks.com</a>. Sign in to Rewards account, add item (original price up to $9.95) and additional merchandise to cart, and apply Reward code in the Reward Codes box at checkout. Shipping applies to free item.
+      
+
+<br><br>
+    
+
+
+<b>All:</b> Valid for one-time use only. Limit 1 free item per Reward. Up to 8 Rewards may be applied per transaction. Except as determined by BBW in its sole discretion, offer cannot be combined with any other scannable coupons or code-based offers except My Bath &amp; Body Works Rewards and Birthday Reward. Expired Rewards will not be replaced. Reward will be applied to the most expensive eligible product in the transaction. Will not receive cash or credit for difference between unit price of rewarded product and $9.95. Offer subject to adjustment due to returns, cancellations and exchanges. Refer to the <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.e2.bathandbodyworks.com/u/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtlJT_xqT4OD_Z7uRFYG3StdE0vKnUKLqYoV4DWZq9UsQ0OmagyH26aCVwYyTtk1OojHhfTZloG0-dhWi9MkTfCO1cNnhw-YhPzmgw" style="color:#270101;text-decoration:underline;font-weight:700;" title="">return policy
+</a> for more information. No rain checks issued. Void if altered, copied, transferred, auctioned or sold. Other restrictions may apply. Subject to change without notice.
+      
+
+    </td>
+  </tr>
+</table></td></tr></table></td></tr></table>
+                    
+                    
+                    <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width:100%;" class="yiv7514150381stylingblock-content-wrapper"><tr><td class="yiv7514150381stylingblock-content-wrapper yiv7514150381camarker-inner"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;background-color:#ffffff;margin:0;padding:0;" width="100%">
+ 
+  <tr>
+   <td align="center" style="padding:0;margin:0;">
+    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;max-width:600px;background-color:#ffffff;" width="600">
+        <tr>
+          <td align="left" style="padding:0 40px 12px 40px;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:11px;line-height:13px;color:#270101;font-weight:400;">
+            Please note. You may 
+            <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.e2.bathandbodyworks.com/u/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtlJT_xtHCZR7EsIQ9T-AHvcBi7JWiYEYW-bjISr3GoIb8Kv3O9vgFhE2-1l2BMHvTOWvGZTNE8Q73KEAhi0gANcL4h_7CeVIikr0OJ-JXw" style="color:#270101;text-decoration:underline;font-weight:700;">unsubscribe</a> at any time. Regardless of your email preferences, you will continue to receive transactional and operational email messages such as password resets or&nbsp;account-related&nbsp;information. If you no longer wish to receive product offers and other marketing emails from us, or to update your frequency, please click 
+            <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.e2.bathandbodyworks.com/u/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtlJT_xwpM0fRdbbW0gHypBXj0vN3bxmcTedd-wpuUs0PcbI-Ie82KkBcIk3B9WDq82poYK94trSjjAlbmF-zpTp09xWNGQiPnf6SbunMrU" style="color:#270101;text-decoration:underline;font-weight:700;">here</a>.
+          </td>
+        </tr>
+
+
+ <tr>
+       <td align="left" style="padding:0 40px 12px 40px;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:11px;line-height:13px;font-weight:400;color:#270101;">
+        Product offers, valid dates and participating stores subject to change without notice. Offers not valid on product purchased through third parties (including, but not limited to, Amazon, Instacart, TikTok, &amp; Ulta Beauty). Stores and online: selection may vary by store and online. While supplies last, and no substitutions or rain checks will be issued. Not valid toward previous purchases. Other restrictions may apply. For more information,visit <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.e2.bathandbodyworks.com/u/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtlJT_xxDV4YTxpefTEdktKIUQuDOShKFZ-LZx_ealwC3jZFhIz-YUdCqLNqGKR5TYcQ_3POSmcNv8teV7VKmozYtdGNbuQls4A3PA" style="color:#270101;text-decoration:underline;font-weight:700;">customer care</a>. Please do not reply to this email, as it is sent from an address that cannot accept incoming emails.</td></tr>
+    <tr>
+       <td align="left" style="padding:0 40px 12px 40px;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:11px;line-height:13px;font-weight:400;color:#270101;">
+        <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.e2.bathandbodyworks.com/u/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtlJT_xycPgGXGuGoDw8JbN2CBxWfPhqQqoP3LOlulBWcSExn8EyuoAikMtxoAo19HheQMitSczOLIOKcLjeDKIBVVA4M7Xnjvptsg" style="color:#270101;text-decoration:underline;font-weight:700;">View in web browser</a>.</td></tr><tr>
+       <td align="left" style="padding:0 40px 0px 40px;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:11px;line-height:13px;font-weight:400;color:#270101;">
+        Bath &amp; Body Works, 95 West Main Street, New Albany, OH 43054.</td></tr><tr>
+       <td align="left" style="padding:0 40px 10px 40px;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:11px;line-height:10px;font-weight:400;color:#270101;">
+        &copy; 2026 Bath &amp; Body Works. All Rights Reserved.</td></tr><tr> 
+        </tr></table></td></tr>  <tr>
+    <td align="center" style="width:600px;padding-top:28px;padding-bottom:30px;">
+      
+      <img src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fimage.e2.bathandbodyworks.com%2Flib%2Ffe9213737561047a72%2Fm%2F1%2Fbbebdf75-1fc0-48a3-96d4-ad8652de93f7.png&t=1790193754&ymreqid=eaffd96d-01d9-fe2a-1c14-af0001019100&sig=HoZxOkpij2d4idQK10OHFA--~D" width="600" height="113" border="0" style="width:600px;height:auto;display:block;" alt="">
+    </td>
+  </tr></table></td></tr></table>
+                  
+                  
+                  <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width:100%;" class="yiv7514150381stylingblock-content-wrapper"><tr><td class="yiv7514150381stylingblock-content-wrapper yiv7514150381camarker-inner">
+<style>@media print{#yiv7514150381 #yiv7514150381two50 {background-image:url("https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fbbwus.everestengagement.com%2Fea%2Ffw0q51vctP%2F%3Ft%3Dp%26e%3D200022201440%26c%3DLoyalty_App_Birthday_08&t=1790193754&ymreqid=eaffd96d-01d9-fe2a-1c14-af0001019100&sig=G0vL0LLOjz7EHr0abtje_g--~D");}}#yiv7514150381 blockquote #yiv7514150381two50, #yiv7514150381 #yiv7514150381mailContainerBody #yiv7514150381two50, #yiv7514150381 div.yiv7514150381OutlookMessageHeader, #yiv7514150381 table.yiv7514150381moz-email-headers-table {background-image:url("https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fbbwus.everestengagement.com%2Fea%2Ffw0q51vctP%2F%3Ft%3Df%26e%3D200022201440%26c%3DLoyalty_App_Birthday_08&t=1790193754&ymreqid=eaffd96d-01d9-fe2a-1c14-af0001019100&sig=ZFeTiaST5bdrDwH85zYqTw--~D");}</style> <div id="yiv7514150381_two50"></div> <img id="yiv7514150381_two50_img" src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fbbwus.everestengagement.com%2Fea%2Ffw0q51vctP%2F%3Fe%3D200022201440%26c%3DLoyalty_App_Birthday_08&t=1790193754&ymreqid=eaffd96d-01d9-fe2a-1c14-af0001019100&sig=xBqKxCA_lY._ezpL32J1tg--~D" width="1" height="1" style="margin:0 !important;padding:0 !important;border:0 !important;min-height:1px !important;width:1px !important;">
+
+
+
+</td></tr></table>
+                  
+                
+              
+            
+            
+          
+        
+      
+       
+      </div> 
+    </html>
+</div></div></div></div></div></div></div></div></div>
+        </body>
+        </html>
