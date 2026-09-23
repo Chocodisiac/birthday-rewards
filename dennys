@@ -1,0 +1,683 @@
+
+
+        <!doctype html>
+        <html id="Atom">
+        <head>
+            <title>FREE Birthday Slam! 🎉</title>
+            <meta name="oath:guce:consent-host" content="guce.yahoo.com"/>
+            <meta name="conf:cjs:locale" content="en-US"/>
+            <script nonce="F3DEOulRry7VQBGcw7KsRM3DYcGcXaa5RRzywhcOTlIGlVRa">
+                window.ymailAssetHost="https://s.yimg.com/nq/nv/";
+                window.BrowserLoggerParams={"appName":"cld_novation_app","cldmbx":1,"yid":"harajuku.lovers","farm":"23520123","shardId":"123955_ZbE2naQh4_WdDtTo1Ukz6A","os":"Mac OS 10.15.7","browser":"Chrome 153.0.0.0","partner":"","partnr":"","cbe":"","buckets":"ComAud_TOM_Cashback_Credit_Card_Desktop::YMail_XStreaks_A_T01::ymailoasis_checkoutwidget_t01::oasis_LMV3contactsAPI_t0::ComAud_TOM_GLP_Kima_Desktop::ComAud_TOM_Chase_Sapphire_AIQ_Desktop::ComAud_Fin_And_Ins_Cash_CC_AIQ_Desktop::ComAud_TOM_GLP_Kima_Refined1_Desktop::ComAud_TOM_GLP_Kima_Refined2_Desktop::ay-growthcode-mail-test::UG_GmailAdsFree_T02_30d::oasis_us_y2yimap_eol_t::ymailoasis_subhub_t01::mailintel_ondemandtldr_list::unsub_oasis_control::moqr_control::ComAud_TOM_AIQ_Peptides_Desktop::YMail_XChallenges_T01::production::oasis_contactsAPI_v2_t1::oasis_trackb_ad_rotation_c01::uss-web-us-test::basic_mail_eol_us_ca_c01::ymail_oasis_20sadrotation_r01::ymail_novation_gam_gcp_r1::ComAud_TOM_KimaTravelIntend_Desktop::ComAud_TOM_StudentLoans_AIQ_Desktop::cal_rightrail_ramp::mail-web-ga-test-v2","rid":"2c1b5ellb8b8h","locale":"en-US","platform":"browser","app":"cld_novation_app","env":"production","colo":"gq1","cldRegion":"us-west2","region":"us","bldVer":"1.0.4577","buildNumber":"1.0.4577","prdct":"novation_cld"};
+                window.loggerEndpoint="/n/log";
+                window.AppBootstrapData={"appId":"YMailCLDNovation","appName":"CLD_NOVATION_APP","buildNumber":"1.0.4577","bldVer":"1.0.4577","guidHash":"eaffd96d01d9fe2a841eaa52635ce60e"};
+
+                // Add event listeners
+                window.addEventListener('afterprint', function handlePrintSuccess() {
+  const pathname = window.location.pathname;
+  let printType = 'contacts';
+  let mKey = 'CONTACTS_PRINT_SUCCEEDED';
+
+  if (pathname.includes('/print/message/')) {
+    printType = 'message';
+    mKey = 'MESSAGE_PRINT_SUCCEEDED';
+  }
+
+  const loggerParams = window.BrowserLoggerParams;
+  const appName =
+  loggerParams && typeof loggerParams.appName === 'string' && loggerParams.appName ?
+  loggerParams.appName :
+  'novation_app';
+
+  const eventData = {
+    type: 'feature',
+    featureEvent: 'success',
+    featureName: 'print_preview',
+    component: 'norrin/info',
+    message: 'feature_success',
+    app: appName,
+    platform: 'browser',
+    data: {
+      mKey,
+      intrctn: 'view',
+      pathname,
+      eventType: 'print_success',
+      printType
+    }
+  };
+
+  if (loggerParams && window.loggerEndpoint) {
+    const payload = {
+      meta: loggerParams,
+      events: [eventData]
+    };
+
+    fetch(window.loggerEndpoint + '?appid=' + appName, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(payload),
+      // Survive the tab closing right after afterprint
+      keepalive: true
+    });
+  }
+});
+                window.addEventListener('beforeunload', function handlePrintClose() {
+  const pathname = window.location.pathname;
+  let printType = 'contacts';
+  let mKey = 'CONTACTS_PRINT_CLOSED';
+
+  if (pathname.includes('/print/message/')) {
+    printType = 'message';
+    mKey = 'MESSAGE_PRINT_CLOSED';
+  }
+
+  const loggerParams = window.BrowserLoggerParams;
+  const appName =
+  loggerParams && typeof loggerParams.appName === 'string' && loggerParams.appName ?
+  loggerParams.appName :
+  'novation_app';
+
+  const eventData = {
+    type: 'feature',
+    featureEvent: 'success',
+    featureName: 'print_preview',
+    component: 'norrin/info',
+    message: 'feature_success',
+    app: appName,
+    platform: 'browser',
+    data: {
+      mKey,
+      pathname,
+      eventType: 'print_close',
+      printType
+    }
+  };
+
+  if (loggerParams && window.loggerEndpoint) {
+    const payload = {
+      meta: loggerParams,
+      events: [eventData]
+    };
+
+    fetch(window.loggerEndpoint + '?appid=' + appName, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(payload),
+      // Fires during beforeunload — keepalive lets it survive the page teardown
+      keepalive: true
+    });
+  }
+});
+
+                // Close the tab once the print dialog is dismissed. Registered after the
+                // success handler so its logging fetch (keepalive) is dispatched first.
+                // window.close() is a no-op if this page was not opened via window.open.
+                window.addEventListener('afterprint', () => {
+                    window.close();
+                });
+</script>
+            <link id="mail-css" rel="stylesheet" type="text/css" href="https://s.yimg.com/nq/nv/css/ltr/novation_app_EGBpOL2nP-PJZl5vWKwJv96BthH_LIcXA3uKb9m1sYg_v1.css" />
+            <style>
+                .body {
+                    overflow: auto;
+                    font-family: "Yahoo Product Sans VF", apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+                    direction: ltr;
+                }
+            </style>
+        </head>
+        <body id="Atom" class="body">
+            <div><div data-test-id="print-message-view" data-test-expanded="true" tabindex="-1" data-iskeynav="true"><header class="print-header P_S9pNs M_2ae0fr m_Z14vXdP" data-test-id="print-header"><div class="D_F el_EZ jb_6Eb4 U_eo6 m_Z14vXdP"><span data-test-id="message-subject" class="C_Z281SGl A_6FsP i_6FIA c1AVi73_6LUG c1AVi7H_6MWH y_jyw3a">FREE Birthday Slam! 🎉</span></div><div class="D_FY"><div class="D_GE"><span class="C_Z1YRXYn D_FZ je_fq7">From:</span><span data-test-id="message-from" class="C_Z281SGl D_FZ X_fq7 je_fq7">Denny&#x27;s Rewards (dennys-rewards@hello.dennys.com)</span></div><div class="D_GE"><span class="C_Z1YRXYn D_FZ je_fq7">To:</span><span data-test-id="message-to" class="C_Z281SGl D_FZ X_fq7 je_fq7">dianacorinadeleon@yahoo.com</span></div><div class="D_GE" data-test-id="message-date"><span class="C_Z1YRXYn D_FZ je_fq7">Date:</span><span class="C_Z281SGl D_FZ X_fq7 je_fq7">Monday, September 21, 2026 at 02:23 PM PDT</span></div></div></header><div><div data-test-id="message-view-body" class="I_ZiTj5d C_1GbO8e W_A D_B ek_BB z_82XEY m_22RyjK em_N O_N ah_n ai_0 P_1r8DAc" role="region" aria-labelledby="message-view-body-landmark"><div class="msg-body mq_AS iy_q s_0 P_0" data-test-id="message-view-body-content"><div><div class=""><div><div id="yiv1097561588"><!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    
+    
+    
+    
+    
+    
+    
+    <title>Denny&#39;s</title>
+
+    
+    
+    <style>
+#yiv1097561588 
+</style>
+    
+    
+
+    
+    <style>
+#yiv1097561588 :root {}
+
+#yiv1097561588 html, #yiv1097561588 body {margin:0 auto !important;padding:0 !important;min-height:100% !important;width:100% !important;}
+#yiv1097561588 * {}
+#yiv1097561588 div .yiv1097561588filtered99999  {margin:0 !important;}#yiv1097561588 sup {vertical-align:super;font-size:48%;line-height:0.5em;font-family:Arial, Helvetica Neue, Helvetica, sans-serif !important;}
+
+
+#yiv1097561588 #yiv1097561588MessageViewBody, #yiv1097561588 #yiv1097561588MessageWebViewDiv{width:100% !important;}
+
+#yiv1097561588 table, #yiv1097561588 td {}#yiv1097561588 table {border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;}#yiv1097561588 img {}
+
+
+#yiv1097561588 .yiv1097561588body {word-wrap:normal;word-spacing:normal;}
+
+#yiv1097561588 span.yiv1097561588MsoHyperlink {color:inherit !important;}#yiv1097561588 span.yiv1097561588MsoHyperlinkFollowed {color:inherit !important;}#yiv1097561588 a {text-decoration:none;}#yiv1097561588 u + .yiv1097561588body a {color:inherit;text-decoration:none;font-size:inherit;font-weight:inherit;line-height:inherit;}
+
+
+#yiv1097561588 u + .yiv1097561588body a {color:inherit;text-decoration:none;font-size:inherit;font-weight:inherit;line-height:inherit;}
+
+
+#yiv1097561588 #yiv1097561588root  .yiv1097561588filtered99999 , #yiv1097561588 a .yiv1097561588filtered99999 {color:inherit !important;text-decoration:inherit !important;}
+#yiv1097561588 .yiv1097561588filtered99999  {color:inherit !important;}
+#yiv1097561588 a .yiv1097561588filtered99999  {color:inherit!important;text-decoration:none!important;font-size:inherit!important;font-family:inherit!important;font-weight:inherit!important;line-height:inherit!important;}
+
+
+#yiv1097561588 .yiv1097561588ms-outlook-linkify{color:inherit !important;}
+
+
+#yiv1097561588 [class=yiv1097561588x_body]  .yiv1097561588filtered99999  {border:none !important;padding:0 !important;color:inherit !important;}
+
+
+#yiv1097561588 #yiv1097561588WEBEXT{}
+
+#yiv1097561588 .yiv1097561588im {color:inherit !important;}#yiv1097561588 .yiv1097561588a6S {display:none !important;opacity:0.01 !important;}#yiv1097561588 img.yiv1097561588g-img + div {display:none !important;}
+
+@media only screen and () and () {#yiv1097561588 u ~ div .yiv1097561588email-container {min-width:320px !important;}}
+@media only screen and () and () {#yiv1097561588 u ~ div .yiv1097561588email-container {min-width:375px !important;}}
+@media only screen and () {#yiv1097561588 u ~ div .yiv1097561588email-container {min-width:414px !important;}}
+
+</style>
+    
+
+    
+    <style>
+@media screen and (max-width:480px) {
+#yiv1097561588 .yiv1097561588stack-column, #yiv1097561588 .yiv1097561588stack-column-center {display:block !important;width:100% !important;max-width:100% !important;direction:ltr;}
+#yiv1097561588 .yiv1097561588stack-column-center {text-align:center !important;}
+#yiv1097561588 .yiv1097561588center-on-narrow {text-align:center !important;display:block !important;margin-left:auto !important;float:none !important;}
+#yiv1097561588 table.yiv1097561588center-on-narrow {display:inline-block !important;}
+
+#yiv1097561588 .yiv1097561588hidden {display:none !important;visibility:hidden;}
+#yiv1097561588 .yiv1097561588hidden_secondary {display:none !important;width:0 !important;min-height:0 !important;font-size:0 !important;line-height:0 !important;min-height:0 !important;visibility:hidden !important;}
+
+#yiv1097561588 .yiv1097561588show-for-mobile {display:block !important;}
+#yiv1097561588 .yiv1097561588show-for-mobile_secondary {display:block !important;margin:0;padding:0;overflow:visible !important;width:auto !important;max-height:inherit !important;}
+
+
+#yiv1097561588 .yiv1097561588m-width20 {width:20px !important;}
+#yiv1097561588 .yiv1097561588m-pb24 {padding-bottom:24px !important;}
+#yiv1097561588 .yiv1097561588m-pb-L25 {padding-left:25px !important;}
+#yiv1097561588 .yiv1097561588m-pb-R25 {padding-right:25px !important;}
+
+#yiv1097561588 .yiv1097561588m-font16 {font-size:16px !important;}
+#yiv1097561588 .yiv1097561588m-font18 {font-size:18px !important;}
+#yiv1097561588 .yiv1097561588m-font28 {font-size:28px !important;}
+
+#yiv1097561588 .yiv1097561588m-line_height16 {line-height:16px !important;}
+#yiv1097561588 .yiv1097561588m-line_height18 {line-height:18px !important;}
+#yiv1097561588 .yiv1097561588m-line_height22 {line-height:22px !important;}
+#yiv1097561588 .yiv1097561588m-line_height32 {line-height:32px !important;}
+}
+</style>
+    
+
+    
+
+    
+
+</head>
+<div>
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+ 
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+  <center lang="en" style="width:100%;background-color:#F5F5F5;" class="yiv1097561588body">
+    
+
+        
+        <div style="max-height:0;overflow:hidden;">
+            Celebrate your birthday month with the gift of free food.
+        </div>
+        
+        <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;font-family:sans-serif;">
+	        &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+        </div>
+        
+       
+        <div style="max-width:600px;margin:0 auto;" class="yiv1097561588email-container">
+            
+
+            
+            
+
+
+<style>
+#yiv1097561588 
+#yiv1097561588 
+#yiv1097561588 #yiv1097561588 1, </style>
+
+<style>
+@media screen and (max-width:480px) {
+
+#yiv1097561588 .yiv1097561588m-width93 {
+width:93px !important;}
+
+#yiv1097561588 .yiv1097561588m-font10 {
+font-size:10px !important;}
+#yiv1097561588 .yiv1097561588m-font12 {
+font-size:12px !important;}
+
+}
+</style>
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color:#FABF17;">
+  <tr>
+    <td valign="top" align="left" style="padding:10px 24px;text-align:left;">
+      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+        <tr>
+          <td valign="middle" align="left" width="36">
+            <table width="36" role="presentation" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td valign="top" align="center">
+                  <img src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fbraze-images.com%2Fappboy%2Fcommunication%2Fassets%2Fimage_assets%2Fimages%2F6a18a54efb2d690083d4d4db%2Foriginal.gif%3F1780000077&t=1790192913&ymreqid=eaffd96d-01d9-fe2a-1cd2-ac0001019d00&sig=6H3ASfcx.hmR0q0.qDDnFg--~D" width="36" alt="" border="0" style="width:100%;max-width:36px;height:auto;display:block;">
+                </td>
+              </tr>
+            </table>
+          </td>
+
+          <td width="12"></td>
+
+          <td valign="middle" align="left">
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" align="left" style="margin:0;display:block;">
+              <tr>
+                <td valign="middle" align="left" style="font-family:'meursault-variable', Arial, Helvetica, sans-serif;font-size:22px;line-height:26px;color:#4A1A08;font-weight:600;" class="yiv1097561588stack-column">Diana</td>
+                <td width="8" class="yiv1097561588stack-column"></td>
+                <td valign="bottom" align="left" style="font-family:'Montserrat', Arial, Helvetica, sans-serif;font-size:12px;line-height:16px;padding-top:10px;color:#4A1A08;" width="auto" class="yiv1097561588stack-column">Earn FREE food with <a rel="nofollow noopener noreferrer" target="_blank" href="https://clicks.hello.dennys.com/f/a/UuKb5fOpqWNxKC_ARoiYZA~~/AAQRxRA~/ZxfG8WNIlj5L2ETG9ymfAc68wF4x1Zxs3L0VrH0iTh1lgGm-Vx8Cnk17u9-Slmzoc9NciNL6ZAHaBrJo8GNvykQXPduogyM4j1RKq6g6ooXEO5h70bML4NZ-DaJ9gMA1BAgpyUngbrko2hO5SOZ41j934e20H4tGmtslZ7ssRfZtNXL4tAlaLuIRAfVjB-tLvj5ThsKFO7cP66Tz_oBdtrSCPCMNqlskaoHmdATwpeO1Q_HP_OR8s1fqKcxAePKT" style="color:#E1283C;text-decoration:underline;font-weight:700;">Denny&#39;s Rewards</a></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color:#FABF17;">
+  <tr>
+    <td valign="middle" align="center" style="padding:0px 24px 10px 24px;" class="yiv1097561588m-pb-L25 yiv1097561588m-pb-R25">
+      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="border-top:1px solid #C67D2A;">
+        <tr>
+          <td valign="middle" align="left" style="padding-top:10px;"><a rel="nofollow noopener noreferrer" target="_blank" href="https://clicks.hello.dennys.com/f/a/NmqQrFEbYllC30hHvFSnAQ~~/AAQRxRA~/ZxfG8WNIlj5L2ETG9ymfAc68wF4x1Zxs3L0VrH0iTh379441G5S-WTBhjwTONgoLZUribgqCg0SDQMq4S5b9fsDpx24RZxT6ROYeGgozB9ttfkL-euWqesTWn3gyHfJM4wZLfjORmumIJgHQ2PFCY5DTP3M733v5OWpCP8HBOCkmga460OU8Nzxr-Tttnc35Y73Pm_L5GPpToYh7VKedTeEMOZBJ4TG0FSpjbvsYwlzzG5VyLL_SYzWgeUU_yWzO"><img src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fbraze-images.com%2Fappboy%2Fcommunication%2Fassets%2Fimage_assets%2Fimages%2F6a18a4057e61990081fa29c1%2Foriginal.png%3F1779999749&t=1790192913&ymreqid=eaffd96d-01d9-fe2a-1cd2-ac0001019d00&sig=WvDd3As.aYEnNqOfXOdiJQ--~D" width="127" height="" alt="Denny&#39;s Rewards" border="0" style="max-width:127px;height:auto;display:block;font-family:'filson-pro', Arial, Helvetica Neue, Helvetica, sans-serif;" class="yiv1097561588m-width93"></a></td>
+          <td width="153" valign="middle" align="right" style="padding-top:10px;">
+            <table align="right" role="presentation" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td height="32" valign="middle" align="right" style="background-color:#fffffe;border-radius:9999px;"><div align="center" style="font-family:'Montserrat', Arial, Helvetica Neue, Helvetica, sans-serif;font-size:14px;line-height:14px;font-weight:700;text-transform:uppercase;" class="yiv1097561588m-font12"><a rel="nofollow noopener noreferrer" target="_blank" href="https://clicks.hello.dennys.com/f/a/d5LLf68X2Y9I6qZeiAH3iw~~/AAQRxRA~/W9_KMndVusn-KzoZGW_HqwPxKcwBxXC-kpSpJgAEnKo7-zsTmtL4ezorGE2Lq7SB4yD2Y8lwwi2yORwJCPWmQ1KiVyCRixvFNTN51nU5iTUC8I0uC4YRdGuMkKTRtrOOqQX8YWxZ9-n-FoXALsGQmhT3XG8RfdMbdpA0wmt8s2slRGWUCeB9ZNJpQYS0TGVfEPL_0zdKLavJi_vZsULo8oMEcE8yyTLu1XhIx4i3dnlITxcqia4d8R6JR7Ak1T7X" style="display:block;color:#E1283C;text-decoration:none;padding:7px 0 7px 0;text-align:center;border-radius:9999px;letter-spacing:1px;"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>Order Now<span>&nbsp;&nbsp;&nbsp;&nbsp;</span></a></div></td>
+              </tr>
+            </table>
+          </td>    
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+  <tr>
+    <td valign="top" align="center" style="background-color:#4A1A08;padding:8px 24px;">
+      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+        <tr>
+          <td valign="top" align="center"><p style="margin:0;font-family:'Montserrat', Arial, Helvetica Neue, Helvetica, sans-serif;font-size:14px;line-height:18px;color:#F8F4E3;font-weight:400;" class="yiv1097561588m-font10">Earn 10 BoothBucks&trade; for every $1 spent </p></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+
+            
+            
+            
+
+            
+            <table width="100%" role="presentation" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td valign="top" align="left" style="background-color:#E1283C;">
+                  <a rel="nofollow noopener noreferrer" target="_blank" href="https://clicks.hello.dennys.com/f/a/hbBHNNPsjR9Sv9S0j65Kpw~~/AAQRxRA~/ZxfG8WNIlj5L2ETG9ymfAc68wF4x1Zxs3L0VrH0iTh3kgXuDbwSDT9PpXip3JqEusNu5y3PIPY2H-KptS9hGwcNoa5ysMQYcvUUJIC09HZcD060DQaHWNM86EejGR4_wmt4H_CvyJfce1sBXnzkUwgglV2gFNyomIaCPbCU7vJf6e_b8TA7Yv6BKA_Kvv_Zqsr-XAQ9gpC_DnBaS_2Gqc2ihWTAl6S5HrARWDiQty191AwMGZwQp-S4my4_ZNZix"><img src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fbraze-images.com%2Fappboy%2Fcommunication%2Fassets%2Fimage_assets%2Fimages%2F6880f9f5fd538f00652c2f6f%2Foriginal.gif%3F1753283061&t=1790192913&ymreqid=eaffd96d-01d9-fe2a-1cd2-ac0001019d00&sig=vQy4qOjkswS8cHgilo0UrA--~D" width="600" height="" alt="Our Gift To You: A Free Everyday Value Slam&reg;" border="0" style="width:100%;max-width:600px;height:auto;display:block;font-family:Arial, Helvetica Neue, Helvetica, sans-serif;"></a>
+                </td>
+              </tr>
+            </table>
+
+            
+            <table width="100%" role="presentation" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td valign="top" align="left" style="background-color:#E1283C;">
+                <img src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fbraze-images.com%2Fappboy%2Fcommunication%2Fassets%2Fimage_assets%2Fimages%2F686ff53154abf40076b7f311%2Foriginal.png%3F1752167729&t=1790192913&ymreqid=eaffd96d-01d9-fe2a-1cd2-ac0001019d00&sig=L7mQWH8v95mP.eKn6lElqA--~D" width="600" height="" alt="" border="0" style="width:100%;max-width:600px;height:auto;display:block;font-family:Arial, Helvetica Neue, Helvetica, sans-serif;">
+                </td>
+              </tr>
+              <tr>
+                <td valign="top" align="center" style="background-color:#fffffe;padding:24px 40px 31px 40px;" class="yiv1097561588">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                      <td valign="top" align="center" style="padding:0 0 20px 0;">
+                        <p style="margin:0;font-family:'filson-pro', Arial, Helvetica Neue, Helvetica, sans-serif;font-size:36px;line-height:40px;color:#911821;font-weight:900;text-transform:uppercase;letter-spacing:0.38px;" class="yiv1097561588m-font28 yiv1097561588m-line_height32">Happy Birthday, <br>Diana!</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td valign="top" align="center">
+                        <p style="margin:0;font-family:'filson-pro', Arial, Helvetica Neue, Helvetica, sans-serif;font-size:18px;line-height:22px;color:#252525;font-weight:400;" class="yiv1097561588">It&rsquo;s your big day and we got you a birthday gift we think you&rsquo;ll really love. Enjoy a <span style="font-weight:700;">FREE Everyday Value&nbsp;Slam<sup>&reg;*</sup></span> at Denny&rsquo;s! This offer&rsquo;s valid for a limited time, so be sure to claim your gift by&nbsp;10/14/2026.</p>
+                  </td>
+                  </tr>
+                </table>
+                </td>
+              </tr>
+            </table>
+            
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color:#fffffe;">
+              <tr>
+                <td valign="top" align="center" style="padding:0px 40px 24px 40px;">
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                     <td height="48" valign="middle" align="center" style="background-color:#FABF17;border-radius:9999px;"><div align="center" style="font-family:'filson-pro', Arial, sans-serif;font-size:24px;line-height:24px;text-transform:uppercase;border:3px solid #252525;border-radius:9999px;padding:12px 0px 12px 0px;letter-spacing:0.48px;" class="yiv1097561588m-font16 yiv1097561588m-line_height18"><a rel="nofollow noopener noreferrer" target="_blank" href="https://clicks.hello.dennys.com/f/a/THweVTKgCimvxpdz2BuLNA~~/AAQRxRA~/ZxfG8WNIlj5L2ETG9ymfAc68wF4x1Zxs3L0VrH0iTh0-qEA2UJfeY_KwDhGYl8ZVdbYz__Yxl-ZzUISUwFMfURnCi8oauCn-iWxmQRLnn7XKYzFXcDWiJi-bezv9mECktJwJc-sWqTltHu1jxUI-fNzJKt5jHKu_9zYeMiaqTvejTslwEqy2b5dpDtd6sDl7mmLFHy2-qL0Fo4Xao-2zNHfqEk2a9GMxS_vhF9Av9nOoG4aND_FNUtywjIgO9e6W" style="display:block;color:#252525;text-decoration:none;text-align:center;font-weight:900;"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>View Rewards<span>&nbsp;&nbsp;&nbsp;&nbsp;</span></a></div></td>  
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+			
+			 <table width="100%" role="presentation" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+               <td valign="top" align="left" style="background-color:#E1283C;">
+                <img src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fbraze-images.com%2Fappboy%2Fcommunication%2Fassets%2Fimage_assets%2Fimages%2F686ff5310817fe0064c4efcc%2Foriginal.png%3F1752167729&t=1790192913&ymreqid=eaffd96d-01d9-fe2a-1cd2-ac0001019d00&sig=R62LBQ0HLM8twCoi19tSeg--~D" width="600" height="" alt="" border="0" style="width:100%;max-width:600px;height:auto;display:block;font-family:Arial, Helvetica Neue, Helvetica, sans-serif;">
+               </td>
+              </tr>
+            </table>
+			
+			
+			<table width="100%" role="presentation" cellspacing="0" cellpadding="0" border="0">
+             <tr>
+              <td valign="top" align="center" style="background-color:#E1283C;padding:32px 40px 0px 40px;" class="yiv1097561588">
+               <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                 <td valign="top" align="center" style="padding:0 0 13px 0;">
+                 <p style="margin:0;font-family:'filson-pro', Arial, Helvetica Neue, Helvetica, sans-serif;font-size:36px;line-height:40px;color:#fffffe;font-weight:900;text-transform:uppercase;letter-spacing:0.38px;" class="yiv1097561588m-font28 yiv1097561588m-line_height32">How to Get Your FREE Everyday Value Slam<sup>&reg;</sup></p>
+                 </td>
+                </tr>
+                <tr>
+                 <td valign="top" align="center">
+                 <p style="margin:0;font-family:'filson-pro', Arial, Helvetica Neue, Helvetica, sans-serif;font-size:18px;line-height:22px;color:#fffffe;font-weight:400;" class="yiv1097561588">It&rsquo;s easy to redeem your gift:</p>
+                 </td>
+                </tr>
+               </table>
+              </td>
+             </tr>
+            </table>
+			
+			
+			<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color:#E1283C;">
+        <tr>
+          <td valign="top" align="left" style="padding:24px 40px 24px 40px;">
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+              <tr>
+                <td valign="top" align="center" class="yiv1097561588stack-column yiv1097561588m-pb24">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                      <td valign="top" align="center">
+                        <table width="100%" role="presentation" cellspacing="0" cellpadding="0" border="0">
+                          <tr>
+                            <td valign="top" align="center" style="min-height:110px;">
+                              <img src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fbraze-images.com%2Fappboy%2Fcommunication%2Fassets%2Fimage_assets%2Fimages%2F686fe93c81a2530085f82fc6%2Foriginal.png%3F1752164668&t=1790192913&ymreqid=eaffd96d-01d9-fe2a-1cd2-ac0001019d00&sig=AqcYDKutkgYbc4dMShHS5A--~D" width="112" height="" alt="Location" border="0" style="width:100%;max-width:112px;height:auto;display:block;">
+                            </td>
+                          </tr>
+                          
+                          <tr>
+                            <td valign="top" align="center">
+                              <p style="margin:0;font-family:'filson-pro', Arial, Helvetica Neue, Helvetica, sans-serif;font-size:14px;line-height:18px;color:#fffffe;font-weight:400;text-align:center;" class="yiv1097561588">Visit any Denny&rsquo;s location and order an Everyday Value&nbsp;Slam<sup>&reg;</sup></p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td width="24"></td>
+                      <td valign="top" align="center">
+                        <table width="100%" role="presentation" cellspacing="0" cellpadding="0" border="0">
+                          <tr>
+                            <td valign="middle" align="center" style="min-height:110px;">
+                              <img src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fbraze-images.com%2Fappboy%2Fcommunication%2Fassets%2Fimage_assets%2Fimages%2F686fe93c81a2530066f830c0%2Foriginal.png%3F1752164668&t=1790192913&ymreqid=eaffd96d-01d9-fe2a-1cd2-ac0001019d00&sig=L8i4PAefUH83dq8cjI9KmQ--~D" width="112" height="" alt="Denny&#x002019;s Rewards" border="0" style="width:100%;max-width:112px;height:auto;display:block;">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td valign="top" align="center">
+                              <p style="margin:0;font-family:'filson-pro', Arial, Helvetica Neue, Helvetica, sans-serif;font-size:14px;line-height:18px;color:#fffffe;font-weight:400;" class="yiv1097561588">Log into your Denny&rsquo;s Rewards account in the app or&nbsp;online</p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+
+                <td width="24" class="yiv1097561588hidden"></td>
+                
+                <td valign="top" align="center" class="yiv1097561588stack-column">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                      <td valign="top" align="center">
+                        <table width="100%" role="presentation" cellspacing="0" cellpadding="0" border="0">
+                          <tr>
+                            <td valign="top" align="center" style="min-height:110px;">
+                              <img src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fbraze-images.com%2Fappboy%2Fcommunication%2Fassets%2Fimage_assets%2Fimages%2F686fe93c809e730067f6fe8c%2Foriginal.png%3F1752164667&t=1790192913&ymreqid=eaffd96d-01d9-fe2a-1cd2-ac0001019d00&sig=2CYinMybd9YthMYx3w.XEQ--~D" width="112" height="" alt="QR Code" border="0" style="width:100%;max-width:112px;height:auto;display:block;">
+                            </td>
+                          </tr>
+                          
+                          <tr>
+                            <td valign="top" align="center">
+                              <p style="margin:0;font-family:'filson-pro', Arial, Helvetica Neue, Helvetica, sans-serif;font-size:14px;line-height:18px;color:#fffffe;font-weight:400;" class="yiv1097561588">Scan your QR Code or give your phone number at checkout</p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td width="24"></td>
+                      <td valign="top" align="center">
+                        <table width="100%" role="presentation" cellspacing="0" cellpadding="0" border="0">
+                          <tr>
+                            <td valign="top" align="center" style="min-height:110px;">
+                              <img src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fbraze-images.com%2Fappboy%2Fcommunication%2Fassets%2Fimage_assets%2Fimages%2F686fe93c809e730087f6fd76%2Foriginal.png%3F1752164668&t=1790192913&ymreqid=eaffd96d-01d9-fe2a-1cd2-ac0001019d00&sig=y4EYF9mWaBRJuStyjqyICg--~D" width="112" height="" alt="birthday reward" border="0" style="width:100%;max-width:112px;height:auto;display:block;">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td valign="top" align="center">
+                              <p style="margin:0;font-family:'filson-pro', Arial, Helvetica Neue, Helvetica, sans-serif;font-size:14px;line-height:18px;color:#fffffe;font-weight:400;" class="yiv1097561588">Your birthday reward will be applied automatically</p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+			
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color:#E1283C;">
+              <tr>
+                <td valign="top" align="center" style="padding:10px 40px 32px 40px;">
+                  <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                     <td height="48" valign="middle" align="center" style="background-color:#FABF17;border-radius:9999px;"><div align="center" style="font-family:'filson-pro', Arial, sans-serif;font-size:24px;line-height:24px;text-transform:uppercase;border:3px solid #252525;border-radius:9999px;padding:12px 0px 12px 0px;letter-spacing:0.48px;" class="yiv1097561588m-font16 yiv1097561588m-line_height18"><a rel="nofollow noopener noreferrer" target="_blank" href="https://clicks.hello.dennys.com/f/a/CqpJKIUZJW3smTcDpRvMxg~~/AAQRxRA~/_mcuoZM18OvWPYzhhUrD21DrXzgJXF6OtLxztCT-90hdLwoNqH5n7D9d-09McV4zwSn1Rkt_nDceVfj0KCDhrbls7w5wmHAnQkYlgctA8dtv-sCpFr5kiE9l2B1olFX-L4P7QqSMUaxvicUwNyXzv_YP1D1PsGrdJHpSNonld90NJ_IveTIMvAx93AIhKzDB7k0yYY4_8FwCmHL2PWlPNXt887Pz8uRMwA6QZf23A00IBaWNoFQFPBUFmgeFAMfR" style="display:block;color:#252525;text-decoration:none;text-align:center;font-weight:900;"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>Find your Denny&rsquo;s<span>&nbsp;&nbsp;&nbsp;&nbsp;</span></a></div></td>  
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+			
+			<table width="100%" role="presentation" cellspacing="0" cellpadding="0" border="0">
+             <tr>
+               <td valign="top" align="left" style="background-color:#E1283C;">
+                <img src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fbraze-images.com%2Fappboy%2Fcommunication%2Fassets%2Fimage_assets%2Fimages%2F686fe93c81a2530075f82fd4%2Foriginal.gif%3F1752164668&t=1790192913&ymreqid=eaffd96d-01d9-fe2a-1cd2-ac0001019d00&sig=GkejFTOYc8oiY3UZsvn8SA--~D" width="600" height="" alt="" border="0" style="width:100%;max-width:600px;height:auto;display:block;font-family:Arial, Helvetica Neue, Helvetica, sans-serif;">
+               </td>
+             </tr>
+            </table>
+              
+            
+            
+              
+            
+            
+
+	
+
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color:#fffffe;">
+  <tr>
+    <td valign="top" align="center">
+      <img src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fbraze-images.com%2Fappboy%2Fcommunication%2Fassets%2Fimage_assets%2Fimages%2F6862d67d694fe90066240862%2Foriginal.png%3F1751307901&t=1790192913&ymreqid=eaffd96d-01d9-fe2a-1cd2-ac0001019d00&sig=YweJxpRs8zZiJQMd_khKbQ--~D" width="600" height="" alt="Denny&#39;s" border="0" style="width:100%;max-width:600px;height:auto;display:block;font-family:'filson-pro', Arial, Helvetica Neue, Helvetica, sans-serif;">
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" align="center" style="padding:30px 20px 30px 20px;">
+      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+        <tr>
+          <td valign="top" align="center" style="padding:0 0 15px 0;">
+            <p style="margin:0;font-family:'filson-pro', Arial, Helvetica Neue, Helvetica, sans-serif;font-size:36px;line-height:40px;color:#66BBA7;font-weight:900;text-transform:uppercase;letter-spacing:0.38px;" class="yiv1097561588m-font28 yiv1097561588m-line_height32">Get the Denny&rsquo;s&nbsp;App</p>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top" align="center">
+            <p style="margin:0;font-family:'filson-pro', Arial, Helvetica Neue, Helvetica, sans-serif;font-size:18px;line-height:22px;color:#252525;" class="yiv1097561588">Earn delicious rewards &amp; more!</p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color:#fffffe;">
+  <tr>
+    <td valign="top" align="center" style="padding:0 0 25px 0;">
+      <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td valign="top" align="right" class="yiv1097561588stack-column yiv1097561588stack-column-center yiv1097561588m-pb24"><a rel="nofollow noopener noreferrer" target="_blank" href="https://clicks.hello.dennys.com/f/a/FWdI0EMmQhRaDmDN-7FEdg~~/AAQRxRA~/r3X7NfZvucVsG5yP96qal9gcdshZRTW-VS9CmAIJT58yRqJO1__6N4xdtas50iY3ATJOUEoZD3sKMkqGu1kecXA3_lMBWIm8THmTqJDY8fP2UUcGl8_pWlsullCY_kzoiv_pAjy9C8zzZ-Ddtc5HuOjAmvGAajUIeQ4ADQtg7UH28GAXkYCgfJ-ogOYwXq7q-SlEDr5guA3J6LXEzb_uWNP2fEB4uWJo-d1bBTlt4DA4ktp8rNbcxZFcc5pApkLlkiCpQoiYCBIzD75wWSVFqw~~"><img src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fbraze-images.com%2Fappboy%2Fcommunication%2Fassets%2Fimage_assets%2Fimages%2F68506ca580955e006743bcde%2Foriginal.png%3F1750101157&t=1790192913&ymreqid=eaffd96d-01d9-fe2a-1cd2-ac0001019d00&sig=6GO8t.KO3oPEVEFcy3csFg--~D" width="186" height="" alt="App Store" border="0" style="width:100%;max-width:186px;height:auto;display:block;font-family:'filson-pro', Arial, Helvetica Neue, Helvetica, sans-serif;"></a>
+          </td>
+          <td width="24" class="yiv1097561588hidden"></td>
+          <td valign="top" align="left" class="yiv1097561588stack-column yiv1097561588stack-column-center"><a rel="nofollow noopener noreferrer" target="_blank" href="https://clicks.hello.dennys.com/f/a/O3QUAxfYpsiTltFlyOe53g~~/AAQRxRA~/3bgzLH0ADROstKWlzQINDICAT5VkJlMDnOWIisQ3ZgZVc3nGRvoqqSMxOqzj8-_Jph6qbDYpqYD6qc6wCvmHyIbzX9MxeFT8Y5tED345MJVnfExgHqVUhPSdKeqSAsYeOTHOOftoO6r4MiLQlZBFmxWd2GrdUmruY7aRHBpCW7Jwn_uwRfbyDwbElsRvou5EM9cUZOClswq-VHh-szjXOcMv-kpv2-Ke84xsMmuEkFAbK0sqUu4X9geWe4_RF3KS_xnX0VEwhSr5Ip7_KbBx4ibHop_8WJb6Ig5pDmsN2MI-T4JFJQIfIUuEMGzxEHpe"><img src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fbraze-images.com%2Fappboy%2Fcommunication%2Fassets%2Fimage_assets%2Fimages%2F68506ca52e4bc300669e3520%2Foriginal.png%3F1750101157&t=1790192913&ymreqid=eaffd96d-01d9-fe2a-1cd2-ac0001019d00&sig=fP.m5XzoPlCeXXuPBZ3daQ--~D" width="186" height="" alt="Google Play" border="0" style="width:100%;max-width:186px;height:auto;display:block;font-family:'filson-pro', Arial, Helvetica Neue, Helvetica, sans-serif;"></a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+            
+             
+            
+            
+
+
+
+
+
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color:#fffffe;">
+  <tr>
+   <td align="center" valign="top" style="padding:20px 0px 20px 0px;background:#fffffe;">         
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+      <tr>
+        <td align="center" valign="top">
+          <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+              <td align="center" valign="top" style="font-size:0px;padding:0px 5px;"><a rel="nofollow noopener noreferrer" target="_blank" href="https://clicks.hello.dennys.com/f/a/-qHdHftvcMl-9z6bQ7PLXw~~/AAQRxRA~/J6IXgocxH1LfE1FEVNnZX3XDmpqAaLIZLr4AT7SmY6yGtflanNGbXpRImJRIH726cDPvHUEO4bki677jSvAD2K0OlUEtahiPVYhrnx-VmxVLdLPWswxv4oju7qbbOlFf2vRpDnCkfL2OvGW6b6Ahhky7Gy-s4kIUeWDm0hvqH5uXx0kEtLJa3T9h9jen6X7kY4Qh5-ESO9XrO02cpGnVZOxBq-iNC0NlnDtEQf7FejxEfLT5y2xzUI8IpUsK-gmE"><img src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fbraze-images.com%2Fappboy%2Fcommunication%2Fassets%2Fimage_assets%2Fimages%2F6838d049bdc6b90064416cf2%2Foriginal.png%3F1748553801&t=1790192913&ymreqid=eaffd96d-01d9-fe2a-1cd2-ac0001019d00&sig=8PUAND12LkscmSrILr56pg--~D" border="0" width="32" alt="Facebook" style="width:32px;height:auto;display:block;"></a></td>
+              <td align="center" valign="top" style="font-size:0px;padding:0px 5px;"><a rel="nofollow noopener noreferrer" target="_blank" href="https://clicks.hello.dennys.com/f/a/3-r39UvLLXvBfaLWZ2Z47Q~~/AAQRxRA~/ZxfG8WNIlj5L2ETG9ymfARwZ8PnJyRYJuhp9REZX5-PcXpGBUkYbk_vkf5Uk33dQp1CkIeb3aAGBACs855Wj0pu5QZtryU_r7L4dtiT2b93akBY0OxpKZwvLhuIZ4-ksyBf0U6C5XG_rB7500w8agS56xp1s9y4gEzhN0rQmARbnqX7IkzTjlHQ1hhOxPOxEiK1V-paAOh5CznBL_J8ZINsGYWW0Mzg65KYVlsJclfQGD4WHCVWgGoMrmjyJBwsp"><img src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fbraze-images.com%2Fappboy%2Fcommunication%2Fassets%2Fimage_assets%2Fimages%2F687abb268a37890076471193%2Foriginal.png%3F1752873766&t=1790192913&ymreqid=eaffd96d-01d9-fe2a-1cd2-ac0001019d00&sig=hExryJXmhLEIWMXK1wq.Ig--~D" border="0" width="32" alt="Tiktok" style="width:32px;height:auto;display:block;"></a></td>
+              <td align="center" valign="top" style="font-size:0px;padding:0px 5px;"><a rel="nofollow noopener noreferrer" target="_blank" href="https://clicks.hello.dennys.com/f/a/UEpv7AxOYq2K9JjlouV6NQ~~/AAQRxRA~/6kzrlsa44v3yRdUkpbcIyeLqjT2gUJP0xWx1rseuqVH3VF8_dQRL0j5GsmEL-wh2MEvXAtuwgIycGF3FIlFRnMDqDJl6vka8NC-FSf_8yIGchhe54tTTR2FHeBiOtY9gmNTOu3XXOQo8oGV5fDCpN7qw2iQjBdHyzF5op4w96xGtsqXAT_sN4WDpyeTrcd1U508EHfXhiBuJRPYhfFASSmmD8e8gvoFZughkruxannZNQ518ugfQMeDbXHnbCdIM"><img src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fbraze-images.com%2Fappboy%2Fcommunication%2Fassets%2Fimage_assets%2Fimages%2F6838d049a631960065d9c494%2Foriginal.png%3F1748553801&t=1790192913&ymreqid=eaffd96d-01d9-fe2a-1cd2-ac0001019d00&sig=aFXu0dlpM6madTWqqLDkXA--~D" border="0" width="32" alt="Instagram" style="width:32px;height:auto;display:block;"></a></td>
+              <td align="center" valign="top" style="font-size:0px;padding:0px 5px;"><a rel="nofollow noopener noreferrer" target="_blank" href="https://clicks.hello.dennys.com/f/a/rwD5hj48WvvxyC0o38Y31Q~~/AAQRxRA~/FqigoZhq4AVLi2fZvn1OncGMOybgemJrOr9lKV8KARXWXwnDbp9gxQMlsnzJ6VbC5FKHdgZJt9P_0sM27udHy8EG-Po5R0CAEN9VUWubp59v40YNFuV47jV-HNu7Il1PFCf7u2eF-pZ45IPOb8_3lwiwpQk-GTmltqI0NtQ7xTBWaV_93LGKw6s7lkRNk2cmeVZqWa4i1arcHFtyIuziqRKDvL7SLWg8ZND5cYmdwirl-PyzFvOuybDvuIHhlxOjkV-W0zVVCw3VwA98TSWrfw~~"><img src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fbraze-images.com%2Fappboy%2Fcommunication%2Fassets%2Fimage_assets%2Fimages%2F6838d04af0284f0066ed6d20%2Foriginal.png%3F1748553802&t=1790192913&ymreqid=eaffd96d-01d9-fe2a-1cd2-ac0001019d00&sig=jKTb20p2etoVncNK46lcFg--~D" border="0" width="32" alt="Linkedin" style="width:32px;height:auto;display:block;"></a></td>
+              <td align="center" valign="top" style="font-size:0px;padding:0px 5px;"><a rel="nofollow noopener noreferrer" target="_blank" href="https://clicks.hello.dennys.com/f/a/e6FDGna9XQa9hFEb0VjgdA~~/AAQRxRA~/1MXKbLj40GY6iPBeJbhDUzfyPYs1C_nlfRk4xZd99ciJjRTac5K3u1GQzVFzLiySfLPR2j_WZCjYH3--gJ-79amudR40BfJXoU5dRr2AlUDVU4zsxuQJ2aCCts55Sw0qBD21QD2SeFmrZ5BnOSmTSxBHXKmD19HEc0G2OA7R5Bhxr_dXFhtAP7KitoSh0K6YAHL-O8i57vv-4fHoH5b6PVWmmMG-J8az-A5IUXdku_23CWP3-j356NpUHNdob0Hd"><img src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fbraze-images.com%2Fappboy%2Fcommunication%2Fassets%2Fimage_assets%2Fimages%2F6838d04ad2b9bf0065af3c45%2Foriginal.png%3F1748553802&t=1790192913&ymreqid=eaffd96d-01d9-fe2a-1cd2-ac0001019d00&sig=5fW9XFUhPNSoScve8JMdlg--~D" border="0" width="32" alt="Youtube" style="width:32px;height:auto;display:block;"></a></td>
+            </tr>
+          </table>
+        </td>
+      </tr>  
+    </table>
+  </td>
+ </tr>
+</table>
+            
+            
+            
+            
+
+
+
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color:#fffffe;">
+  <tr>
+    <td valign="top" align="center" style="padding:10px 20px 20px 20px;">
+      <p style="margin:0;font-family:Arial, Helvetica Neue, Helvetica, sans-serif;font-size:14px;line-height:20px;color:#444444;" class="yiv1097561588"><span style="font-family:'filson-pro', Arial, Helvetica Neue, Helvetica, sans-serif;">*One coupon or promo code per order. Free Everyday Value Slam<sup>&reg;</sup> only. Everyday Value Slam<sup>&reg;</sup> includes: Choose from two buttermilk pancakes, one slice of French toast or a biscuit &amp; gravy. Served with eggs*, plus two bacon strips or two sausage links. Beverages not included. Not valid with any other coupons, promotional offers, KEF or AARP discount. Coupon has no cash value. No change returned. Taxes and gratuity not included. Alcoholic beverages not included. Valid at participating U.S. locations for a limited time only. Selection and prices may vary. No substitutions. Offer valid for dine&#8209;in only. Offer valid until&nbsp;10/14/2026.</span><br><br></p>
+      
+      <p style="margin:0;font-family:'filson-pro', Arial, Helvetica Neue, Helvetica, sans-serif;font-size:14px;line-height:20px;color:#444444;" class="yiv1097561588">This is an unmonitored mailbox; please do not reply to this email. This email was sent to <a rel="nofollow noopener noreferrer" style="color:#cf363b;text-decoration:none;"><span style="color:#cf363b;font-weight:700;">dianacorinadeleon@yahoo.com</span></a> because you joined Denny&rsquo;s Rewards in one of our restaurants or online. If you do not wish to receive emails like this in the future, please&nbsp;<a rel="nofollow noopener noreferrer" target="_blank" href="https://clicks.hello.dennys.com/f/a/8O64pXTP2XbCfsTvG4S78g~~/AAQRxRA~/fc-q6MP7opwKEyCvY97QYOyJNpbVDw4wfOfAeQk0-96PZMx-HRjJNKK05VCpZwu7m6Mr7n3c50ro-FRpc77ce8gnxny39pR31mGGH8rmo2hTb6gq9UtMIP_lU3ARNf6AM45jsplcC9DMf1CPMt-U4HHAFO34s8zidztt9iFaK2AeXnX2314loP4b2yyzORI-fnDdWC7sdCtooC1FwpQtSjnx_n7hgi0zgPdXt55rkXFfnWXC20A4_ZotSfkzEDaIRffYhoMIjWcUISO5rEop-OT2Xx7XRwcWBi4yCDZtjGrLojE85Xqw7Woaxd1lcC8ZEqfx7EyTPdYtsOjLBxUSaHBNkToXJN2dRdnMLKQJnHk6JGtmpyA6IRFNA0c0X4f7TtbG7nWmLMEM_0Yq5qK-C2nTx2PqXIUP-A3LoFXIGh6OpqmTZIoaPeO70J5zHhLPDdSwfGCfUksJHVBfnNZBD4LtFPbNTcbU68xduKlDmad3C8zYOAgii1ZxDSrBLxPFZY6FwkfBcdhRoeDB2FX2haijTnE-7wkanjBlAEeB201IUuksgAqWRS_HQVTXnLbHjWZqmz3cvAa9NXcMaYhDUST-TnOs_hk_V-b45d2e5O7Q7lGzEo1D6EdMhpU3RJBKh2H_vkqMBew4Q9M-N0lzzXrVNNH1XsdZF38JMx6QTdGvFY18RRFKAH4nOi-f1iNYqo7jeYec4dcAoVxz1Ok4LmA8V48v4F02x-2_nVaX23W_tJPGF2OZhKSAKQ3KbW_qUzDtAb0xIk2A7C8YNwT-cn1Hhow5_0H8c0ReWVbYqOE~" style="color:#cf363b;text-decoration:underline;font-weight:700;">unsubscribe</a>.<br><br></p>
+      
+      <p style="margin:0;font-family:'filson-pro', Arial, Helvetica Neue, Helvetica, sans-serif;font-size:14px;line-height:20px;color:#444444;" class="yiv1097561588">This email is an advertisement. &copy; 2026 DFO, LLC. All&nbsp;Rights&nbsp;Reserved.<br></p> 
+      
+      <p style="margin:0;font-family:'filson-pro', Arial, Helvetica Neue, Helvetica, sans-serif;font-size:14px;line-height:20px;color:#444444;" class="yiv1097561588">This email was sent by: Denny&rsquo;s, Inc.<br></p> 
+      
+      <p style="margin:0;font-family:'filson-pro', Arial, Helvetica Neue, Helvetica, sans-serif;font-size:14px;line-height:20px;color:#cf363b;text-decoration:underline;font-weight:700;" class="yiv1097561588">203 E&#65279;ast Mai&#65279;n Str&#65279;eet, Spart&#65279;anburg, S&#65279;C 29&#65279;319<br><br></p>
+
+      <p style="margin:0;font-family:'filson-pro', Arial, Helvetica Neue, Helvetica, sans-serif;font-size:14px;line-height:20px;color:#444444;" class="yiv1097561588">For any questions, comments, or concerns please contact&nbsp;us&nbsp;<a rel="nofollow noopener noreferrer" target="_blank" href="https://clicks.hello.dennys.com/f/a/k0HZe6xNwN142HP_jE_fOA~~/AAQRxRA~/2Cc9ZOVC6QMYnaBF2WUY5OLIh1-_jJk3NQP2yub6SzqvNyOHm0WsS1Upr33FZpOU97G7UFifB-wAWqS2hsqSIFqAjQXmppBJe8u-QlbkjZNfTx1nuHvBAeqUNhYT68-abbUWmN8LKk0t1NS4IBG6Wu3Hp28INA62k2_QXzsihkVZWmZ7N8Ntp65LktachHvzlxytLpBJCzOV2SIkjN4gSyyECPa6dANO6pVaG7a1HbYwrzelxzDBpLbP5GgqQ1RN" style="color:#cf363b;text-decoration:underline;font-weight:700;">here</a>.<br><br></p>
+
+      <p style="margin:0;font-family:'filson-pro', Arial, Helvetica Neue, Helvetica, sans-serif;font-size:14px;line-height:20px;color:#444444;" class="yiv1097561588"><a rel="nofollow noopener noreferrer" target="_blank" href="https://clicks.hello.dennys.com/f/a/OzZPiZaNv-HEzs-H0os6nA~~/AAQRxRA~/ZxfG8WNIlj5L2ETG9ymfAc68wF4x1Zxs3L0VrH0iTh2HeyPwbAMoKhM25VlruVgCxM0xCopyU2fx66oaHFa1lKiayzgNYxOZQB48sKUqorqn6fLIFWlj1F5cm2q9eDagvd04Bi6rAV9DMQ6UmhGZoE4KeRU-CH2fxbFwWSHwZvOEh-KAOdwqV9o5ZJx57Z4MeMsWQuK8tSNe7wCZnaAUzjVAJmxWVdVkgL96KnjrJqQlCRGf35YRgtgCnZ2Brylj" style="color:#cf363b;text-decoration:underline;font-weight:700;">Privacy Policy</a></p>
+    </td>
+  </tr>
+</table>
+            
+
+            
+        </div>
+    
+  </center>
+
+<img border="0" width="1" height="1" alt="" src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fclicks.hello.dennys.com%2Fq%2FJ_NY27SEo6BkOizz4D60lw%7E%7E%2FAAQRxRA%7E%2F5WGL0XyltZUSlBpViKLnFNY9pSbOjoG3py7kNZSYP2vczy6JmIExXIfFBoT8SLbG2PDO2UdSChdznKU66XNlZA%7E%7E&t=1790192913&ymreqid=eaffd96d-01d9-fe2a-1cd2-ac0001019d00&sig=MaUL8wwjI4st5trjqYPIzg--~D">
+</div>
+</html></div></div></div></div></div></div></div></div></div>
+        </body>
+        </html>
