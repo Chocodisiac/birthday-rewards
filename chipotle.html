@@ -1,0 +1,639 @@
+
+
+        <!doctype html>
+        <html id="Atom">
+        <head>
+            <title>Your Birthday, Your Reward 🎉</title>
+            <meta name="oath:guce:consent-host" content="guce.yahoo.com"/>
+            <meta name="conf:cjs:locale" content="en-US"/>
+            <script nonce="KoQ2FlLI030ZGj9VJPoRGhxip1a07JZZCKDHtSOL7UjD7J76">
+                window.ymailAssetHost="https://s.yimg.com/nq/nv/";
+                window.BrowserLoggerParams={"appName":"cld_novation_app","cldmbx":1,"yid":"harajuku.lovers","farm":"23520123","shardId":"123955_ZbE2naQh4_WdDtTo1Ukz6A","os":"Mac OS 10.15.7","browser":"Chrome 153.0.0.0","partner":"","partnr":"","cbe":"","buckets":"ComAud_TOM_Cashback_Credit_Card_Desktop::YMail_XStreaks_A_T01::ymailoasis_checkoutwidget_t01::oasis_LMV3contactsAPI_t0::ComAud_TOM_GLP_Kima_Desktop::ComAud_TOM_Chase_Sapphire_AIQ_Desktop::ComAud_Fin_And_Ins_Cash_CC_AIQ_Desktop::ComAud_TOM_GLP_Kima_Refined1_Desktop::ComAud_TOM_GLP_Kima_Refined2_Desktop::ay-growthcode-mail-test::UG_GmailAdsFree_T02_30d::oasis_us_y2yimap_eol_t::ymailoasis_subhub_t01::mailintel_ondemandtldr_list::unsub_oasis_control::moqr_control::ComAud_TOM_AIQ_Peptides_Desktop::YMail_XChallenges_T01::production::oasis_contactsAPI_v2_t1::oasis_trackb_ad_rotation_c01::uss-web-us-test::basic_mail_eol_us_ca_c01::ymail_oasis_20sadrotation_r01::ymail_novation_gam_gcp_r1::ComAud_TOM_KimaTravelIntend_Desktop::ComAud_TOM_StudentLoans_AIQ_Desktop::cal_rightrail_ramp::mail-web-ga-test-v2","rid":"245r6ndlb8ctr","locale":"en-US","platform":"browser","app":"cld_novation_app","env":"production","colo":"gq1","cldRegion":"us-west2","region":"us","bldVer":"1.0.4577","buildNumber":"1.0.4577","prdct":"novation_cld"};
+                window.loggerEndpoint="/n/log";
+                window.AppBootstrapData={"appId":"YMailCLDNovation","appName":"CLD_NOVATION_APP","buildNumber":"1.0.4577","bldVer":"1.0.4577","guidHash":"eaffd96d01d9fe2a841eaa52635ce60e"};
+
+                // Add event listeners
+                window.addEventListener('afterprint', function handlePrintSuccess() {
+  const pathname = window.location.pathname;
+  let printType = 'contacts';
+  let mKey = 'CONTACTS_PRINT_SUCCEEDED';
+
+  if (pathname.includes('/print/message/')) {
+    printType = 'message';
+    mKey = 'MESSAGE_PRINT_SUCCEEDED';
+  }
+
+  const loggerParams = window.BrowserLoggerParams;
+  const appName =
+  loggerParams && typeof loggerParams.appName === 'string' && loggerParams.appName ?
+  loggerParams.appName :
+  'novation_app';
+
+  const eventData = {
+    type: 'feature',
+    featureEvent: 'success',
+    featureName: 'print_preview',
+    component: 'norrin/info',
+    message: 'feature_success',
+    app: appName,
+    platform: 'browser',
+    data: {
+      mKey,
+      intrctn: 'view',
+      pathname,
+      eventType: 'print_success',
+      printType
+    }
+  };
+
+  if (loggerParams && window.loggerEndpoint) {
+    const payload = {
+      meta: loggerParams,
+      events: [eventData]
+    };
+
+    fetch(window.loggerEndpoint + '?appid=' + appName, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(payload),
+      // Survive the tab closing right after afterprint
+      keepalive: true
+    });
+  }
+});
+                window.addEventListener('beforeunload', function handlePrintClose() {
+  const pathname = window.location.pathname;
+  let printType = 'contacts';
+  let mKey = 'CONTACTS_PRINT_CLOSED';
+
+  if (pathname.includes('/print/message/')) {
+    printType = 'message';
+    mKey = 'MESSAGE_PRINT_CLOSED';
+  }
+
+  const loggerParams = window.BrowserLoggerParams;
+  const appName =
+  loggerParams && typeof loggerParams.appName === 'string' && loggerParams.appName ?
+  loggerParams.appName :
+  'novation_app';
+
+  const eventData = {
+    type: 'feature',
+    featureEvent: 'success',
+    featureName: 'print_preview',
+    component: 'norrin/info',
+    message: 'feature_success',
+    app: appName,
+    platform: 'browser',
+    data: {
+      mKey,
+      pathname,
+      eventType: 'print_close',
+      printType
+    }
+  };
+
+  if (loggerParams && window.loggerEndpoint) {
+    const payload = {
+      meta: loggerParams,
+      events: [eventData]
+    };
+
+    fetch(window.loggerEndpoint + '?appid=' + appName, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(payload),
+      // Fires during beforeunload — keepalive lets it survive the page teardown
+      keepalive: true
+    });
+  }
+});
+
+                // Close the tab once the print dialog is dismissed. Registered after the
+                // success handler so its logging fetch (keepalive) is dispatched first.
+                // window.close() is a no-op if this page was not opened via window.open.
+                window.addEventListener('afterprint', () => {
+                    window.close();
+                });
+
+</script>
+            <link id="mail-css" rel="stylesheet" type="text/css" href="https://s.yimg.com/nq/nv/css/ltr/novation_app_EGBpOL2nP-PJZl5vWKwJv96BthH_LIcXA3uKb9m1sYg_v1.css" />
+            <style>
+                .body {
+                    overflow: auto;
+                    font-family: "Yahoo Product Sans VF", apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+                    direction: ltr;
+                }
+            </style>
+        </head>
+        <body id="Atom" class="body">
+            <div><div data-test-id="print-message-view" data-test-expanded="true" tabindex="-1" data-iskeynav="true"><header class="print-header P_S9pNs M_2ae0fr m_Z14vXdP" data-test-id="print-header"><div class="D_F el_EZ jb_6Eb4 U_eo6 m_Z14vXdP"><span data-test-id="message-subject" class="C_Z281SGl A_6FsP i_6FIA c1AVi73_6LUG c1AVi7H_6MWH y_jyw3a">Your Birthday, Your Reward 🎉</span></div><div class="D_FY"><div class="D_GE"><span class="C_Z1YRXYn D_FZ je_fq7">From:</span><span data-test-id="message-from" class="C_Z281SGl D_FZ X_fq7 je_fq7">Chipotle Rewards (chipotle@email.chipotle.com)</span></div><div class="D_GE"><span class="C_Z1YRXYn D_FZ je_fq7">To:</span><span data-test-id="message-to" class="C_Z281SGl D_FZ X_fq7 je_fq7">harajuku.lovers@yahoo.com</span></div><div class="D_GE" data-test-id="message-date"><span class="C_Z1YRXYn D_FZ je_fq7">Date:</span><span class="C_Z281SGl D_FZ X_fq7 je_fq7">Sunday, September 20, 2026 at 09:29 AM PDT</span></div></div></header><div><div data-test-id="message-view-body" class="I_ZiTj5d C_1GbO8e W_A D_B ek_BB z_82XEY m_22RyjK em_N O_N ah_n ai_0 P_1r8DAc" role="region" aria-labelledby="message-view-body-landmark"><div class="msg-body mq_AS iy_q s_0 P_0" data-test-id="message-view-body-content"><div><div class=""><div><div id="yiv3749173256">
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>  
+    <title>Chipotle Mexican Grill</title>
+    
+    
+       
+<style type="text/css">
+#yiv3749173256 ReadMsgBody{width:100%;}
+#yiv3749173256 .yiv3749173256ExternalClass {width:100%;}
+#yiv3749173256 .yiv3749173256ExternalClass, #yiv3749173256 .yiv3749173256ExternalClass p, #yiv3749173256 .yiv3749173256ExternalClass span, #yiv3749173256 .yiv3749173256ExternalClass font, #yiv3749173256 .yiv3749173256ExternalClass td, #yiv3749173256 .yiv3749173256ExternalClass div {line-height:100%;}
+#yiv3749173256 body {margin:0 !important;}
+#yiv3749173256 p {margin:1em 0;}
+#yiv3749173256 table td {border-collapse:collapse;}
+#yiv3749173256 img {outline:0;}
+#yiv3749173256 a img {border:none;}
+#yiv3749173256 filtered {}
+
+</style>
+ <style type="text/css">
+#yiv3749173256 filtered {}
+
+#yiv3749173256 filtered {}
+
+#yiv3749173256 filtered {}
+
+#yiv3749173256 filtered {}
+
+#yiv3749173256 filtered {}
+
+#yiv3749173256 filtered {}
+#yiv3749173256 .yiv3749173256aBn, 
+#yiv3749173256 .yiv3749173256x-gmail-data-detectors, 
+#yiv3749173256 .yiv3749173256x-gmail-data-detectors *, 
+#yiv3749173256 .yiv3749173256filtered99999  {
+border-bottom:0!important;cursor:default!important;color:inherit!important;text-decoration:none!important;font-size:inherit!important;font-family:inherit!important;font-weight:inherit!important;line-height:inherit!important;}
+#yiv3749173256 .yiv3749173256a6T{cursor:default !important;}
+#yiv3749173256 img+div{display:none !important;}
+#yiv3749173256 .yiv3749173256header_1{
+font-size:70px !important;}
+
+#yiv3749173256 .yiv3749173256header_2{
+font-size:52px !important;}
+
+#yiv3749173256 .yiv3749173256header_3{
+font-size:46px !important;}
+
+#yiv3749173256 .yiv3749173256header_4 {
+font-size:46px !important;}
+
+#yiv3749173256 .yiv3749173256header_5 {
+font-size:42px !important;}
+
+#yiv3749173256 .yiv3749173256header_6{
+font-size:36px !important;}
+
+#yiv3749173256 .yiv3749173256subheader_gotham_1{
+font-size:38px !important;}
+
+#yiv3749173256 .yiv3749173256subheader_gotham_2{
+font-size:34px !important;}
+
+#yiv3749173256 .yiv3749173256subheader_gotham_3{
+font-size:32px !important;}
+#yiv3749173256 .yiv3749173256subhead_Trdgothic{
+font-size:32px !important;}
+#yiv3749173256 .yiv3749173256subheader_gotham_4{
+font-size:32px !important;}
+
+#yiv3749173256 .yiv3749173256subheader_gotham_5 {
+font-size:26px !important;}
+
+#yiv3749173256 .yiv3749173256subheader_gotham_6 {
+font-size:26px !important;}
+
+#yiv3749173256 .yiv3749173256subheader_gotham_7{
+font-size:20px !important;}
+
+#yiv3749173256 .yiv3749173256subheader_gothic_1{
+font-size:56px !important;}
+
+#yiv3749173256 .yiv3749173256subheader_gothic_2{
+font-size:38px !important;}
+
+#yiv3749173256 .yiv3749173256subheader_gothic_3{
+font-size:32px !important;}
+
+#yiv3749173256 .yiv3749173256subheader_gothic_4{
+font-size:32px !important;}
+
+#yiv3749173256 .yiv3749173256subheader_gothic_5{
+font-size:22px !important;}
+
+#yiv3749173256 .yiv3749173256misc_bdy_2{
+font-size:20px !important;}
+
+#yiv3749173256 .yiv3749173256body_1{
+font-size:22px !important;}
+
+#yiv3749173256 .yiv3749173256body_2{
+font-size:20px !important;}
+
+#yiv3749173256 .yiv3749173256body_3{
+font-size:20px !important;}
+
+#yiv3749173256 .yiv3749173256body_4{
+font-size:18px !important;}
+
+#yiv3749173256 .yiv3749173256body_5{
+font-size:15px !important;}
+</style>
+ <style type="text/css">
+@media only screen and (max-width:640px) {
+#yiv3749173256 .yiv3749173256container {width:100% !important;}
+#yiv3749173256 .yiv3749173256disp {display:block !important;}
+#yiv3749173256 .yiv3749173256mobile-hidden {display:none !important;}
+#yiv3749173256 .yiv3749173256logo {display:block !important;padding:0 !important;}
+#yiv3749173256 .yiv3749173256photo img {width:100% !important;height:auto !important;}
+#yiv3749173256 .yiv3749173256nav5, #yiv3749173256 .yiv3749173256nav6 {display:none !important;}
+#yiv3749173256 .yiv3749173256fluid, #yiv3749173256 .yiv3749173256fluid-centered {
+width:100% !important;max-width:100% !important;height:auto !important;margin-left:auto !important;margin-right:auto !important;}
+#yiv3749173256 .yiv3749173256fluid-centered {
+margin-left:auto !important;margin-right:auto !important;}
+}
+</style>
+     <style type="text/css">
+@media screen and (max-width:599px) {
+#yiv3749173256 td.yiv3749173256txt_padding_top {
+padding-top:45px !important;}
+#yiv3749173256 td.yiv3749173256txt_padding_left {
+padding-left:15px !important;}
+#yiv3749173256 td.yiv3749173256txt_padding_right {
+padding-right:15px !important;}
+#yiv3749173256 .yiv3749173256footer_logo img, 
+#yiv3749173256 .yiv3749173256footer_logo td {
+width:182px !important;}
+#yiv3749173256 .yiv3749173256header_1{
+font-size:60px !important;}
+#yiv3749173256 .yiv3749173256header_2{
+font-size:45px !important;}
+#yiv3749173256 .yiv3749173256header_3{
+font-size:38px !important;}
+#yiv3749173256 .yiv3749173256header_4{
+font-size:38px !important;}
+#yiv3749173256 .yiv3749173256header_5{
+font-size:32px !important;}
+#yiv3749173256 .yiv3749173256header_6{
+font-size:28px !important;}
+#yiv3749173256 .yiv3749173256subheader_gotham_1 {
+font-size:30px !important;}
+#yiv3749173256 .yiv3749173256subheader_gotham_2{
+font-size:26px !important;}
+#yiv3749173256 .yiv3749173256subhead_Trdgothic {
+font-size:24px !important;}
+#yiv3749173256 .yiv3749173256subheader_gotham_3 {
+font-size:24px !important;}
+#yiv3749173256 .yiv3749173256subheader_gotham_4{
+font-size:24px !important;}
+#yiv3749173256 .yiv3749173256subheader_gotham_5 {
+font-size:20px !important;}
+#yiv3749173256 .yiv3749173256subheader_gotham_6{
+font-size:20px !important;}
+#yiv3749173256 .yiv3749173256subheader_gotham_7 {
+font-size:15px !important;}
+#yiv3749173256 .yiv3749173256subheader_gothic_1 {
+font-size:47px !important;}
+#yiv3749173256 .yiv3749173256subheader_gothic_2{
+font-size:30px !important;}
+#yiv3749173256 .yiv3749173256subheader_gothic_3 {
+font-size:24px !important;}
+#yiv3749173256 .yiv3749173256subheader_gothic_4{
+font-size:24px !important;}
+#yiv3749173256 .yiv3749173256subheader_gothic_5 {
+font-size:18px !important;}
+#yiv3749173256 .yiv3749173256misc_bdy_2{
+font-size:16px !important;}
+#yiv3749173256 .yiv3749173256body_1{
+font-size:19px !important;}
+#yiv3749173256 .yiv3749173256body_2{
+font-size:17px !important;}
+#yiv3749173256 .yiv3749173256body_3{
+font-size:17px !important;}
+#yiv3749173256 .yiv3749173256body_4{
+font-size:14px !important;}
+#yiv3749173256 .yiv3749173256body_5{
+font-size:12px !important;}
+#yiv3749173256 .yiv3749173256charimg{width:97% !important;height:auto !important;}
+#yiv3749173256 .yiv3749173256w50{width:50% !important;height:auto !important;}
+
+}
+</style>
+     <style type="text/css">
+
+@media only screen and (max-width:480px) {
+#yiv3749173256 .yiv3749173256container {width:100% !important;}
+#yiv3749173256 .yiv3749173256footer {width:auto !important;margin-left:0;}
+#yiv3749173256 .yiv3749173256mobile-hidden {display:none !important;}
+#yiv3749173256 .yiv3749173256logo {display:block !important;padding:0 !important;}
+#yiv3749173256 img {max-width:100% !important;height:auto !important;}
+#yiv3749173256 .yiv3749173256header img{max-width:100% !important;height:auto !important;}
+#yiv3749173256 .yiv3749173256photo img {width:100% !important;max-width:100% !important;height:auto !important;}
+#yiv3749173256 .yiv3749173256drop {display:block !important;width:100% !important;float:left;clear:both;}
+#yiv3749173256 .yiv3749173256footerlogo {display:block !important;width:100% !important;padding-top:15px;float:left;clear:both;}
+#yiv3749173256 .yiv3749173256nav4, #yiv3749173256 .yiv3749173256nav5, #yiv3749173256 .yiv3749173256nav6 {display:none !important;}
+#yiv3749173256 .yiv3749173256tableBlock {width:100% !important;}
+#yiv3749173256 .yiv3749173256responsive-td {width:100% !important;display:block !important;padding:0 !important;}
+#yiv3749173256 .yiv3749173256footer_mobile_border_1 {border-left:1px solid #808080 !important;border-top:1px solid #808080 !important;border-right:1px solid #808080 !important;}
+#yiv3749173256 .yiv3749173256footer_mobile_border_2 {border-left:1px solid #808080 !important;border-right:1px solid #808080 !important;}
+#yiv3749173256 .yiv3749173256footer_mobile_border_3 {border-left:1px solid #808080 !important;border-bottom:1px solid #808080 !important;border-right:1px solid #808080 !important;}
+#yiv3749173256 .yiv3749173256fluid, #yiv3749173256 .yiv3749173256fluid-centered {
+width:100% !important;max-width:100% !important;height:auto !important;margin-left:auto !important;margin-right:auto !important;}
+#yiv3749173256 .yiv3749173256fluid-centered {
+margin-left:auto !important;margin-right:auto !important;}
+#yiv3749173256 .yiv3749173256threcol{width:33.33% !important;}
+
+#yiv3749173256 body {padding:0px !important;font-size:16px !important;line-height:150% !important;}
+
+#yiv3749173256 .yiv3749173256buttonstyles {
+font-family:arial, helvetica, sans-serif !important;font-size:16px !important;color:#FFFFFF !important;padding:10px !important;}
+
+}
+
+</style>
+     <style type="text/css">
+@media screen and (max-width:380px) {
+#yiv3749173256 .yiv3749173256header_1{
+font-size:46px !important;}
+#yiv3749173256 .yiv3749173256header_2{
+font-size:38px !important;}
+#yiv3749173256 .yiv3749173256header_3{
+font-size:32px !important;}
+#yiv3749173256 .yiv3749173256header_4 {
+font-size:32px !important;}
+#yiv3749173256 .yiv3749173256header_5{
+font-size:26px !important;}
+#yiv3749173256 .yiv3749173256header_6{
+font-size:20px !important;}
+#yiv3749173256 .yiv3749173256subheader_gotham_1 {
+font-size:22px !important;}
+#yiv3749173256 .yiv3749173256subheader_gotham_2{
+font-size:20px !important;}
+#yiv3749173256 .yiv3749173256subheader_gotham_3 {
+font-size:18px !important;}
+#yiv3749173256 .yiv3749173256subhead_Trdgothic{
+font-size:20px !important;}
+#yiv3749173256 .yiv3749173256subheader_gotham_4{
+font-size:18px !important;}
+#yiv3749173256 .yiv3749173256subheader_gotham_5{
+font-size:16px !important;}
+#yiv3749173256 .yiv3749173256subheader_gotham_6{
+font-size:17px !important;}
+#yiv3749173256 .yiv3749173256subheader_gotham_7{
+font-size:15px !important;}
+#yiv3749173256 .yiv3749173256subheader_gothic_1{
+font-size:40px !important;}
+#yiv3749173256 .yiv3749173256subheader_gothic_2 {
+font-size:24px !important;}
+#yiv3749173256 .yiv3749173256subheader_gothic_3 {
+font-size:20px!important;}
+#yiv3749173256 .yiv3749173256subheader_gothic_4{
+font-size:20px!important;}
+#yiv3749173256 .yiv3749173256subheader_gothic_5{
+font-size:15px !important;}
+#yiv3749173256 .yiv3749173256misc_bdy_2{
+font-size:14px !important;}
+#yiv3749173256 .yiv3749173256body_1{
+font-size:16px !important;}
+#yiv3749173256 .yiv3749173256body_2{
+font-size:14px !important;}
+#yiv3749173256 .yiv3749173256body_3 {
+font-size:14px !important;}
+#yiv3749173256 .yiv3749173256body_4{
+font-size:12px !important;}
+#yiv3749173256 .yiv3749173256body_5{
+font-size:12px !important;}
+}
+</style>
+
+    
+  </head>
+  <div><style type="text/css">
+#yiv3749173256 div.yiv3749173256preheader 
+{display:none !important;}
+</style>
+<div style="font-size:1px;display:none !important;" class="yiv3749173256preheader">Claim your Free Drink, Chips, Guac, or Queso</div>
+     
+  <div style="display:none;max-height:0px;overflow:hidden;">
+   &#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847;
+ &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp;
+ &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199;
+ &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj;
+ &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;
+    &#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199;
+ &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj;
+ &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp;
+ &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199;
+ &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj;
+ &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp;
+ &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199;
+ &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj;
+ &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp;
+ &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199;
+ &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj;
+ &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp;
+ &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;&#8199; &#847; &zwnj; &nbsp; &shy;
+    
+    </div>
+  
+    <div style="font-size:0;line-height:0;"><img src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fclick.email.chipotle.com%2Fopen.aspx%3FYBLLPWIBE7YEFK5I5GK6AWWACE.110062%26d%3D110062%26bmt%3D0&t=1790194620&ymreqid=eaffd96d-01d9-fe2a-1c14-af0001012f00&sig=cIrKAh30p5kljIGtikXwgw--~D" width="1" height="1" alt=""><img src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fbeacon.krxd.net%2F1x1_usermatch.gif%3Fpartner%3DNBMtP-nk_sfmc_514000685_sha256%26partner_uid%3D83ddb27c00f1509a70f47a0f8cbd231030df1351a1f8d90dce92835013cf9b86&t=1790194620&ymreqid=eaffd96d-01d9-fe2a-1c14-af0001012f00&sig=3h0PVTMora1V0TznFXpIpQ--~D" width="0" height="0" style="display:none;"> 
+<img src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fbeacon.krxd.net%2F1x1_usermatch.gif%3Fpartner%3DNBMtP-nk_sfmc_514000685_subid%26partner_uid%3D27352701&t=1790194620&ymreqid=eaffd96d-01d9-fe2a-1c14-af0001012f00&sig=Za5N6WdqbwhAjzWzG4uXMw--~D" width="0" height="0" style="display:none;"> 
+<img src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fbeacon.krxd.net%2F1x1_ad_impression.gif%3Fconfid%3Dus6xxqlx7%26advertiserid%3D514000685%26campaignid%3DTrigger_Birthday_2026&t=1790194620&ymreqid=eaffd96d-01d9-fe2a-1c14-af0001012f00&sig=_B.NjU8OYCB8S.a5RiluQg--~D" width="0" height="0" style="display:none;"></div>
+    <table width="100%" border="0" cellpadding="0" role="presentation" cellspacing="0" align="center">
+   
+      <tr>
+        <td align="center">
+          <table cellspacing="0" cellpadding="0" role="presentation" border="0" width="600" align="center" class="yiv3749173256container">
+             
+            <tr>
+              <td>
+                <table style="background-color:#FFFFFF;" cellspacing="0" cellpadding="0" bgcolor="#ffffff" role="presentation" width="100%" class="yiv3749173256tb_properties yiv3749173256border_style">
+                  <tr>
+                    <td align="center" valign="top">
+                      <table align="left" border="0" role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                          
+                          <td style="" class="yiv3749173256content_padding">
+                            
+                            <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                              <tr> 
+                                <td align="center" valign="top" class="yiv3749173256header">
+                                  <table align="left" border="0" cellpadding="0" role="presentation" cellspacing="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                          <td align="left" valign="top">
+                                            <table cellspacing="0" cellpadding="0" style="width:100%;" role="presentation">
+                                              <tbody>
+                                                  
+                                                
+                                              <tr>
+                                                <td valign="top" style="width:100%;" class="yiv3749173256responsive-td">
+                                                  <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width:100%;" class="yiv3749173256stylingblock-content-wrapper"><tr><td class="yiv3749173256stylingblock-content-wrapper yiv3749173256camarker-inner"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;" width="100%">
+	
+		<tr>
+			<td>
+				<a rel="nofollow noopener noreferrer" target="_blank" href="https://click.email.chipotle.com/?qs=ABB7InYiOjEsImQiOjUwMDV9AAsAAAAABQn5iUSNFbov-i9DUFUJsXwEEwHXsmlhHOr4yarL4QD39Z94YYkpVJ1AXGWZQ1ubkRJjox-joGVpdnhEjhIWpagsHtDNz0oRvO28xtI" title=""><img alt="" src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fimage.email.chipotle.com%2Flib%2Ffe3211717164047d731c75%2Fm%2F1%2Fc745df26-ec79-4724-83b8-514674215a22.gif&t=1790194620&ymreqid=eaffd96d-01d9-fe2a-1c14-af0001012f00&sig=ViuLzneBo8ZiUo_eZslMxA--~D" style="display:block;outline:0px;text-decoration:none;height:auto;width:100%;font-size:13px;padding:0px;text-align:center;border:0px;" width="600"></a></td></tr></table></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width:100%;" class="yiv3749173256stylingblock-content-wrapper"><tr><td class="yiv3749173256stylingblock-content-wrapper yiv3749173256camarker-inner"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;" width="100%">
+	
+		<tr>
+			<td>
+				<a rel="nofollow noopener noreferrer" target="_blank" href="https://click.email.chipotle.com/?qs=ABB7InYiOjEsImQiOjUwMDV9AAsAAAAABQn5iUSO9XX2XzILBPBqFKFwaEOYwnb7e4cdM2VkxN50mA57p6L3mDve_orM_9Ussl6ZjWA008VgvXiT9c390QlfAvNnwohQoBE3w2Q" title=""><img alt="" src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fimage.email.chipotle.com%2Flib%2Ffe3211717164047d731c75%2Fm%2F1%2F031e9646-13fd-451c-b6fa-1d496cc34682.png&t=1790194620&ymreqid=eaffd96d-01d9-fe2a-1c14-af0001012f00&sig=yUcsjjL1.r1S1pV9XZgFDA--~D" style="display:block;outline:0px;text-decoration:none;height:auto;width:100%;font-size:13px;padding:0px;text-align:center;border:0px;" width="600"></a></td></tr></table></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width:100%;" class="yiv3749173256stylingblock-content-wrapper"><tr><td class="yiv3749173256stylingblock-content-wrapper yiv3749173256camarker-inner"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;" width="100%">
+ 
+  <tr>
+   <td>
+    <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.email.chipotle.com/?qs=ABB7InYiOjEsImQiOjUwMDV9AAsAAAAABQn5iUSPSZNAu0MdR2-329hSXaPYgtHtPnVhzhkZc5-ADQs_BzO4ZchTpzPjgE93BtWGYD_06dY1e0c1RJvvZoHl4esLV7y89u_kg5I" title=""><img alt="Chipotle promotional image featuring guacamole, queso, tortilla chips, and a branded drink cup with text reading &#x002018;Make your birthday iconic,&#x002019; &#x002018;birthday queso just feels right,&#x002019; and &#x002018;choose your birthday sip.&#x002019;" src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fimage.email.chipotle.com%2Flib%2Ffe3211717164047d731c75%2Fm%2F1%2F0b069025-5848-4dc5-8289-b7781d3c06f0.jpg&t=1790194620&ymreqid=eaffd96d-01d9-fe2a-1c14-af0001012f00&sig=J6JqMFHEF4C9iWiKksjqZA--~D" style="display:block;outline:0px;text-decoration:none;height:auto;width:100%;font-size:13px;padding:0px;border:0px;text-align:center;" width="600"></a></td></tr></table></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width:100%;" class="yiv3749173256stylingblock-content-wrapper"><tr>
+<td class="yiv3749173256stylingblock-content-wrapper yiv3749173256camarker-inner"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;" width="100%">
+ 
+  <tr>
+   <td>
+    <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.email.chipotle.com/?qs=ABB7InYiOjEsImQiOjUwMDV9AAsAAAAABQn5iUSQQRD8T5slNgM_1mfCfsWKkDEwSn52YoU-hutUcWeS8-sa-sIRcl3OwIZMRKHNfZT3N58c9_q2kraoCxJJZVkruBHuQCaw8uk" title="Choose Reward Image Slice"><img alt="chips, guac, queso, or a drink, the decision is yours. happy birthday!" src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fimage.email.chipotle.com%2Flib%2Ffe3211717164047d731c75%2Fm%2F1%2F8804beef-8385-4685-931d-1d6113f152a7.jpg&t=1790194620&ymreqid=eaffd96d-01d9-fe2a-1c14-af0001012f00&sig=oID0cmIWlZR21J066AwNsg--~D" style="display:block;outline:0px;text-decoration:none;height:auto;width:100%;font-size:13px;padding:0px;text-align:center;border:0px;" width="600"></a></td></tr></table></td></tr></table>
+              
+                                                </td>
+                                              </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                            
+
+                            
+                            
+                            
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+<div style="margin:0 auto;max-width:600px;background:#fff;background-color:#fff;" class="yiv3749173256dmblack">
+ <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;background:#fff;background-color:#fff;" class="yiv3749173256dmblack">
+  <tbody>
+   <tr>
+    <td style="direction:ltr;font-size:0;padding:15px 0px 0px 0px;text-align:center;">
+     
+     <div style="font-size:0;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;" class="yiv3749173256mj-column-per-100 yiv3749173256mj-outlook-group-fix">
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+       <tbody>
+        <tr>
+         <td style="vertical-align:top;padding:0;">
+          <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+           <tr>
+            <td align="center" style="font-size:0;padding:0px;">
+             <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0;">
+              <tbody>
+               <tr>
+                <td style="width:600px;" class="yiv3749173256container">
+                 <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.email.chipotle.com/?qs=ABB7InYiOjEsImQiOjUwMDV9AAsAAAAABQn5iUSSFVGv-EHFjC-3mjectxGsTyOx5S-uPeJXphp62e0hXhLTK8GG7b5Wwryzh_krV1kXFZS_t10XO5NCaNAL1OsJ6kGuWzyz3lnmromA"><img alt="Footer Banner" height="auto" src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fimage.email.chipotle.com%2Flib%2Ffe3211717164047d731c75%2Fm%2F1%2Ffe0e434c-7502-401f-b746-c3dba4390f63.png&t=1790194620&ymreqid=eaffd96d-01d9-fe2a-1c14-af0001012f00&sig=NN1CgYsoi7AeppeBkdC2uQ--~D" style="border:0;display:block;outline:0;text-decoration:none;height:auto;width:100%;font-size:13px;" width="600" class="yiv3749173256container"></a>
+                </td>
+               </tr>
+              </tbody>
+             </table>
+            </td>
+           </tr>
+          </table>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+     
+    </td>
+   </tr>
+  </tbody>
+ </table>
+</div>
+
+
+<div style="background:#FFFFFF;background-color:#FFFFFF;margin:0px auto;max-width:600px;"><table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#FFFFFF;background-color:#FFFFFF;width:100%;"><tbody><tr><td style="direction:ltr;font-size:0px;padding:15px 0;text-align:center;"><div style="background:#FFFFFF;background-color:#FFFFFF;margin:0px auto;max-width:600px;">
+<table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#FFFFFF;background-color:#FFFFFF;width:100%;"><tbody><tr><td style="direction:ltr;font-size:0px;padding:0;text-align:center;"><div style="font-size:0;line-height:0;text-align:center;display:inline-block;width:100%;direction:ltr;background-color:#FFFFFF;" class="yiv3749173256mj-column-per-100 yiv3749173256mj-outlook-group-fix"><div style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:49%;" class="yiv3749173256mj-column-per-49 yiv3749173256mj-outlook-group-fix"><table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%"><tbody>
+<tr><td style="background-color:#FFFFFF;vertical-align:top;padding:0;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%"><tbody><tr><td align="left" style="font-size:0px;padding:0;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;"><tbody><tr><td style="width:294px;"><a rel="nofollow noopener noreferrer" target="_blank" href="https://click.email.chipotle.com/?qs=ABB7InYiOjEsImQiOjUwMDV9AAsAAAAABQn5iUSTGpcCkgF0-fMU1vsFPnPOsh3pW_20xnJ37R28gg8SB1rJAG_aUTzWpkIxxY3dUOq0Dp-gy7v7as_ZPv879SDLDmcUYX1aa3e23dVT"><img alt="Order Online" height="auto" src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fimage.email.chipotle.com%2Flib%2Ffe3211717164047d731c75%2Fm%2F5%2Fb1e25dbc-cbc3-428f-813f-fc640c8b9c85.png&t=1790194620&ymreqid=eaffd96d-01d9-fe2a-1c14-af0001012f00&sig=MOk0_uSxJ8.Oda.9AXT5OA--~D" style="border:0;display:block;outline:0;text-decoration:none;height:auto;width:100%;font-size:13px;" width="294"></a></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table>
+</div><div style="font-size:0px;text-align:center;direction:ltr;display:inline-block;vertical-align:top;width:2%;" class="yiv3749173256mj-column-per-2 yiv3749173256mj-outlook-group-fix"><table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%"><tbody><tr><td style="vertical-align:top;padding:0;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%"><tbody></tbody></table></td></tr></tbody></table></div><div style="font-size:0px;text-align:right;direction:ltr;display:inline-block;vertical-align:top;width:49%;" class="yiv3749173256mj-column-per-49 yiv3749173256mj-outlook-group-fix">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%"><tbody><tr><td style="background-color:#FFFFFF;vertical-align:top;padding:0;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%"><tbody><tr><td align="center" style="font-size:0px;padding:0;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;"><tbody><tr><td style="width:294px;"><a rel="nofollow noopener noreferrer" target="_blank" href="https://click.email.chipotle.com/?qs=ABB7InYiOjEsImQiOjUwMDV9AAsAAAAABQn5iUSUr5mbpiwnKNVWkrfsDgv1vYXsWmHjneE4U4hi2FzzB5eccYdXZEMnOPdi6HIs-XnOb1IERjCHP-NVSwU_x7otLhZdowu5YYPiXZdz">
+<img alt="My Rewards" height="auto" src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fimage.email.chipotle.com%2Flib%2Ffe3211717164047d731c75%2Fm%2F5%2F405d061d-e969-4341-9074-aa8031275fcf.png&t=1790194620&ymreqid=eaffd96d-01d9-fe2a-1c14-af0001012f00&sig=d38uwJAN0nOMeEv.R3PIog--~D" style="border:0;display:block;outline:0;text-decoration:none;height:auto;width:100%;font-size:13px;" width="294"></a></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></div></div></td></tr></tbody></table></div></td></tr></tbody></table></div>
+
+
+<div style="background:#FFFFFF;background-color:#FFFFFF;margin:0px auto;max-width:600px;"><table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#FFFFFF;background-color:#FFFFFF;width:100%;"><tbody><tr><td style="direction:ltr;font-size:0px;padding:0px 0 0 0;text-align:center;"><div style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;" class="yiv3749173256mj-column-per-100 yiv3749173256mj-outlook-group-fix">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%"><tbody><tr><td style="vertical-align:top;padding:0;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%"><tbody><tr><td align="center" style="font-size:0px;padding:0;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;"><tbody><tr><td style="width:600px;"><a rel="nofollow noopener noreferrer" target="_blank" href="https://click.email.chipotle.com/?qs=ABB7InYiOjEsImQiOjUwMDV9AAsAAAAABQn5iUSVA7Jv_upfnnHkRumDByJs1tiqpk7QkgUvzy4Qfnxr2lyVnY7VdA3eI0UC6xJyDqdOcdPRQbfYnSE2mj3Lh8wCIiTSsrn0Sa0"><img alt="Download the App" height="auto" src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fem.realtime.email%2Fservice%2Frte%3Fkind%3Dliveimage%26id%3D1437875955%26esp_uid%3D0030P00002QD36yQAD&t=1790194620&ymreqid=eaffd96d-01d9-fe2a-1c14-af0001012f00&sig=tBVc1ugmmmHeV2dp4oIoFA--~D" style="border:0;display:block;outline:0;text-decoration:none;height:auto;width:100%;font-size:13px;" width="600"></a></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></div></td></tr></tbody></table></div>
+
+<div style="background:#FFFFFF;background-color:#FFFFFF;margin:0px auto;max-width:600px;"><table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#FFFFFF;background-color:#FFFFFF;width:100%;"><tbody><tr><td style="direction:ltr;font-size:0px;padding:0px 0 0 0;text-align:center;"><div style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;" class="yiv3749173256mj-column-per-100 yiv3749173256mj-outlook-group-fix">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%"><tbody><tr><td style="background-color:#FFFFFF;border-left:1.5px solid #808080;border-right:1.5px solid #808080;border-top:1.5px solid #808080;vertical-align:top;padding:50px 0 0 0;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%"><tbody><tr><td align="center" style="font-size:0px;padding:0;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;"><tbody><tr><td style="width:565px;"><a rel="nofollow noopener noreferrer" target="_blank" href="https://click.email.chipotle.com/?qs=ABB7InYiOjEsImQiOjUwMDV9AAsAAAAABQn5iUSW-zAyVJuNgn7z6K-dx1CvtBKyvXKScNvPDFw2Z0bwZQEHuQPfyY6cT263IwWDXRrSYZhfUyzpt8BYbZvrJduC5gp1GOZvcosO_zie">
+<img alt="Chipotle Logo" height="auto" src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fimage.email.chipotle.com%2Flib%2Ffe3211717164047d731c75%2Fm%2F5%2Fb6431995-e1d5-42f1-98b0-0414693d66a0.png&t=1790194620&ymreqid=eaffd96d-01d9-fe2a-1c14-af0001012f00&sig=AiBJK0WIfX4guOdlj64xgA--~D" style="border:0;display:block;outline:0;text-decoration:none;height:auto;width:100%;font-size:13px;" width="565"></a></td></tr></tbody></table></td></tr><tr><td align="center" style="font-size:0px;padding:30px 0 18px 0;" class="yiv3749173256footer_size"><div style="font-family:Gotham-Book, Helvetica, Arial, sans-serif;font-size:13px;line-height:1.2;text-align:center;color:#000000;">Cultivate a Better World.</div></td></tr></tbody></table></td></tr></tbody></table></div></td></tr></tbody></table></div><div style="background:#FFFFFF;background-color:#FFFFFF;margin:0px auto;max-width:600px;"><table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#FFFFFF;background-color:#FFFFFF;width:100%;"><tbody><tr><td style="direction:ltr;font-size:0px;padding:0 0 0 0;text-align:center;"><div style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;" class="yiv3749173256mj-column-per-100 yiv3749173256mj-outlook-group-fix"><table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%"><tbody><tr><td style="background-color:#FFFFFF;border-left:1.5px solid #808080;border-right:1.5px solid #808080;vertical-align:top;padding:0;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%"><tbody><tr><td align="center" style="font-size:0px;padding:0;"><table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;"><tbody><tr><td style="padding:12px;vertical-align:middle;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#FFFFFF;border-radius:3px;width:43px;"><tbody><tr><td style="font-size:0;vertical-align:middle;width:43px;"><a rel="nofollow noopener noreferrer" target="_blank" href="https://click.email.chipotle.com/u/?qs=ABB7InYiOjEsImQiOjUwMDV9AAsAAAAABQn5iUSXUgXeXVzv_cRW2pBuNRYONi5bKUMn_zWl8VuXK3D-OH9DW4lgWoWn43IPm-uG_KZOrhr4VkIUKjGLCXar1MC2YViDnrfI-eMAVeVF">
+<img alt="Chipotle TikTok" src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fimage.email.chipotle.com%2Flib%2Ffe3211717164047d731c75%2Fm%2F5%2F7e051ca8-17ec-465f-9add-96d6363c9daa.png&t=1790194620&ymreqid=eaffd96d-01d9-fe2a-1c14-af0001012f00&sig=p_odoQKkGCzVy05dr6w23g--~D" style="border-radius:3px;display:block;" width="43"></a></td></tr></tbody></table></td></tr></tbody></table><table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;"><tbody><tr><td style="padding:12px;vertical-align:middle;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#FFFFFF;border-radius:3px;width:43px;"><tbody><tr><td style="font-size:0;vertical-align:middle;width:43px;"><a rel="nofollow noopener noreferrer" target="_blank" href="https://click.email.chipotle.com/u/?qs=ABB7InYiOjEsImQiOjUwMDV9AAsAAAAABQn5iUSYXRhDRhBiCFMAO8jLlzsv5JvE4UxdMLSQuKa1hQAli6or0s80-yc6pSpvxF3sp3aOyHfW4TelYdl7ASVYssiQFJTPDKaNA5JNla3o">
+<img alt="Chipotle Instagram" src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fimage.email.chipotle.com%2Flib%2Ffe3211717164047d731c75%2Fm%2F5%2Faf1baa91-ffdc-47ac-8c1f-56ae07b464c1.png&t=1790194620&ymreqid=eaffd96d-01d9-fe2a-1c14-af0001012f00&sig=myIiby4f.5szzqfyZj.1zA--~D" style="border-radius:3px;display:block;" width="43"></a></td></tr></tbody></table></td></tr></tbody></table><table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;"><tbody><tr><td style="padding:12px;vertical-align:middle;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#FFFFFF;border-radius:3px;width:43px;"><tbody><tr><td style="font-size:0;vertical-align:middle;width:43px;"><a rel="nofollow noopener noreferrer" target="_blank" href="https://click.email.chipotle.com/u/?qs=ABB7InYiOjEsImQiOjUwMDV9AAsAAAAABQn5iUSZtq6XsdVuPpM63slgObY9pwHm4LdXUdiWlbgBmvBvQJqaNEdwovYyoy42H_ocUdlE2g89gk_8SUEu-fSnqqwANXsH9ZcpLPkA1wIl">
+<img alt="Chipotle Twitter" src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fimage.email.chipotle.com%2Flib%2Ffe3211717164047d731c75%2Fm%2F1%2Fd9f1f3ee-2e20-4e83-b55e-0c86658193db.png&t=1790194620&ymreqid=eaffd96d-01d9-fe2a-1c14-af0001012f00&sig=YHoI89uScfY2RN6s3r1KlA--~D" style="border-radius:3px;display:block;" width="43"></a></td></tr></tbody></table></td></tr></tbody></table><table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;"><tbody><tr><td style="padding:12px;vertical-align:middle;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#FFFFFF;border-radius:3px;width:43px;"><tbody><tr><td style="font-size:0;vertical-align:middle;width:43px;"><a rel="nofollow noopener noreferrer" target="_blank" href="https://click.email.chipotle.com/u/?qs=ABB7InYiOjEsImQiOjUwMDV9AAsAAAAABQn5iUSa30xgbZfVjucJTnwW7pbkFy0KO3fERKv7l8ZYeyZ3fNL4WEfH1imlzklw8qMzhM9xpPI7e66ugxISZwpv_VoIEUw8bznRtgDd8tFR">
+<img alt="Chipotle Facebook" src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fimage.email.chipotle.com%2Flib%2Ffe3211717164047d731c75%2Fm%2F5%2F8b4499f0-6c6d-48a1-bc31-3c3baef708d6.png&t=1790194620&ymreqid=eaffd96d-01d9-fe2a-1c14-af0001012f00&sig=jv2yseYlOK1IX_DQe5fi1A--~D" style="border-radius:3px;display:block;" width="43"></a></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></div></td></tr></tbody></table></div><div style="background:#FFFFFF;background-color:#FFFFFF;margin:0px auto;max-width:600px;">
+<table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#FFFFFF;background-color:#FFFFFF;width:100%;"><tbody><tr><td style="direction:ltr;font-size:0px;padding:0 0 15px 0;text-align:center;border-bottom:1.5px solid #808080;border-left:1.5px solid #808080;border-right:1.5px solid #808080;vertical-align:top;"><div style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;" class="yiv3749173256mj-column-per-100 yiv3749173256mj-outlook-group-fix"><table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%"><tbody><tr><td style="background-color:#FFFFFF;"><table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%"><tbody><tr>
+<td align="center" style="font-size:0px;padding:18px;" class="yiv3749173256footer_size yiv3749173256grey_legal_anchor"><div style="font-family:Gotham-Book, Helvetica, Arial, sans-serif;font-size:13px;line-height:1.25;text-align:center;color:#000000;">*For full Chipotle Rewards Terms and Conditions, see https://www.chipotle.com/rewards-terms</div></td></tr> <tr><td align="center" style="font-size:0px;padding:12px;" class="yiv3749173256footer_size"><div style="font-family:Gotham-Book, Helvetica, Arial, sans-serif;font-size:13px;line-height:1.25;text-align:center;color:#000000;">This email was sent to <a rel="nofollow noopener noreferrer" ymailto="mailto:harajuku.lovers@yahoo.com" target="_blank" href="mailto:harajuku.lovers@yahoo.com" style="color:#000000!important;text-decoration:none!important;text-transform:none!important;">harajuku.lovers@yahoo.com</a></div></td></tr>
+ 
+ 
+ 
+ 
+   <tr><td align="center" style="font-size:0px;padding:12px 0 12px 0;" class="yiv3749173256footer_size"><div style="font-family:Gotham-Book, Helvetica, Arial, sans-serif;font-size:13px;line-height:1.25;text-align:center;color:#000000;"><a rel="nofollow noopener noreferrer" target="_blank" href="https://click.email.chipotle.com/u/?qs=ABB7InYiOjEsImQiOjUwMDV9AAsAAAAABQn5iUSbjpJxIlQk5_LEOCo-HbW0A9ENsrMDpaddVU-qRiq6GRoTTxdAjHaC5ICWgepbU4mRNicfpOUjb-VHbxhqxIQLScAIZljoqO6Np79G" style="color:#000000;text-decoration:underline;">Customer Service</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.email.chipotle.com/u/?qs=ABB7InYiOjEsImQiOjUwMDV9AAsAAAAABQn5iUScJ8NpPAjtNfRJENbtxik2R6FSDcKnCHYmYIuhNySNDERDb-0KTiO-BC8W7jdbK5aj0Xx2Ywp9Mokfc_lvfOtpuAEDA2DP9r9daXiK" style="color:#000000;text-decoration:underline;">Manage Preferences</a>
+ </div></td></tr>
+ 
+ 
+ <tr><td align="center" style="font-size:0px;padding:12px 0 12px 0;" class="yiv3749173256footer_size"><div style="font-family:Gotham-Book, Helvetica, Arial, sans-serif;font-size:13px;line-height:1.25;text-align:center;color:#000000;">
+ <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.email.chipotle.com/unsub_center.aspx?qs=ABB7InYiOjEsImQiOjUwMDV9AAsAAAAABQn5iUSd4nwy9ZrdKeUTiERSOrpilfp79bazj_s16b6f1SulAcKHzzUNT7zX7bTPR6vizWSoQevZY5LOD5IjH_Gpb8Dz1XylS1BIDD2w9gUgax4PdRvRgt0oz3U" style="color:#000000;text-decoration:underline;">Unsubscribe</a>
+ 
+ </div></td></tr>
+ 
+ 
+ <tr><td align="center" style="font-size:0px;padding:12px 0 12px 0;" class="yiv3749173256footer_size"><div style="font-family:Gotham-Book, Helvetica, Arial, sans-serif;font-size:13px;line-height:1.25;text-align:center;color:#000000;">CMG Strategy Co, LLC.<br><a rel="nofollow noopener noreferrer" style="text-decoration:none;color:#000000;">610 Newport Center Drive<br>Newport Beach, CA 92660 &bull; USA</a><br>&copy;2026 CMG Strategy Co, LLC.</div></td></tr><tr><td align="center" style="font-size:0px;padding:12px 0 12px 0;" class="yiv3749173256footer_size"><div style="font-family:Gotham-Book, Helvetica, Arial, sans-serif;font-size:13px;line-height:1.25;text-align:center;color:#000000;">
+<a rel="nofollow noopener noreferrer" target="_blank" href="https://chipotle.app.link/?$3p=e_et&$deep_link=true&$fallback_url=https%3A%2F%2Fwww.chipotle.com%2Frewards&destination=user_rewards&lyid=36119198&UTM_Source=salesforce&UTM_medium=email&UTM_campaign=Trigger_Birthday_2026" style="color:#000000;text-decoration:underline;">Chipotle Rewards</a>&nbsp;&nbsp;<a rel="nofollow noopener noreferrer" target="_blank" href="https://click.email.chipotle.com/u/?qs=ABB7InYiOjEsImQiOjUwMDV9AAsAAAAABQn5iUSeo8tk_-cLRrylSJHmK8vZnhaRTTk44gHVh0kE4IHyYvRACh7dg_cPvig2wnDBvE1L3aCqMNezR52IeiUpS9FauGrjR07k6uWaOamv" style="color:#000000;text-decoration:underline;">Terms of Use</a></div></td></tr><tr><td align="center" style="font-size:0px;padding:12px 0 35px 0;" class="yiv3749173256footer_size"><div style="font-family:Gotham-Book, Helvetica, Arial, sans-serif;font-size:13px;line-height:1.25;text-align:center;color:#000000;">
+<a rel="nofollow noopener noreferrer" target="_blank" href="https://click.email.chipotle.com/u/?qs=ABB7InYiOjEsImQiOjUwMDV9AAsAAAAABQn5iUSfuxkBM5Fh6JN-V2wV1nPJTeydOvta5Tr_92BNUxOflnPEwk9Wt28zfTWJw3mRROyteiqtl5A15rr2s5RFqxeviJF5Da4Rp7KU9dPi" style="color:#000000;text-decoration:underline;">Privacy Policy</a></div></td></tr></tbody></table></td></tr></tbody></table></div></td></tr></tbody></table></div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+           
+          </table></td></tr>
+          </table>
+       
+     
+   
+  </div>
+</html>
+</div></div></div></div></div></div></div></div></div>
+        </body>
+        </html>
