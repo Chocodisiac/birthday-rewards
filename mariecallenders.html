@@ -1,0 +1,462 @@
+
+
+        <!doctype html>
+        <html id="Atom">
+        <head>
+            <title>Your Birthday Gift Has Arrived!</title>
+            <meta name="oath:guce:consent-host" content="guce.yahoo.com"/>
+            <meta name="conf:cjs:locale" content="en-US"/>
+            <script nonce="ji84y57HCvnBBPTn01y+gqJ7eWy3sj4fLgMwkx2r8s4BnyyU">
+                window.ymailAssetHost="https://s.yimg.com/nq/nv/";
+                window.BrowserLoggerParams={"appName":"cld_novation_app","cldmbx":1,"yid":"harajuku.lovers","farm":"23520123","shardId":"123955_ZbE2naQh4_WdDtTo1Ukz6A","os":"Mac OS 10.15.7","browser":"Chrome 153.0.0.0","partner":"","partnr":"","cbe":"","buckets":"ComAud_TOM_Cashback_Credit_Card_Desktop::YMail_XStreaks_A_T01::ymailoasis_checkoutwidget_t01::oasis_LMV3contactsAPI_t0::ComAud_TOM_GLP_Kima_Desktop::ComAud_TOM_Chase_Sapphire_AIQ_Desktop::ComAud_Fin_And_Ins_Cash_CC_AIQ_Desktop::ComAud_TOM_GLP_Kima_Refined1_Desktop::ComAud_TOM_GLP_Kima_Refined2_Desktop::ay-growthcode-mail-test::UG_GmailAdsFree_T02_30d::oasis_us_y2yimap_eol_t::ymailoasis_subhub_t01::mailintel_ondemandtldr_list::unsub_oasis_control::moqr_control::ComAud_TOM_AIQ_Peptides_Desktop::YMail_XChallenges_T01::production::oasis_contactsAPI_v2_t1::oasis_trackb_ad_rotation_c01::uss-web-us-test::basic_mail_eol_us_ca_c01::ymail_oasis_20sadrotation_r01::ymail_novation_gam_gcp_r1::ComAud_TOM_KimaTravelIntend_Desktop::ComAud_TOM_StudentLoans_AIQ_Desktop::cal_rightrail_ramp::mail-web-ga-test-v2","rid":"410i7ahlb8e7f","locale":"en-US","platform":"browser","app":"cld_novation_app","env":"production","colo":"gq1","cldRegion":"us-west2","region":"us","bldVer":"1.0.4577","buildNumber":"1.0.4577","prdct":"novation_cld"};
+                window.loggerEndpoint="/n/log";
+                window.AppBootstrapData={"appId":"YMailCLDNovation","appName":"CLD_NOVATION_APP","buildNumber":"1.0.4577","bldVer":"1.0.4577","guidHash":"eaffd96d01d9fe2a841eaa52635ce60e"};
+
+                // Add event listeners
+                window.addEventListener('afterprint', function handlePrintSuccess() {
+  const pathname = window.location.pathname;
+  let printType = 'contacts';
+  let mKey = 'CONTACTS_PRINT_SUCCEEDED';
+
+  if (pathname.includes('/print/message/')) {
+    printType = 'message';
+    mKey = 'MESSAGE_PRINT_SUCCEEDED';
+  }
+
+  const loggerParams = window.BrowserLoggerParams;
+  const appName =
+  loggerParams && typeof loggerParams.appName === 'string' && loggerParams.appName ?
+  loggerParams.appName :
+  'novation_app';
+
+  const eventData = {
+    type: 'feature',
+    featureEvent: 'success',
+    featureName: 'print_preview',
+    component: 'norrin/info',
+    message: 'feature_success',
+    app: appName,
+    platform: 'browser',
+    data: {
+      mKey,
+      intrctn: 'view',
+      pathname,
+      eventType: 'print_success',
+      printType
+    }
+  };
+
+  if (loggerParams && window.loggerEndpoint) {
+    const payload = {
+      meta: loggerParams,
+      events: [eventData]
+    };
+
+    fetch(window.loggerEndpoint + '?appid=' + appName, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(payload),
+      // Survive the tab closing right after afterprint
+      keepalive: true
+    });
+  }
+});
+                window.addEventListener('beforeunload', function handlePrintClose() {
+  const pathname = window.location.pathname;
+  let printType = 'contacts';
+  let mKey = 'CONTACTS_PRINT_CLOSED';
+
+  if (pathname.includes('/print/message/')) {
+    printType = 'message';
+    mKey = 'MESSAGE_PRINT_CLOSED';
+  }
+
+  const loggerParams = window.BrowserLoggerParams;
+  const appName =
+  loggerParams && typeof loggerParams.appName === 'string' && loggerParams.appName ?
+  loggerParams.appName :
+  'novation_app';
+
+  const eventData = {
+    type: 'feature',
+    featureEvent: 'success',
+    featureName: 'print_preview',
+    component: 'norrin/info',
+    message: 'feature_success',
+    app: appName,
+    platform: 'browser',
+    data: {
+      mKey,
+      pathname,
+      eventType: 'print_close',
+      printType
+    }
+  };
+
+  if (loggerParams && window.loggerEndpoint) {
+    const payload = {
+      meta: loggerParams,
+      events: [eventData]
+    };
+
+    fetch(window.loggerEndpoint + '?appid=' + appName, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(payload),
+      // Fires during beforeunload — keepalive lets it survive the page teardown
+      keepalive: true
+    });
+  }
+});
+
+                // Close the tab once the print dialog is dismissed. Registered after the
+                // success handler so its logging fetch (keepalive) is dispatched first.
+                // window.close() is a no-op if this page was not opened via window.open.
+                window.addEventListener('afterprint', () => {
+                    window.close();
+                });
+
+</script>
+            <link id="mail-css" rel="stylesheet" type="text/css" href="https://s.yimg.com/nq/nv/css/ltr/novation_app_EGBpOL2nP-PJZl5vWKwJv96BthH_LIcXA3uKb9m1sYg_v1.css" />
+            <style>
+                .body {
+                    overflow: auto;
+                    font-family: "Yahoo Product Sans VF", apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+                    direction: ltr;
+                }
+            </style>
+        </head>
+        <body id="Atom" class="body">
+            <div><div data-test-id="print-message-view" data-test-expanded="true" tabindex="-1" data-iskeynav="true"><header class="print-header P_S9pNs M_2ae0fr m_Z14vXdP" data-test-id="print-header"><div class="D_F el_EZ jb_6Eb4 U_eo6 m_Z14vXdP"><span data-test-id="message-subject" class="C_Z281SGl A_6FsP i_6FIA c1AVi73_6LUG c1AVi7H_6MWH y_jyw3a">Your Birthday Gift Has Arrived!</span></div><div class="D_FY"><div class="D_GE"><span class="C_Z1YRXYn D_FZ je_fq7">From:</span><span data-test-id="message-from" class="C_Z281SGl D_FZ X_fq7 je_fq7">Marie Callender&#x27;s Restaurant &amp; Bakery (mariecallender@mariecallender.fbmta.com)</span></div><div class="D_GE"><span class="C_Z1YRXYn D_FZ je_fq7">To:</span><span data-test-id="message-to" class="C_Z281SGl D_FZ X_fq7 je_fq7">harajuku.lovers@yahoo.com</span></div><div class="D_GE" data-test-id="message-date"><span class="C_Z1YRXYn D_FZ je_fq7">Date:</span><span class="C_Z281SGl D_FZ X_fq7 je_fq7">Monday, September 14, 2026 at 12:02 AM PDT</span></div></div></header><div><div data-test-id="message-view-body" class="I_ZiTj5d C_1GbO8e W_A D_B ek_BB z_82XEY m_22RyjK em_N O_N ah_n ai_0 P_1r8DAc" role="region" aria-labelledby="message-view-body-landmark"><div class="msg-body mq_AS iy_q s_0 P_0" data-test-id="message-view-body-content"><div><div class=""><div><div id="yiv5436346046"><!DOCTYPE html>
+<html>
+<head>
+<title>Your Birthday Gift Has Arrived!</title>
+<style type="text/css">
+#yiv5436346046 .yiv5436346046ReadMsgBody {
+width:100%;}
+#yiv5436346046 .yiv5436346046ExternalClass {
+width:100%;}
+
+</style>
+<style media="all" type="text/css">
+#yiv5436346046 * {
+line-height:normal !important;}
+
+
+#yiv5436346046 html, #yiv5436346046 body {
+margin:0;min-height:100%;min-width:100%;padding:0;width:100%;}
+
+#yiv5436346046 .yiv5436346046ExternalClass {width:100%;}
+
+#yiv5436346046 .yiv5436346046ExternalClass, #yiv5436346046 .yiv5436346046ExternalClass p, #yiv5436346046 .yiv5436346046ExternalClass span, #yiv5436346046 .yiv5436346046ExternalClass font, #yiv5436346046 .yiv5436346046ExternalClass td, #yiv5436346046 .yiv5436346046ExternalClass div {line-height:100%;}
+
+#yiv5436346046 p {margin:1em 0;}
+#yiv5436346046 img {outline:none;text-decoration:none;}
+
+#yiv5436346046 a img {border:0 none #000000;}
+#yiv5436346046 td {
+line-height:normal !important;}
+
+
+
+
+
+
+
+#yiv5436346046 span.yiv5436346046MsoHyperlink {
+color:inherit;}
+#yiv5436346046 span.yiv5436346046MsoHyperlinkFollowed {
+color:inherit;}
+#yiv5436346046 button {display:block !important;}
+#yiv5436346046 div {display:block!important;}
+
+
+</style>
+
+<style>
+#yiv5436346046 .yiv5436346046filtered99999 {
+font-size:0;min-height:0;line-height:0;}
+#yiv5436346046 .yiv5436346046mobile{
+display:none;font-size:0;min-height:0;line-height:0;}
+
+@media only screen and (max-width:550px) {
+#yiv5436346046 .yiv5436346046filtered99999  {
+display:none !important;}
+#yiv5436346046 .yiv5436346046desktop {
+display:none !important;}
+
+#yiv5436346046 .yiv5436346046filtered99999  {
+display:block !important;font-size:inherit !important;height:auto !important;line-height:inherit !important;overflow:visible !important;max-height:100% !important;}
+#yiv5436346046 .yiv5436346046mobile {
+display:block !important;font-size:inherit !important;height:auto !important;line-height:inherit !important;overflow:visible !important;max-height:100% !important;}
+}
+</style>
+
+<style>
+#yiv5436346046 * .yiv5436346046filtered99999 .yiv5436346046FBDisplayNone {
+display:none;}
+
+
+@media only screen and (max-width:550px) {
+#yiv5436346046 * .yiv5436346046filtered99999 .yiv5436346046FBDisplayNone {
+display:block !important;}
+
+#yiv5436346046 .yiv5436346046filtered99999  {
+display:none !important;}
+
+#yiv5436346046 .yiv5436346046filtered99999  {
+min-width:352px !important;max-width:352px !important;width:352px !important;}
+}
+
+</style>
+
+</head>
+<div><div style="display:none;font-size:0px;color:transparent;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;"></div>
+ 
+	
+	<span style="display:block;width:100%;">
+		<table cellpadding="0" cellspacing="0" border="0" id="yiv5436346046Wrapper" align="center">
+			<tr>
+				<td class="yiv5436346046FBDisplayNone">
+					<div style="display:none;max-height:0px;min-height:0px;overflow:hidden;font-size:0;line-height:0px;" class="yiv5436346046mobile">
+						
+							<table border="0" cellpadding="0" cellspacing="0" class="yiv5436346046mobile">
+							  <tr>
+								<td width="1"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fclt%2Fspacer.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=o2w0zDSo5zsCygyzV_VPHQ--~D" height="1" width="1" style="display:block;"></td>
+								<td width="1"><a rel="nofollow noopener noreferrer" target="_blank" href="https://mariecallender.fbmta.com/a/0/22848764/1904742/default.aspx"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fshared%2Fimages%2F285%2F285_2020032710580601.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=NCT0mekDJmDfDYwhnnFzPQ--~D" alt="Marie Callender&#39;s Restaurant and Bakery" style="max-width:350px;max-height:74px;display:block;" width="350" height="74" border="0"></a></td>
+								<td width="1"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fclt%2Fspacer.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=o2w0zDSo5zsCygyzV_VPHQ--~D" height="1" width="1" style="display:block;"></td>
+							  </tr>
+							</table>
+						
+							<table border="0" cellpadding="0" cellspacing="0" class="yiv5436346046mobile">
+							  <tr>
+								<td width="1"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fclt%2Fspacer.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=o2w0zDSo5zsCygyzV_VPHQ--~D" height="1" width="1" style="display:block;"></td>
+								<td width="1"><a rel="nofollow noopener noreferrer" target="_blank" href="https://mariecallender.fbmta.com/a/1/22848764/2032394/default.aspx?_u=aHR0cHM6Ly9tYXJpZWNhbGxlbmRlci5mYm10YS5jb20vbWVtYmVycy9WaWV3TWFpbGluZy5hc3B4P01haWxpbmdJRD0xOTgwOTgmU3RvcmVDb2RlPTczJkZpcnN0TmFtZT1EaWFuYSZMYXN0TmFtZT1EZStMZW9uJkVtYWlsQWRkcmVzcz1oYXJhanVrdS5sb3ZlcnMlNDB5YWhvby5jb20mTWVtYmVySUQ9MjI4NDg3NjQ1&_X=GNER_KRcAQE10"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fshared%2Fimages%2F285%2F285_2020032710580607.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=CWjkt1gcchfTQiQvIFv5cQ--~D" alt="Happy Birthday  CLICK HERE FOR YOUR BIRTHDAY COUPON" style="max-width:350px;max-height:147px;display:block;" width="350" height="147" border="0"></a></td>
+								<td width="1"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fclt%2Fspacer.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=o2w0zDSo5zsCygyzV_VPHQ--~D" height="1" width="1" style="display:block;"></td>
+							  </tr>
+							</table>
+						
+							<table border="0" cellpadding="0" cellspacing="0" class="yiv5436346046mobile">
+							  <tr>
+								<td width="1"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fclt%2Fspacer.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=o2w0zDSo5zsCygyzV_VPHQ--~D" height="1" width="1" style="display:block;"></td>
+								<td width="1"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fshared%2Fimages%2F285%2F285_2020032710580617.jpg&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=2Sug7Tf.bxMRHiSgc1KRpg--~D" alt="Grilled Shrimp Street Tacos" style="max-width:350px;max-height:320px;display:block;" width="350" height="320" border="0"></td>
+								<td width="1"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fclt%2Fspacer.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=o2w0zDSo5zsCygyzV_VPHQ--~D" height="1" width="1" style="display:block;"></td>
+							  </tr>
+							</table>
+						
+							<table border="0" cellpadding="0" cellspacing="0" class="yiv5436346046mobile">
+							  <tr>
+								<td width="1"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fclt%2Fspacer.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=o2w0zDSo5zsCygyzV_VPHQ--~D" height="1" width="1" style="display:block;"></td>
+								<td width="1"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fshared%2Fimages%2F285%2F285_2020032710580626.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=l2MbfeM1B4y_28pQtGucLQ--~D" alt="Save $5 OFF   two entr&#xe9;es and get two FREE slices of pie*.   Click for your    Birthday Coupon     *Excludes cheesecakes, promotional pies and fresh fruit pies.   Offers valid for a limited time only. Price and participation may vary per location." style="max-width:350px;max-height:141px;display:block;" width="350" height="141" border="0"></td>
+								<td width="1"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fclt%2Fspacer.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=o2w0zDSo5zsCygyzV_VPHQ--~D" height="1" width="1" style="display:block;"></td>
+							  </tr>
+							</table>
+						
+							<table border="0" cellpadding="0" cellspacing="0" class="yiv5436346046mobile">
+							  <tr>
+								<td width="1"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fclt%2Fspacer.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=o2w0zDSo5zsCygyzV_VPHQ--~D" height="1" width="1" style="display:block;"></td>
+								<td width="1"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fshared%2Fimages%2F285%2F285_2020032710580632.jpg&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=KohmfYmRQKYRXkYNE6D1Ag--~D" alt="Braised and Slow-Roasted Pot Roast     California Eggs Benedict        Chocolate Cream Pie" style="max-width:350px;max-height:579px;display:block;" width="350" height="579" border="0"></td>
+								<td width="1"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fclt%2Fspacer.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=o2w0zDSo5zsCygyzV_VPHQ--~D" height="1" width="1" style="display:block;"></td>
+							  </tr>
+							</table>
+						
+							<table border="0" cellpadding="0" cellspacing="0" class="yiv5436346046mobile">
+							  <tr>
+								<td width="1"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fclt%2Fspacer.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=o2w0zDSo5zsCygyzV_VPHQ--~D" height="1" width="1" style="display:block;"></td>
+								<td width="1"><a rel="nofollow noopener noreferrer" target="_blank" href="https://mariecallender.fbmta.com/a/0/22848764/1904742/default.aspx"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fshared%2Fimages%2F285%2F285_2020032710580640.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=PJFcp8kb0jekWi3plnWN6Q--~D" alt="Marie Callender&#39;s Restaurant and Bakery" style="max-width:350px;max-height:61px;display:block;" width="350" height="61" border="0"></a></td>
+								<td width="1"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fclt%2Fspacer.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=o2w0zDSo5zsCygyzV_VPHQ--~D" height="1" width="1" style="display:block;"></td>
+							  </tr>
+							</table>
+						
+							<table border="0" cellpadding="0" cellspacing="0" class="yiv5436346046mobile">
+							  <tr>
+								<td width="1"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fclt%2Fspacer.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=o2w0zDSo5zsCygyzV_VPHQ--~D" height="1" width="1" style="display:block;"></td>
+								<td width="1"><a rel="nofollow noopener noreferrer" target="_blank" href="https://mariecallender.fbmta.com/a/0/22848764/1904744/default.aspx"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fshared%2Fimages%2F285%2F285_2020032710580648.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=PVsaGof5d.oG4UoGMjzksA--~D" alt="Locations" style="max-width:350px;max-height:27px;display:block;" width="350" height="27" border="0"></a></td>
+								<td width="1"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fclt%2Fspacer.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=o2w0zDSo5zsCygyzV_VPHQ--~D" height="1" width="1" style="display:block;"></td>
+							  </tr>
+							</table>
+						
+							<table border="0" cellpadding="0" cellspacing="0" class="yiv5436346046mobile">
+							  <tr>
+								<td width="1"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fclt%2Fspacer.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=o2w0zDSo5zsCygyzV_VPHQ--~D" height="1" width="1" style="display:block;"></td>
+								<td width="1"><a rel="nofollow noopener noreferrer" target="_blank" href="https://mariecallender.fbmta.com/a/0/22848764/2135307/default.aspx"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fshared%2Fimages%2F285%2F285_2020032710580656.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=iA51vh42XWwTXZ4lGpMpIw--~D" alt="Menu" style="max-width:350px;max-height:23px;display:block;" width="350" height="23" border="0"></a></td>
+								<td width="1"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fclt%2Fspacer.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=o2w0zDSo5zsCygyzV_VPHQ--~D" height="1" width="1" style="display:block;"></td>
+							  </tr>
+							</table>
+						
+							<table border="0" cellpadding="0" cellspacing="0" class="yiv5436346046mobile">
+							  <tr>
+								<td width="1"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fclt%2Fspacer.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=o2w0zDSo5zsCygyzV_VPHQ--~D" height="1" width="1" style="display:block;"></td>
+								<td width="1"><a rel="nofollow noopener noreferrer" target="_blank" href="https://mariecallender.fbmta.com/a/0/22848764/1904746/default.aspx"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fshared%2Fimages%2F285%2F285_2020032710580664.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=l9hGkmSJpz.wbDtqYV2L2g--~D" alt="Famous Pies" style="max-width:350px;max-height:24px;display:block;" width="350" height="24" border="0"></a></td>
+								<td width="1"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fclt%2Fspacer.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=o2w0zDSo5zsCygyzV_VPHQ--~D" height="1" width="1" style="display:block;"></td>
+							  </tr>
+							</table>
+						
+							<table border="0" cellpadding="0" cellspacing="0" class="yiv5436346046mobile">
+							  <tr>
+								<td width="1"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fclt%2Fspacer.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=o2w0zDSo5zsCygyzV_VPHQ--~D" height="1" width="1" style="display:block;"></td>
+								<td width="1"><a rel="nofollow noopener noreferrer" target="_blank" href="https://mariecallender.fbmta.com/a/0/22848764/2135308/default.aspx"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fshared%2Fimages%2F285%2F285_2020032710580673.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=21OV04QxvtFJZgkdRjaE.w--~D" alt="Gift Cards" style="max-width:350px;max-height:23px;display:block;" width="350" height="23" border="0"></a></td>
+								<td width="1"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fclt%2Fspacer.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=o2w0zDSo5zsCygyzV_VPHQ--~D" height="1" width="1" style="display:block;"></td>
+							  </tr>
+							</table>
+						
+							<table border="0" cellpadding="0" cellspacing="0" class="yiv5436346046mobile">
+							  <tr>
+								<td width="1"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fclt%2Fspacer.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=o2w0zDSo5zsCygyzV_VPHQ--~D" height="1" width="1" style="display:block;"></td>
+								<td width="100%" style="width:100%;"><table width="350" border="0" cellpadding="0" cellspacing="0">
+	
+	<tr>
+		<td><a rel="nofollow noopener noreferrer" target="_blank" href="https://mariecallender.fbmta.com/a/0/22848764/2135307/default.aspx"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fclt%2FMarieCallender%2Floop%2F1%2Fm_11.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=PV7fox2AMi5q693LaAe77g--~D" alt="Order Online" width="350" height="23" border="0" style="display:block;"></a></td>
+	</tr>
+</table>
+<table width="350" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+			<img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fclt%2FMarieCallender%2Floop%2F1%2Fm_12.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=q2PuUm2CqFve3UMsDNmZAQ--~D" width="135" height="67" alt="" style="display:block;"></td>
+		<td><a rel="nofollow noopener noreferrer" target="_blank" href="https://mariecallender.fbmta.com/a/0/22848764/1904749/default.aspx"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fclt%2FMarieCallender%2Floop%2F1%2Fm_13.jpg&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=lAalf28jfTtB4OTRILXpmA--~D" alt="Facebook" width="22" height="67" border="0" style="display:block;"></a></td>
+		<td><a rel="nofollow noopener noreferrer" target="_blank" href="https://mariecallender.fbmta.com/a/0/22848764/1904750/default.aspx"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fclt%2FMarieCallender%2Floop%2F1%2Fm_14.jpg&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=hgvM1yf1klTtBvZCu5J_yA--~D" alt="Twitter" width="18" height="67" border="0" style="display:block;"></a></td>
+		<td><a rel="nofollow noopener noreferrer" target="_blank" href="https://mariecallender.fbmta.com/a/0/22848764/1904751/default.aspx"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fclt%2FMarieCallender%2Floop%2F1%2Fm_15.jpg&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=FDVsc1OZm8BePbFUo26LWg--~D" alt="Pinterest" width="19" height="67" border="0" style="display:block;"></a></td>
+		<td><a rel="nofollow noopener noreferrer" target="_blank" href="https://mariecallender.fbmta.com/a/0/22848764/1904752/default.aspx"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fclt%2FMarieCallender%2Floop%2F1%2Fm_16.jpg&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=wFeFcQwr8p_mPq73Ra94YA--~D" alt="Instagram" width="22" height="67" border="0" style="display:block;"></a></td>
+		<td>
+			<img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fclt%2FMarieCallender%2Floop%2F1%2Fm_17.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=1FxytbwHe4tAUGSnMDRVpQ--~D" width="134" height="67" alt="" style="display:block;"></td>
+	</tr>
+</table></td>
+								<td width="1"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fclt%2Fspacer.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=o2w0zDSo5zsCygyzV_VPHQ--~D" height="1" width="1" style="display:block;"></td>
+							  </tr>
+							</table>
+						 
+							<table border="0" cellpadding="0" cellspacing="0" class="yiv5436346046mobile">
+								<tr>
+									<td align="center" width="352"><br><font face="Arial, Helvetica, sans-serif" size="1" style="font-size:11px;">
+<a rel="nofollow noopener noreferrer" target="_blank" href="https://mariecallender.fbmta.com/a/0/22848764/1904742/default.aspx"><font color="#990000">Visit Us Online</font></a>&nbsp;&nbsp;|&nbsp;
+<a rel="nofollow noopener noreferrer" target="_blank" href="https://mariecallender.fbmta.com/a/1/22848764/1904753/default.aspx?Member=56680c4eadea499b94ccb85efd77ff49"><font color="#990000">Update Your Information</font></a>&nbsp;&nbsp;|&nbsp;
+<a rel="nofollow noopener noreferrer" target="_blank" href="https://mariecallender.fbmta.com/a/1/22848764/1904754/default.aspx?_u=aHR0cHM6Ly9tYXJpZWNhbGxlbmRlci5mYm10YS5jb20vbWVtYmVycy9VbnN1YnNjcmliZS5hc3B4P01lbWJlcj01NjY4MGM0ZWFkZWE0OTliOTRjY2I4NWVmZDc3ZmY0OSZNYWlsaW5nPTE5ODA5OA2"><font color="#990000">Unsubscribe</font></a>
+</font></td></tr>
+								<tr>
+									<td width="352"><hr>
+<table width="100%" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td><span style="line-height:100%;display:block;font-family:Arial, Helvetica, sans-serif;font-size:10px;">This email was sent to harajuku.lovers@yahoo.com because you joined our E-club in one of our restaurants, online or at one of our events. Your email address will not be shared with anyone. You can take your name out of our E-club at any time by clicking the unsubscribe link on this email and you will be removed from our list immediately. &copy;2026 Marie Callenders Inc., 170 East Rincon Street, Corona, CA 91720</span></td>
+        </tr>
+    </tbody>
+</table>
+<p style="text-align:left;line-height:100%;display:block;margin-top:0px;margin-bottom:0px;"><span style="line-height:100%;display:block;font-family:Arial, Helvetica, sans-serif;font-size:10px;">To ensure delivery, add mariecallender@mariecallender.fbmta.com to your address book.</span></p></td></tr>
+							</table>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					
+					
+						<table align="center" width="652" style="width:652px;min-width:652px;max-width:652px;" border="0" cellpadding="0" cellspacing="0" class="yiv5436346046desktop">
+						  <tr>
+							<td width="1"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fclt%2Fspacer.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=o2w0zDSo5zsCygyzV_VPHQ--~D" height="1" width="1" style="display:block;"></td>
+							
+							<td><a rel="nofollow noopener noreferrer" target="_blank" href="https://mariecallender.fbmta.com/a/0/22848764/1904742/default.aspx"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fshared%2Fimages%2F285%2F285_2020032710580470.jpg&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=fSRqXXG6jWatqkZmdPk9WQ--~D" alt="Marie Callender&#39;s Restaurant and Bakery" style="max-width:650px;max-height:87px;display:block;" width="650" height="87" border="0"></a></td>
+							
+							<td width="1"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fclt%2Fspacer.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=o2w0zDSo5zsCygyzV_VPHQ--~D" height="1" width="1" style="display:block;"></td>
+						  </tr>
+						</table>
+					
+						<table align="center" width="652" style="width:652px;min-width:652px;max-width:652px;" border="0" cellpadding="0" cellspacing="0" class="yiv5436346046desktop">
+						  <tr>
+							<td width="1"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fclt%2Fspacer.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=o2w0zDSo5zsCygyzV_VPHQ--~D" height="1" width="1" style="display:block;"></td>
+							
+							<td><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fshared%2Fimages%2F285%2F285_2020032710580482.jpg&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=DvofByvMzusyZBgDn0OC3g--~D" alt="Happy Birthday" style="max-width:650px;max-height:160px;display:block;" width="650" height="160" border="0"></td>
+							
+							<td width="1"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fclt%2Fspacer.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=o2w0zDSo5zsCygyzV_VPHQ--~D" height="1" width="1" style="display:block;"></td>
+						  </tr>
+						</table>
+					
+						<table align="center" width="652" style="width:652px;min-width:652px;max-width:652px;" border="0" cellpadding="0" cellspacing="0" class="yiv5436346046desktop">
+						  <tr>
+							<td width="1"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fclt%2Fspacer.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=o2w0zDSo5zsCygyzV_VPHQ--~D" height="1" width="1" style="display:block;"></td>
+							
+							<td><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fshared%2Fimages%2F285%2F285_2020032710580492.jpg&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=c0PK2n53kc6FgZ_D8DoymQ--~D" alt="Grilled Shrimp Street Tacos" style="max-width:361px;max-height:333px;display:block;" width="361" height="333" border="0"></td>
+							
+							<td><a rel="nofollow noopener noreferrer" target="_blank" href="https://mariecallender.fbmta.com/a/1/22848764/2032394/default.aspx?_u=aHR0cHM6Ly9tYXJpZWNhbGxlbmRlci5mYm10YS5jb20vbWVtYmVycy9WaWV3TWFpbGluZy5hc3B4P01haWxpbmdJRD0xOTgwOTgmU3RvcmVDb2RlPTczJkZpcnN0TmFtZT1EaWFuYSZMYXN0TmFtZT1EZStMZW9uJkVtYWlsQWRkcmVzcz1oYXJhanVrdS5sb3ZlcnMlNDB5YWhvby5jb20mTWVtYmVySUQ9MjI4NDg3NjQ1&_X=GNER_KRcAQE10"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fshared%2Fimages%2F285%2F285_2020032710580501.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=3nle6abWxcSCEIU7HwlTgg--~D" alt="Save $5 OFF   two entr&#xe9;es and get two FREE slices of pie*.   Click for your    Birthday Coupon     *Excludes cheesecakes, promotional pies and fresh fruit pies.   Offers valid for a limited time only. Price and participation may vary per location." style="max-width:289px;max-height:333px;display:block;" width="289" height="333" border="0"></a></td>
+							
+							<td width="1"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fclt%2Fspacer.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=o2w0zDSo5zsCygyzV_VPHQ--~D" height="1" width="1" style="display:block;"></td>
+						  </tr>
+						</table>
+					
+						<table align="center" width="652" style="width:652px;min-width:652px;max-width:652px;" border="0" cellpadding="0" cellspacing="0" class="yiv5436346046desktop">
+						  <tr>
+							<td width="1"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fclt%2Fspacer.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=o2w0zDSo5zsCygyzV_VPHQ--~D" height="1" width="1" style="display:block;"></td>
+							
+							<td><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fshared%2Fimages%2F285%2F285_2020032710580512.jpg&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=a0OqVeEr1Psd1XylNdkWlg--~D" alt="Braised and Slow-Roasted Pot Roast     California Eggs Benedict        Chocolate Cream Pie" style="max-width:650px;max-height:225px;display:block;" width="650" height="225" border="0"></td>
+							
+							<td width="1"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fclt%2Fspacer.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=o2w0zDSo5zsCygyzV_VPHQ--~D" height="1" width="1" style="display:block;"></td>
+						  </tr>
+						</table>
+					
+						<table align="center" width="652" style="width:652px;min-width:652px;max-width:652px;" border="0" cellpadding="0" cellspacing="0" class="yiv5436346046desktop">
+						  <tr>
+							<td width="1"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fclt%2Fspacer.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=o2w0zDSo5zsCygyzV_VPHQ--~D" height="1" width="1" style="display:block;"></td>
+							
+							<td><a rel="nofollow noopener noreferrer" target="_blank" href="https://mariecallender.fbmta.com/a/0/22848764/1904744/default.aspx"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fshared%2Fimages%2F285%2F285_2020032710580520.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=pNr98.SvAGmK0x3gvXxB4Q--~D" alt="Locations" style="max-width:130px;max-height:37px;display:block;" width="130" height="37" border="0"></a></td>
+							
+							<td><a rel="nofollow noopener noreferrer" target="_blank" href="https://mariecallender.fbmta.com/a/0/22848764/2135307/default.aspx"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fshared%2Fimages%2F285%2F285_2020032710580528.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=rIhr1_9ZXc7p7cY59pmSEw--~D" alt="Menu" style="max-width:92px;max-height:37px;display:block;" width="92" height="37" border="0"></a></td>
+							
+							<td><a rel="nofollow noopener noreferrer" target="_blank" href="https://mariecallender.fbmta.com/a/0/22848764/1904746/default.aspx"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fshared%2Fimages%2F285%2F285_2020032710580536.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=2zyjcFKcnBwbI_ybQ2256w--~D" alt="Famous Pies" style="max-width:152px;max-height:37px;display:block;" width="152" height="37" border="0"></a></td>
+							
+							<td><a rel="nofollow noopener noreferrer" target="_blank" href="https://mariecallender.fbmta.com/a/0/22848764/2135308/default.aspx"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fshared%2Fimages%2F285%2F285_2020032710580542.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=DykaMjsHelrWul8OHUnO7Q--~D" alt="Gift Cards" style="max-width:123px;max-height:37px;display:block;" width="123" height="37" border="0"></a></td>
+							
+							<td><a rel="nofollow noopener noreferrer" target="_blank" href="https://mariecallender.fbmta.com/a/0/22848764/2135307/default.aspx"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fshared%2Fimages%2F285%2F285_2020032710580550.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=eKYTJYV6HtfHJvNoCXkETg--~D" alt="Order Online" style="max-width:153px;max-height:37px;display:block;" width="153" height="37" border="0"></a></td>
+							
+							<td width="1"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fclt%2Fspacer.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=o2w0zDSo5zsCygyzV_VPHQ--~D" height="1" width="1" style="display:block;"></td>
+						  </tr>
+						</table>
+					
+						<table align="center" width="652" style="width:652px;min-width:652px;max-width:652px;" border="0" cellpadding="0" cellspacing="0" class="yiv5436346046desktop">
+						  <tr>
+							<td width="1"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fclt%2Fspacer.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=o2w0zDSo5zsCygyzV_VPHQ--~D" height="1" width="1" style="display:block;"></td>
+							
+							<td><a rel="nofollow noopener noreferrer" target="_blank" href="https://mariecallender.fbmta.com/a/0/22848764/1904742/default.aspx"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fshared%2Fimages%2F285%2F285_2020032710580559.jpg&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=N1z9qP7r0Cu90O.0Z5NYHg--~D" alt="Marie Callender&#39;s Restaurant and Bakery" style="max-width:545px;max-height:98px;display:block;" width="545" height="98" border="0"></a></td>
+							
+							<td><a rel="nofollow noopener noreferrer" target="_blank" href="https://mariecallender.fbmta.com/a/0/22848764/1904749/default.aspx"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fshared%2Fimages%2F285%2F285_2020032710580567.jpg&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=eiUVd3Z.mLMnZBEr4tVzYQ--~D" alt="Facebook" style="max-width:28px;max-height:98px;display:block;" width="28" height="98" border="0"></a></td>
+							
+							<td><a rel="nofollow noopener noreferrer" target="_blank" href="https://mariecallender.fbmta.com/a/0/22848764/1904750/default.aspx"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fshared%2Fimages%2F285%2F285_2020032710580576.jpg&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=POtK9cQW_gi.mPjBZh4etg--~D" alt="Twitter" style="max-width:23px;max-height:98px;display:block;" width="23" height="98" border="0"></a></td>
+							
+							<td><a rel="nofollow noopener noreferrer" target="_blank" href="https://mariecallender.fbmta.com/a/0/22848764/1904751/default.aspx"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fshared%2Fimages%2F285%2F285_2020032710580582.jpg&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=9C1GYSM1CVILd4F1ltjmSQ--~D" alt="Pinterest" style="max-width:23px;max-height:98px;display:block;" width="23" height="98" border="0"></a></td>
+							
+							<td><a rel="nofollow noopener noreferrer" target="_blank" href="https://mariecallender.fbmta.com/a/0/22848764/1904752/default.aspx"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fshared%2Fimages%2F285%2F285_2020032710580592.jpg&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=5QLbn8BJYnyuCelEIhjCQg--~D" alt="Instagram" style="max-width:31px;max-height:98px;display:block;" width="31" height="98" border="0"></a></td>
+							
+							<td width="1"><img src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fassets.personica.com%2Fclt%2Fspacer.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=o2w0zDSo5zsCygyzV_VPHQ--~D" height="1" width="1" style="display:block;"></td>
+						  </tr>
+						</table>
+					
+						<table align="center" width="652" style="width:652px;min-width:652px;max-width:652px;" border="0" cellpadding="0" cellspacing="0" class="yiv5436346046desktop">
+							<tr>
+								<td align="center" width="652"><br><font face="Arial, Helvetica, sans-serif" size="1" style="font-size:11px;">
+<a rel="nofollow noopener noreferrer" target="_blank" href="https://mariecallender.fbmta.com/a/0/22848764/1904742/default.aspx"><font color="#990000">Visit Us Online</font></a>&nbsp;&nbsp;|&nbsp;
+<a rel="nofollow noopener noreferrer" target="_blank" href="https://mariecallender.fbmta.com/a/1/22848764/1904753/default.aspx?Member=56680c4eadea499b94ccb85efd77ff49"><font color="#990000">Update Your Information</font></a>&nbsp;&nbsp;|&nbsp;
+<a rel="nofollow noopener noreferrer" target="_blank" href="https://mariecallender.fbmta.com/a/1/22848764/1904754/default.aspx?_u=aHR0cHM6Ly9tYXJpZWNhbGxlbmRlci5mYm10YS5jb20vbWVtYmVycy9VbnN1YnNjcmliZS5hc3B4P01lbWJlcj01NjY4MGM0ZWFkZWE0OTliOTRjY2I4NWVmZDc3ZmY0OSZNYWlsaW5nPTE5ODA5OA2"><font color="#990000">Unsubscribe</font></a>
+</font></td></tr>
+							<tr>
+								<td><hr>
+<table width="100%" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td><span style="line-height:100%;display:block;font-family:Arial, Helvetica, sans-serif;font-size:10px;">This email was sent to harajuku.lovers@yahoo.com because you joined our E-club in one of our restaurants, online or at one of our events. Your email address will not be shared with anyone. You can take your name out of our E-club at any time by clicking the unsubscribe link on this email and you will be removed from our list immediately. &copy;2026 Marie Callenders Inc., 170 East Rincon Street, Corona, CA 91720</span></td>
+        </tr>
+    </tbody>
+</table>
+<p style="text-align:left;line-height:100%;display:block;margin-top:0px;margin-bottom:0px;"><span style="line-height:100%;display:block;font-family:Arial, Helvetica, sans-serif;font-size:10px;">To ensure delivery, add mariecallender@mariecallender.fbmta.com to your address book.</span></p></td></tr>
+						</table>
+				</td>
+			</tr>
+		</table>
+	</span>
+
+</div>
+<img height="1" src="https://ecp.yusercontent.com/mail?url=http%3A%2F%2Fmariecallender.fbmta.com%2Fa%2F22848764%2F198098%2Fdefault.gif&t=1790195952&ymreqid=eaffd96d-01d9-fe2a-1c14-af000101f200&sig=fsMfkA6MdD66PGk7H.FOgw--~D">
+</html></div></div></div></div></div></div></div></div></div>
+        </body>
+        </html>
