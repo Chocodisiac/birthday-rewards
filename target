@@ -1,0 +1,796 @@
+
+
+        <!doctype html>
+        <html id="Atom">
+        <head>
+            <title>Here's your birthday gift from Target Circle!</title>
+            <meta name="oath:guce:consent-host" content="guce.yahoo.com"/>
+            <meta name="conf:cjs:locale" content="en-US"/>
+            <script nonce="csBOVHvN+Y7gNdJ/Wy1MYEhgZJDF5Ia1CwZDd6s9b8kdv/to">
+                window.ymailAssetHost="https://s.yimg.com/nq/nv/";
+                window.BrowserLoggerParams={"appName":"cld_novation_app","cldmbx":1,"yid":"harajuku.lovers","farm":"23520123","shardId":"123955_ZbE2naQh4_WdDtTo1Ukz6A","os":"Mac OS 10.15.7","browser":"Chrome 153.0.0.0","partner":"","partnr":"","cbe":"","buckets":"ComAud_TOM_Cashback_Credit_Card_Desktop::YMail_XStreaks_A_T01::ymailoasis_checkoutwidget_t01::oasis_LMV3contactsAPI_t0::ComAud_TOM_GLP_Kima_Desktop::ComAud_TOM_Chase_Sapphire_AIQ_Desktop::ComAud_Fin_And_Ins_Cash_CC_AIQ_Desktop::ComAud_TOM_GLP_Kima_Refined1_Desktop::ComAud_TOM_GLP_Kima_Refined2_Desktop::ay-growthcode-mail-test::UG_GmailAdsFree_T02_30d::oasis_us_y2yimap_eol_t::ymailoasis_subhub_t01::mailintel_ondemandtldr_list::unsub_oasis_control::moqr_control::ComAud_TOM_AIQ_Peptides_Desktop::YMail_XChallenges_T01::production::oasis_contactsAPI_v2_t1::oasis_trackb_ad_rotation_c01::uss-web-us-test::basic_mail_eol_us_ca_c01::ymail_oasis_20sadrotation_r01::ymail_novation_gam_gcp_r1::ComAud_TOM_KimaTravelIntend_Desktop::ComAud_TOM_StudentLoans_AIQ_Desktop::cal_rightrail_ramp::mail-web-ga-test-v2","rid":"2tkkm95lb8bq9","locale":"en-US","platform":"browser","app":"cld_novation_app","env":"production","colo":"gq1","cldRegion":"us-west2","region":"us","bldVer":"1.0.4577","buildNumber":"1.0.4577","prdct":"novation_cld"};
+                window.loggerEndpoint="/n/log";
+                window.AppBootstrapData={"appId":"YMailCLDNovation","appName":"CLD_NOVATION_APP","buildNumber":"1.0.4577","bldVer":"1.0.4577","guidHash":"eaffd96d01d9fe2a841eaa52635ce60e"};
+
+                // Add event listeners
+                window.addEventListener('afterprint', function handlePrintSuccess() {
+  const pathname = window.location.pathname;
+  let printType = 'contacts';
+  let mKey = 'CONTACTS_PRINT_SUCCEEDED';
+
+  if (pathname.includes('/print/message/')) {
+    printType = 'message';
+    mKey = 'MESSAGE_PRINT_SUCCEEDED';
+  }
+
+  const loggerParams = window.BrowserLoggerParams;
+  const appName =
+  loggerParams && typeof loggerParams.appName === 'string' && loggerParams.appName ?
+  loggerParams.appName :
+  'novation_app';
+
+  const eventData = {
+    type: 'feature',
+    featureEvent: 'success',
+    featureName: 'print_preview',
+    component: 'norrin/info',
+    message: 'feature_success',
+    app: appName,
+    platform: 'browser',
+    data: {
+      mKey,
+      intrctn: 'view',
+      pathname,
+      eventType: 'print_success',
+      printType
+    }
+  };
+
+  if (loggerParams && window.loggerEndpoint) {
+    const payload = {
+      meta: loggerParams,
+      events: [eventData]
+    };
+
+    fetch(window.loggerEndpoint + '?appid=' + appName, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(payload),
+      // Survive the tab closing right after afterprint
+      keepalive: true
+    });
+  }
+});
+                window.addEventListener('beforeunload', function handlePrintClose() {
+  const pathname = window.location.pathname;
+  let printType = 'contacts';
+  let mKey = 'CONTACTS_PRINT_CLOSED';
+
+  if (pathname.includes('/print/message/')) {
+    printType = 'message';
+    mKey = 'MESSAGE_PRINT_CLOSED';
+  }
+
+  const loggerParams = window.BrowserLoggerParams;
+  const appName =
+  loggerParams && typeof loggerParams.appName === 'string' && loggerParams.appName ?
+  loggerParams.appName :
+  'novation_app';
+
+  const eventData = {
+    type: 'feature',
+    featureEvent: 'success',
+    featureName: 'print_preview',
+    component: 'norrin/info',
+    message: 'feature_success',
+    app: appName,
+    platform: 'browser',
+    data: {
+      mKey,
+      pathname,
+      eventType: 'print_close',
+      printType
+    }
+  };
+
+  if (loggerParams && window.loggerEndpoint) {
+    const payload = {
+      meta: loggerParams,
+      events: [eventData]
+    };
+
+    fetch(window.loggerEndpoint + '?appid=' + appName, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(payload),
+      // Fires during beforeunload — keepalive lets it survive the page teardown
+      keepalive: true
+    });
+  }
+});
+
+                // Close the tab once the print dialog is dismissed. Registered after the
+                // success handler so its logging fetch (keepalive) is dispatched first.
+                // window.close() is a no-op if this page was not opened via window.open.
+                window.addEventListener('afterprint', () => {
+                    window.close();
+                });
+
+</script>
+            <link id="mail-css" rel="stylesheet" type="text/css" href="https://s.yimg.com/nq/nv/css/ltr/novation_app_EGBpOL2nP-PJZl5vWKwJv96BthH_LIcXA3uKb9m1sYg_v1.css" />
+            <style>
+                .body {
+                    overflow: auto;
+                    font-family: "Yahoo Product Sans VF", apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+                    direction: ltr;
+                }
+            </style>
+        </head>
+        <body id="Atom" class="body">
+            <div><div data-test-id="print-message-view" data-test-expanded="true" tabindex="-1" data-iskeynav="true"><header class="print-header P_S9pNs M_2ae0fr m_Z14vXdP" data-test-id="print-header"><div class="D_F el_EZ jb_6Eb4 U_eo6 m_Z14vXdP"><span data-test-id="message-subject" class="C_Z281SGl A_6FsP i_6FIA c1AVi73_6LUG c1AVi7H_6MWH y_jyw3a">Here&#x27;s your birthday gift from Target Circle!</span></div><div class="D_FY"><div class="D_GE"><span class="C_Z1YRXYn D_FZ je_fq7">From:</span><span data-test-id="message-from" class="C_Z281SGl D_FZ X_fq7 je_fq7">Target Circle (targetcircle@oe.target.com)</span></div><div class="D_GE"><span class="C_Z1YRXYn D_FZ je_fq7">To:</span><span data-test-id="message-to" class="C_Z281SGl D_FZ X_fq7 je_fq7">harajuku.lovers@yahoo.com</span></div><div class="D_GE" data-test-id="message-date"><span class="C_Z1YRXYn D_FZ je_fq7">Date:</span><span class="C_Z281SGl D_FZ X_fq7 je_fq7">Monday, September 21, 2026 at 10:11 AM PDT</span></div></div></header><div><div data-test-id="message-view-body" class="I_ZiTj5d C_1GbO8e W_A D_B ek_BB z_82XEY m_22RyjK em_N O_N ah_n ai_0 P_1r8DAc" role="region" aria-labelledby="message-view-body-landmark"><div class="msg-body mq_AS iy_q s_0 P_0" data-test-id="message-view-body-content"><div><div class=""><div><div id="yiv3353924159">
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title></title>
+  
+  
+  
+  
+  
+  
+  
+  
+
+  <style type="text/css">
+#yiv3353924159 body, 
+#yiv3353924159 #yiv3353924159bodyTable {
+min-height:100% !important;width:100% !important;margin:0;padding:0;}
+
+#yiv3353924159 img, 
+#yiv3353924159 a img {
+border:0;outline:none;text-decoration:none;display:block;line-height:100%;outline:none;}
+
+#yiv3353924159 .yiv3353924159imageFix {
+display:block;}
+
+#yiv3353924159 table, 
+#yiv3353924159 td {
+border-collapse:collapse;}
+
+#yiv3353924159 h1, 
+#yiv3353924159 p {
+margin:0px;}
+
+#yiv3353924159 body {
+margin:0 !important;}
+
+#yiv3353924159 div .yiv3353924159filtered99999  {
+margin:0 !important;}
+
+#yiv3353924159 a .yiv3353924159filtered99999  {
+color:inherit !important;text-decoration:none !important;font-size:inherit !important;font-family:inherit !important;font-weight:inherit !important;line-height:inherit !important;}
+
+#yiv3353924159 .yiv3353924159ReadMsgBody {
+width:100%;}
+
+#yiv3353924159 .yiv3353924159ExternalClass {
+width:100%;}
+
+#yiv3353924159 .yiv3353924159ExternalClass, 
+#yiv3353924159 .yiv3353924159ExternalClass p, 
+#yiv3353924159 .yiv3353924159ExternalClass span, 
+#yiv3353924159 .yiv3353924159ExternalClass font, 
+#yiv3353924159 .yiv3353924159ExternalClass td, 
+#yiv3353924159 .yiv3353924159ExternalClass div {
+line-height:100%;}
+
+#yiv3353924159 table, 
+#yiv3353924159 td {
+}
+
+#yiv3353924159 #yiv3353924159outlook a {
+padding:0;}
+
+#yiv3353924159 img {
+}
+
+#yiv3353924159 body, 
+#yiv3353924159 table, 
+#yiv3353924159 td, 
+#yiv3353924159 p, 
+#yiv3353924159 a, 
+#yiv3353924159 li, 
+#yiv3353924159 blockquote {
+}
+
+#yiv3353924159 a:focus {
+outline:0 !important;text-decoration:underline !important;}
+
+#yiv3353924159 a:focus img {
+}
+
+#yiv3353924159 a:focus span {
+text-decoration:underline !important;}
+
+@media screen and (max-width:480px) {
+#yiv3353924159 .yiv3353924159padding {
+padding:0 !important;}
+
+#yiv3353924159 .yiv3353924159wrapper {
+width:100% !important;}
+
+#yiv3353924159 .yiv3353924159wrapper90 {
+width:90% !important;}
+
+#yiv3353924159 .yiv3353924159wrapper80 {
+width:80% !important;}
+
+#yiv3353924159 .yiv3353924159mw-wrapper {
+width:100% !important;max-width:100% !important;}
+
+#yiv3353924159 .yiv3353924159display-none, 
+#yiv3353924159 .yiv3353924159hide {
+display:none !important;}
+
+#yiv3353924159 .yiv3353924159header-logo {
+padding:7px 0px 5px 15px !important;width:35px !important;min-height:35px !important;}
+
+#yiv3353924159 .yiv3353924159header-ordernum {
+padding:15px 15px 5px 0px !important;font-size:15px !important;line-height:17px !important;}
+
+#yiv3353924159 .yiv3353924159header-ordernum-l {
+padding:5px 15px 10px 15px !important;font-size:15px !important;line-height:17px !important;text-align:center !important;}
+
+
+#yiv3353924159 .yiv3353924159footer-pad {
+padding:17px 0 17px 0 !important;margin:0px !important;}
+
+#yiv3353924159 .yiv3353924159footer-text {
+font-size:17px !important;line-height:20px !important;text-align:center !important;color:#666666 !important;}
+
+#yiv3353924159 .yiv3353924159footer-targetcom {
+font-size:20px !important;line-height:24px !important;}
+
+#yiv3353924159 .yiv3353924159footer-noborder {
+display:none !important;padding:0px 0px 0px 0px !important;border-bottom:solid 0px #ffffff;}
+
+#yiv3353924159 .yiv3353924159desktop {
+display:none !important;}
+
+#yiv3353924159 .yiv3353924159mobile-wrapper {
+padding:50px 35px !important;}
+
+#yiv3353924159 .yiv3353924159pt-15 {
+padding-top:15px !important;}
+
+#yiv3353924159 .yiv3353924159pt-20 {
+padding-top:20px !important;}
+
+#yiv3353924159 .yiv3353924159p15 {
+padding-left:15px !important;padding-right:15px !important;}
+
+#yiv3353924159 .yiv3353924159center {
+text-align:center !important;}
+
+#yiv3353924159 .yiv3353924159width-100 {
+width:100% !important;}
+
+#yiv3353924159 .yiv3353924159block {
+display:block !important;}
+
+#yiv3353924159 .yiv3353924159footer-border-t-b {
+border-bottom:solid 1px #D6D6D6 !important;width:100% !important;border-top:solid 1px #D6D6D6 !important;}
+
+#yiv3353924159 .yiv3353924159footer-border-b {
+border-bottom:solid 1px #D6D6D6 !important;width:100% !important;}
+#yiv3353924159 .yiv3353924159p-15 {
+padding-left:15px !important;padding-right:15px !important;}
+
+#yiv3353924159 .yiv3353924159p-25 {
+padding-left:25px !important;padding-right:25px !important;}
+
+#yiv3353924159 .yiv3353924159wrapperdisplay {
+width:100% !important;display:block !important;}
+}
+</style>
+  <style type="text/css">
+@media () {
+
+
+#yiv3353924159 h1, 
+#yiv3353924159 h2, 
+#yiv3353924159 h3, 
+#yiv3353924159 h4 {
+color:#ffffff !important;}
+
+#yiv3353924159 p, 
+#yiv3353924159 .yiv3353924159header-ordernum, 
+#yiv3353924159 .yiv3353924159footer-text, 
+#yiv3353924159 .yiv3353924159footerCopyright {
+color:#ffffff !important;}
+
+#yiv3353924159 a {
+color:#ffffff !important;}
+
+#yiv3353924159 td {
+color:#ffffff !important;}
+
+#yiv3353924159 span {
+color:#ffffff !important;}
+
+#yiv3353924159 .yiv3353924159darkbg {
+background-color:#333333 !important;}
+
+#yiv3353924159 .yiv3353924159no-image-dark {
+display:none !important;}
+
+#yiv3353924159 .yiv3353924159target-red {
+color:#CC0000 !important;}
+
+#yiv3353924159 .yiv3353924159divider-bar-gray {
+background-color:#eff0f1 !important;}
+
+#yiv3353924159 .yiv3353924159divider-bar-gray h1 {
+color:#333333 !important;}
+
+#yiv3353924159 .yiv3353924159filtered99999  h1 {
+color:#ffffff !important;}
+
+#yiv3353924159 .yiv3353924159filtered99999  h2 {
+color:#ffffff !important;}
+
+#yiv3353924159 .yiv3353924159filtered99999  h3 {
+color:#ffffff !important;}
+
+#yiv3353924159 .yiv3353924159filtered99999  p, 
+#yiv3353924159 .yiv3353924159header-ordernum, 
+#yiv3353924159 .yiv3353924159footer-text, 
+#yiv3353924159 .yiv3353924159footerCopyright {
+color:#ffffff !important;}
+
+#yiv3353924159 .yiv3353924159filtered99999  a {
+color:#ffffff !important;}
+
+#yiv3353924159 .yiv3353924159filtered99999  td {
+color:#ffffff !important;}
+
+#yiv3353924159 .yiv3353924159filtered99999  span {
+color:#ffffff !important;}
+
+#yiv3353924159 .yiv3353924159filtered99999  .yiv3353924159no-image-dark {
+display:none !important;}
+
+#yiv3353924159 .yiv3353924159filtered99999  .yiv3353924159target-red {
+color:#CC0000 !important;}
+
+#yiv3353924159 .yiv3353924159filtered99999  .yiv3353924159divider-bar-gray {
+background-color:#eff0f1 !important;}
+
+#yiv3353924159 .yiv3353924159filtered99999  .yiv3353924159divider-bar-gray h1 {
+color:#333333 !important;}
+
+#yiv3353924159 .yiv3353924159tgt-bgGray {
+color:#f7f7f7 !important;}
+
+#yiv3353924159 .yiv3353924159filtered99999  .yiv3353924159tgt-bgGray {
+color:#f7f7f7 !important;}
+
+#yiv3353924159 .yiv3353924159tgt-gray {
+color:#333333 !important;}
+
+#yiv3353924159 .yiv3353924159filtered99999  .yiv3353924159tgt-gray {
+color:#333333 !important;}
+
+
+#yiv3353924159 .yiv3353924159darkmode {
+background-color:#262626 !important;}
+
+#yiv3353924159 .yiv3353924159darkmode-2 {
+background-color:#212121 !important;}
+
+#yiv3353924159 .yiv3353924159darkmode-3 {
+background-color:#151515 !important;}
+
+#yiv3353924159 .yiv3353924159darkmode-4 {
+background-color:#000000 !important;}
+}
+</style>
+</head>
+
+<div><style type="text/css">
+#yiv3353924159 div.yiv3353924159preheader 
+{display:none !important;}
+</style>
+<div style="font-size:1px;display:none !important;" class="yiv3353924159preheader">Happy birthday! We got you a little something.</div>
+  <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width:100%;" class="yiv3353924159stylingblock-content-wrapper"><tr><td class="yiv3353924159stylingblock-content-wrapper yiv3353924159camarker-inner"><div style="display:none;max-height:0px;overflow:hidden;">
+    &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847;
+ &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847;
+ &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847;
+ &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847;
+ &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847; &#8199; &#847;
+    &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+ &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+ &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+ &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+</div></td></tr></table>
+  <table style="table-layout:fixed;" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+    <tr>
+        <td align="center" style="padding:15px 0;">
+            <table style="width:640px;" role="presentation" width="640" border="0" cellspacing="0" cellpadding="0" class="yiv3353924159wrapper">
+                <tr>
+                    <td align="left" valign="middle" style="padding:0 0 0 20px;" class="yiv3353924159header-logo">
+                        <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.oe.target.com/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtqgOisp3wpiFgAbIsVQrbc6KWhAnIJ2z-JvgI6JoANVWfnXsScp2so1RvRlnaDdiQd0hIbrY6J6nuWTwWVedVwttZPkCs-76cHkeoAYDA" style="text-decoration:none;color:#CC0000;">
+                            <img src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Ftarget.scene7.com%2Fis%2Fimage%2FTarget%2FCircle_Red%3Fscl%3D1%26fmt%3Dpng-alpha&t=1790193481&ymreqid=eaffd96d-01d9-fe2a-1cd2-ac0001016700&sig=sxywkRz6gDJ0qcEuJ03srQ--~D" alt="Target Circle Logo" width="107" border="0" style="display:block;font-family:'Helvetica Neue', Helvetica, Arial;font-weight:normal;font-size:12px;border:0;">
+                        </a>
+                    </td>
+                    <td align="right" valign="middle" style="padding:0 20px 0 10px;color:#333333;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-weight:normal;font-size:16px;line-height:18px;" class="yiv3353924159header-ordernum">Hi, Diana!
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+  <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width:100%;" class="yiv3353924159stylingblock-content-wrapper"><tr><td class="yiv3353924159stylingblock-content-wrapper yiv3353924159camarker-inner"><table style="table-layout:fixed;" border="0" width="100%" cellspacing="0" cellpadding="0">
+    <tr>
+        <td valign="top" align="center">
+            <table role="presentation" width="640" border="0" bgcolor="#288186" cellspacing="0" cellpadding="0" style="width:640px;background-color:#288186;" class="yiv3353924159wrapper">
+                <tr>
+                    <td align="center" valign="top" style="padding:30px 35px;">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%;" role="presentation">
+                            <tr>
+                                <td align="center" valign="middle" style="padding-right:25px;" class="yiv3353924159block yiv3353924159width-100 yiv3353924159padding">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%;" role="presentation">
+                                        <tr>
+                                            <td align="center" valign="top" style="display:none;" class="yiv3353924159block yiv3353924159width-100">
+                                                <img alt="Bullseye" width="230" style="max-width:230px;width:100%;display:block;" border="0" src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Ftarget.scene7.com%2Fis%2Fimage%2FTarget%2FBullseyeBirthday2x%3Fscl%3D1%26fmt%3Dpng-alpha&t=1790193481&ymreqid=eaffd96d-01d9-fe2a-1cd2-ac0001016700&sig=B6yX_hvtxIvYVIDl4o5b3A--~D">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center" valign="top" style="text-align:left;" class="yiv3353924159center yiv3353924159pt-20">
+                                                <h1 style="color:#feffff;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-weight:normal;font-size:40px;line-height:45px;margin:0;">
+                                                    <strong>Happy birthday!</strong>
+                                                </h1>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center" valign="top" style="text-align:left;padding:15px 0 0;" class="yiv3353924159center">
+                                                <p style="color:#feffff;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-weight:normal;font-size:20px;line-height:28px;margin:0;">
+                                                    Let’s make your big day extra special <br class="yiv3353924159hide">with 5% off an entire Target&nbsp;run.
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center" style="text-align:left;padding:20px 0 0;" valign="top" dir="ltr" class="yiv3353924159center">
+                                                <div>
+                                                    
+                                                    <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.oe.target.com/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtqgOisqLI-vmCg1P7ZSVaXKAo-7YYveznBW5hHic_9Oo5iMSK0rRMKaGDP15KC7RrVlnIFQC6eF2xKetOKOwPC6WorTud3ul1cEikjaEA" style="border:1px solid #666666;background-color:#feffff;border-radius:4px;color:#333333;display:inline-block;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;padding:13px 0;text-align:center;text-decoration:none;width:207px;" class="yiv3353924159tgt-gray">
+                                                        Open your gift
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td align="center" valign="middle" style="width:200px;" class="yiv3353924159hide">
+                                    <img alt="Bullseye" width="180" style="max-width:180px;width:100%;display:block;" border="0" src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Ftarget.scene7.com%2Fis%2Fimage%2FTarget%2FBullseyeBirthday2x%3Fscl%3D1%26fmt%3Dpng-alpha&t=1790193481&ymreqid=eaffd96d-01d9-fe2a-1cd2-ac0001016700&sig=B6yX_hvtxIvYVIDl4o5b3A--~D">
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table></td></tr></table>
+  <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width:100%;" class="yiv3353924159stylingblock-content-wrapper"><tr><td class="yiv3353924159stylingblock-content-wrapper yiv3353924159camarker-inner"><table style="table-layout:fixed;" border="0" width="100%" cellspacing="0" cellpadding="0">
+    <tr>
+        <td valign="top" align="center">
+            
+            <table style="width:640px;" border="0" width="640" cellspacing="0" cellpadding="0" class="yiv3353924159wrapper">
+                <tr>
+                    <td style="padding:40px 30px 0;text-align:left;">
+                        <p style="color:#333333;font-size:15px;line-height:24px;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;margin:0px 0px 10px 0px;">
+                            Time to celebrate! Enjoy 5% off a qualifying shopping trip of your choice any time in the next 30&nbsp;days.
+                        </p>
+                        <p style="color:#333333;font-size:15px;line-height:24px;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;margin:0px 0px 10px 0px;">
+                            Find your gift in the Target Circle Bonus section of the deals page in the Target app, or at <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.oe.target.com/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtqgOisr1hf8BYnekwpIGLk1_mJItITmM2QYUkVYUwNzzUQTgSYcIs8H0rfsckCmTpDjZqjCvLdsiZ3nsUunkab-g6lBACV9JpIPPsfE1A" style="text-decoration:underline;color:#333333;">Target.com/Circle</a>.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table></td></tr></table>
+   
+    
+    
+
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout:fixed;" role="presentation">
+ <tr>
+  <td align="center" style="padding:30px 0;">
+   
+   <table border="0" cellpadding="0" cellspacing="0" width="640" style="width:640px;" role="presentation" class="yiv3353924159wrapper">
+    
+    <tr>
+     <td align="center" valign="top">
+      <table width="80%" border="0" cellspacing="0" cellpadding="0" style="width:80%;" role="presentation" class="yiv3353924159wrapper80">
+       <tr>
+        <td align="center" valign="top" style="border-top:solid 1px #D6D6D6;font-size:0px;line-height:0px;">
+         &nbsp;
+        </td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+    
+    <tr>
+     <td align="center" valign="top" style="padding-top:30px;">
+      <h2 style="color:#333333;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-weight:bold;font-size:20px;line-height:25px;margin:0;" align="center">Treat yourself to something special </h2>
+     </td>
+    </tr>
+    
+    <tr>
+     <td align="center" valign="top" style="padding-top:25px;" class="yiv3353924159p-25">
+      <table style="border-collapse:separate;" border="0" cellspacing="0" cellpadding="0" role="presentation">
+       <tr>
+        
+        <td align="center" valign="top" style="border:1px solid #EDEDEE;border-radius:8px;width:140px;" class="yiv3353924159prz-col yiv3353924159wrapperdisplay">
+         <table width="140" border="0" cellspacing="0" cellpadding="0" style="width:140px;" role="presentation" class="yiv3353924159wrapper90">
+          <tr>
+           <td align="center" valign="top" style="padding:15px 10px 0;" class="yiv3353924159product-image">
+            <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.oe.target.com/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtqgOiss6RIdFCMstrcPI2uzCdglJXupRqsXvld-OYBurif6Qu9i0F6Ebu46y_FKpck_Og3I2WQ-Y54gLCaXfDtrwoI9j-W4nbI1h5Y5gf9mXqI" style="text-decoration:none;">
+             <img src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Ftarget.scene7.com%2Fis%2Fimage%2FTarget%2FGUEST_184db31f-fb1b-4574-aa6b-8a6e5eabc3f7&t=1790193481&ymreqid=eaffd96d-01d9-fe2a-1cd2-ac0001016700&sig=.sC29bJ6OuByMQPWPwyydw--~D" alt="Crave - by Tracy Wolff (Hard..." border="0" width="125" style="width:125px;display:block;border:0;border-radius:8px;max-width:240px;">
+            </a>
+           </td>
+          </tr>
+          <tr>
+           <td align="center" valign="top" style="padding:8px 10px 0;" class="yiv3353924159p-15">
+            <p style="color:#333333;font-family:Helvetica, Arial, sans-serif;font-size:13px;line-height:18px;margin:0;text-align:left;font-weight:bold;">$39.99</p>
+           </td>
+          </tr>
+          <tr>
+           <td align="center" valign="top" style="padding:4px 10px 0;" class="yiv3353924159p-15">
+            <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.oe.target.com/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtqgOist7_H8x5xwIeIdTkIlI1B4b1BbxwN3AgzZiDkEVjXWt00-gIXsXwMgmzOHF0nU9MwBHa2DZPUkbysgcOpM1Ut-2zeMyM1FWQ2xRNqU7AQ" style="text-decoration:none;">
+             <p style="color:#333333;font-family:Helvetica, Arial, sans-serif;font-size:13px;line-height:18px;margin:0;text-align:left;font-weight:400;">Crave - by Tracy Wolff (Hard...</p>
+            </a>
+           </td>
+          </tr>
+          <tr>
+           <td align="center" style="padding:16px 10px;" class="yiv3353924159p-15">
+            <table border="0" cellspacing="0" cellpadding="0" align="center" style="margin:0;">
+             <tr>
+              <td align="center" style="border-radius:5px;" bgcolor="#cc0000">
+               <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.oe.target.com/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtqgOisu3srz1_0UaAEjSKSrtGwbxcDE7Eh30cOXHODkFSnBR5cGZLrRHtFXSOQv11Kp2glIuhQXzHsgBbQqGaNFPwrD8_r9QekCnKo_KYhEMg8" style="font-size:13px;font-family:Helvetica, Arial, sans-serif;color:#ffffff;text-decoration:none;border-radius:5px;border:1px solid #cc0000;display:inline-block;padding:8px 30px;">Shop now</a>
+              </td>
+             </tr>
+            </table>
+           </td>
+          </tr>
+         </table>
+        </td>
+        
+        
+        <td align="center" valign="top" style="width:10px;padding:5px;" class="yiv3353924159wrapperdisplay">
+         &nbsp;
+        </td>
+        <td align="center" valign="top" style="border:1px solid #EDEDEE;border-radius:8px;width:140px;" class="yiv3353924159prz-col yiv3353924159wrapperdisplay">
+         <table width="140" border="0" cellspacing="0" cellpadding="0" style="width:140px;" role="presentation" class="yiv3353924159wrapper90">
+          <tr>
+           <td align="center" valign="top" style="padding:15px 10px 0;" class="yiv3353924159product-image">
+            <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.oe.target.com/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtqgOisv1xcHp5cibgy0PZXQJJAtKoSnZI504fsm845FlGJUQ2udjUm8vgTvWI5tPe4ZhoWg-sh7UJFGoQSzx6zvYT0QUh0SA1_eAGZGoaOMK14" style="text-decoration:none;">
+             <img src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Ftarget.scene7.com%2Fis%2Fimage%2FTarget%2FGUEST_25ea4047-f4f3-4e55-8cb0-2fd1ba8b9adf&t=1790193481&ymreqid=eaffd96d-01d9-fe2a-1cd2-ac0001016700&sig=3xTbW4esXt0qsNIP2CmQVg--~D" alt="Katjes Sourpuss Gummy Candy..." border="0" width="125" style="width:125px;display:block;border:0;border-radius:8px;max-width:240px;">
+            </a>
+           </td>
+          </tr>
+          <tr>
+           <td align="center" valign="top" style="padding:8px 10px 0;" class="yiv3353924159p-15">
+            <p style="color:#333333;font-family:Helvetica, Arial, sans-serif;font-size:13px;line-height:18px;margin:0;text-align:left;font-weight:bold;">$4.49</p>
+           </td>
+          </tr>
+          <tr>
+           <td align="center" valign="top" style="padding:4px 10px 0;" class="yiv3353924159p-15">
+            <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.oe.target.com/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtqgOiswSmyCsSa1mlr9ofaL72b2EfA-kj0tnTpaQ50qf0o_vxGqAJ4luTz-NoVg0w5TyaWQ0f_T2p3ljO-gpc43CgjqBXSdZgkxR4_nlg5oDu0" style="text-decoration:none;">
+             <p style="color:#333333;font-family:Helvetica, Arial, sans-serif;font-size:13px;line-height:18px;margin:0;text-align:left;font-weight:400;">Katjes Sourpuss Gummy Candy...</p>
+            </a>
+           </td>
+          </tr>
+          <tr>
+           <td align="center" style="padding:16px 10px;" class="yiv3353924159p-15">
+            <table border="0" cellspacing="0" cellpadding="0" align="center" style="margin:0;">
+             <tr>
+              <td align="center" style="border-radius:5px;" bgcolor="#cc0000">
+               <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.oe.target.com/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtqgOisxV1qaWLbwjkMHfqcC0HLZ1-XFHC-jOfr6fXjr3MkwRv8AG0rXwFmJBe2msqakusxFTHFCxV86hXqJXD0B_h17sGAJBgvfLik-kjN4oc0" style="font-size:13px;font-family:Helvetica, Arial, sans-serif;color:#ffffff;text-decoration:none;border-radius:5px;border:1px solid #cc0000;display:inline-block;padding:8px 30px;">Shop now</a>
+              </td>
+             </tr>
+            </table>
+           </td>
+          </tr>
+         </table>
+        </td>
+        
+        
+        <td align="center" valign="top" style="width:10px;padding:5px;" class="yiv3353924159wrapperdisplay">
+         &nbsp;
+        </td>
+        <td align="center" valign="top" style="border:1px solid #EDEDEE;border-radius:8px;width:140px;" class="yiv3353924159prz-col yiv3353924159wrapperdisplay">
+         <table width="140" border="0" cellspacing="0" cellpadding="0" style="width:140px;" role="presentation" class="yiv3353924159wrapper90">
+          <tr>
+           <td align="center" valign="top" style="padding:15px 10px 0;" class="yiv3353924159product-image">
+            <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.oe.target.com/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtqgOisyZh45uHIcOO9yNenQfJDkReIkuSs1OcRyyHu5PDtu6JpheRRWIQ_ZRRvSjsY41ZA_vDvsiI7mDlXZ-aBNVTZ9JUVWQ6Nc_dV6142yyYE" style="text-decoration:none;">
+             <img src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Ftarget.scene7.com%2Fis%2Fimage%2FTarget%2FGUEST_980029bb-85da-41b6-848e-6195296d1e62&t=1790193481&ymreqid=eaffd96d-01d9-fe2a-1cd2-ac0001016700&sig=P5qBbHDFYXvOW8XMuyS97Q--~D" alt="Women&#39;s Long Sleeve Vintage..." border="0" width="125" style="width:125px;display:block;border:0;border-radius:8px;max-width:240px;">
+            </a>
+           </td>
+          </tr>
+          <tr>
+           <td align="center" valign="top" style="padding:8px 10px 0;" class="yiv3353924159p-15">
+            <p style="color:#333333;font-family:Helvetica, Arial, sans-serif;font-size:13px;line-height:18px;margin:0;text-align:left;font-weight:bold;">$18.00</p>
+           </td>
+          </tr>
+          <tr>
+           <td align="center" valign="top" style="padding:4px 10px 0;" class="yiv3353924159p-15">
+            <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.oe.target.com/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtqgOisz5FnMiObzLWpRhCc7uBI2xjL1J5v3RvtlahkSCzE25L4J5InPwWW9YNqqhmmiwXf9R-W25_9GKjSPGUpe9zcGU3e4qSvyTJSkkwJzzX0" style="text-decoration:none;">
+             <p style="color:#333333;font-family:Helvetica, Arial, sans-serif;font-size:13px;line-height:18px;margin:0;text-align:left;font-weight:400;">Women&#39;s Long Sleeve Vintage...</p>
+            </a>
+           </td>
+          </tr>
+          <tr>
+           <td align="center" style="padding:16px 10px;" class="yiv3353924159p-15">
+            <table border="0" cellspacing="0" cellpadding="0" align="center" style="margin:0;">
+             <tr>
+              <td align="center" style="border-radius:5px;" bgcolor="#cc0000">
+               <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.oe.target.com/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtqgOis0Yzk52D8woLW1x29MY59uIN7jfbb23ZhRbWLZ7UxetE6ZrmLRQMk9tMif_CT2RdfN7dP19YMhRRHg0H6uJ9Xrf8hUDL4QfIwC_Y0DUlg" style="font-size:13px;font-family:Helvetica, Arial, sans-serif;color:#ffffff;text-decoration:none;border-radius:5px;border:1px solid #cc0000;display:inline-block;padding:8px 30px;">Shop now</a>
+              </td>
+             </tr>
+            </table>
+           </td>
+          </tr>
+         </table>
+        </td>
+        
+        
+        <td align="center" valign="top" style="width:10px;padding:5px;" class="yiv3353924159wrapperdisplay">
+         &nbsp;
+        </td>
+        <td align="center" valign="top" style="border:1px solid #EDEDEE;border-radius:8px;width:140px;" class="yiv3353924159prz-col yiv3353924159wrapperdisplay">
+         <table width="140" border="0" cellspacing="0" cellpadding="0" style="width:140px;" role="presentation" class="yiv3353924159wrapper90">
+          <tr>
+           <td align="center" valign="top" style="padding:15px 10px 0;" class="yiv3353924159product-image">
+            <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.oe.target.com/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtqgOis1SVbe1E72npcGOb350nY2IdIfwfXnMpBgjD7nATNtWhUIcftt7xWJZMslpM87FK-sDOqTo6e4X67_920kkx7-JZDgwQfdARZt-7bciKM" style="text-decoration:none;">
+             <img src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Ftarget.scene7.com%2Fis%2Fimage%2FTarget%2FGUEST_0d32f9f7-67de-4f8d-8be0-f835c76e2a3d&t=1790193481&ymreqid=eaffd96d-01d9-fe2a-1cd2-ac0001016700&sig=W7FItriZjB6KRBlnco02ow--~D" alt="Stanley 40 oz Stainless Stee..." border="0" width="125" style="width:125px;display:block;border:0;border-radius:8px;max-width:240px;">
+            </a>
+           </td>
+          </tr>
+          <tr>
+           <td align="center" valign="top" style="padding:8px 10px 0;" class="yiv3353924159p-15">
+            <p style="color:#333333;font-family:Helvetica, Arial, sans-serif;font-size:13px;line-height:18px;margin:0;text-align:left;font-weight:bold;">See price in cart</p>
+           </td>
+          </tr>
+          <tr>
+           <td align="center" valign="top" style="padding:4px 10px 0;" class="yiv3353924159p-15">
+            <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.oe.target.com/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtqgOis2x2LvXKjAzoy-V8-0s67lI04BFh_inZ6QnJaWIefdrjCOjzQcfNfayA8gQ_bd1mNU6oUYNRyyp5POnXzuMhqgReNVOpvTjU1k3_d91pE" style="text-decoration:none;">
+             <p style="color:#333333;font-family:Helvetica, Arial, sans-serif;font-size:13px;line-height:18px;margin:0;text-align:left;font-weight:400;">Stanley 40 oz Stainless Stee...</p>
+            </a>
+           </td>
+          </tr>
+          <tr>
+           <td align="center" style="padding:16px 10px;" class="yiv3353924159p-15">
+            <table border="0" cellspacing="0" cellpadding="0" align="center" style="margin:0;">
+             <tr>
+              <td align="center" style="border-radius:5px;" bgcolor="#cc0000">
+               <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.oe.target.com/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtqgOis3V1EeXhiqw6OD4HepK3aNNPyqsA-i__BwKfaNftJXhy4JYVnoPgV7M6iOZBN8O3JTtA5S0Nvsfb0r_29GoVdbJ2Et_pRP_25rgbp_0b4" style="font-size:13px;font-family:Helvetica, Arial, sans-serif;color:#ffffff;text-decoration:none;border-radius:5px;border:1px solid #cc0000;display:inline-block;padding:8px 30px;">Shop now</a>
+              </td>
+             </tr>
+            </table>
+           </td>
+          </tr>
+         </table>
+        </td>
+        
+       </tr>
+      </table>
+     </td>
+    </tr>
+    
+   </table>
+  </td>
+ </tr>
+</table>
+    
+    
+  
+  <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width:100%;" class="yiv3353924159stylingblock-content-wrapper"><tr><td class="yiv3353924159stylingblock-content-wrapper yiv3353924159camarker-inner"><table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout:fixed;background-color:#feffff;" align="center" role="presentation" class="yiv3353924159darkbg">
+    <tr>
+        <td align="center" valign="top">
+            <table border="0" cellpadding="0" cellspacing="0" width="640" style="width:640px;" align="center" role="presentation" class="yiv3353924159wrapper90">
+                <tr>
+                    <td align="center" style="padding:35px 0 0 0;border-bottom:1px solid #D6D6D6;font-size:0px;line-height:0px;" class="yiv3353924159footer-noborder">
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top" style="padding:30px 0 0 0;">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%;" role="presentation">
+                            <tr>
+                                <td style="padding:0 25px;" class="yiv3353924159block yiv3353924159footer-pad yiv3353924159footer-border-t-b">
+                                    <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.oe.target.com/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtqgOis4zfNtEt2HZoN7yt4uqZrzMTH7EqVIKoSp4dkFVV5hAO_bgoN5Y2QEws6HC0IEZswPtCCg9qfbpK_IrjD0L-ILF1-YL1d2tmjTRg" style="text-decoration:none;">
+                                        <p style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;font-weight:normal;line-height:16px;color:#333333;" class="yiv3353924159footer-text">
+                                            Help
+                                        </p>
+                                    </a>
+                                </td>
+                                <td style="padding:0 25px;" class="yiv3353924159block yiv3353924159footer-pad yiv3353924159footer-border-b">
+                                    <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.oe.target.com/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtqgOis5Sgd8EE2qfPUCFpSuhx51CMHmUO2_4n3AFM7jvjReNfSQTPNqmh0vTXh-AAzFdZBF4ZyHhlVmctET7rxLYQVRLhcCxeL1sfvs-A" style="text-decoration:none;">
+                                        <p style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;font-weight:normal;line-height:16px;color:#333333;" class="yiv3353924159footer-text">
+                                            Returns</p>
+                                    </a>
+                                </td>
+                                <td style="padding:0 25px;" class="yiv3353924159block yiv3353924159footer-pad yiv3353924159footer-border-b">
+                                    <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.oe.target.com/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtqgOis6Zf6nPqrciaE9CPSGVlcgrjiP-dj40W4GZKZ_xUU7LA72-eiOTfCaiOAESdkwJDLVJuBNienFkEpmr9OYMg1erW0jBNLFR9Yqzg" style="text-decoration:none;">
+                                        <p style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;font-weight:normal;line-height:16px;color:#333333;" class="yiv3353924159footer-text">
+                                            Contact
+                                        </p>
+                                    </a>
+                                </td>
+                                <td style="padding:0 25px;" class="yiv3353924159block yiv3353924159footer-pad yiv3353924159footer-border-b">
+                                    <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.oe.target.com/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtqgOis7ZDbpJbIfZs4KnaISJxF9YlWLnF5iQeovrtt12ynTgJhJ7v0dY8idAtIudwiKit6USEkP8iWYGdlMY_kpXOzWQN5sjQ8XObOUNw" style="text-decoration:none;">
+                                        <p style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;font-weight:normal;line-height:16px;color:#333333;" class="yiv3353924159footer-text">
+                                            Find a store
+                                        </p>
+                                    </a>
+                                </td>
+                                <td style="padding:0 25px;" class="yiv3353924159block yiv3353924159footer-pad yiv3353924159footer-border-b">
+                                    <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.oe.target.com/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtqgOis8O2503hY5UeIuMnStw5v-cixqAT4fHO_81J9bizh6WefplqeJjliq5pUm-nSvN_9DmfZr3CAimqpL2jKLuIxVegpX6MOMlTe5IA" style="text-decoration:none;">
+                                        <p style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;font-weight:normal;line-height:16px;color:#333333;" class="yiv3353924159footer-text">
+                                            Terms of use
+                                        </p>
+                                    </a>
+                                </td>
+                                <td style="padding:0 25px;" class="yiv3353924159block yiv3353924159footer-pad yiv3353924159footer-border-b">
+                                    <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.oe.target.com/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtqgOis97hzNq2D2JbshhyHsS_hED5-ARgm2FKu1JkQb1pHjJLBxBZWsUy6sD01K1nXuWYT1sFVChl58NgqcOB5njoIyfw6qssODDK5nbg" style="text-decoration:none;">
+                                        <p style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;font-weight:normal;line-height:16px;color:#333333;" class="yiv3353924159footer-text">
+                                            Privacy
+                                        </p>
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:30px 0 0 0;" align="center">
+                        <a rel="nofollow noopener noreferrer" target="_blank" href="https://click.oe.target.com/?qs=ABB7InYiOjEsImQiOjUwMDZ9AAcAAAAABtqgOis-od6BII6BrZrc6Yc3uRczkfw_7BGoXn35Y2bsx5UpmWP1jzO4C1NcqAM6YsWDlrCh1F55J_vaBxsEFlYXY3G94ShCxyeGUVOiOg" style="text-decoration:none;">
+                            <h2 style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:17px;font-weight:normal;line-height:22px;color:#CC0000;" class="yiv3353924159target-red">
+                                Target.com
+                            </h2>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:5px 0 30px;" align="center">
+                        <p style="padding:0;color:#000000;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-weight:normal;font-size:13px;line-height:15px;">
+                            &#169; 2026 Target Brands, Inc.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table></td></tr></table>
+
+  <img src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Fclick.oe.target.com%2Fopen.aspx%3FLKC3L2YMSR4EDAMFEHB6WMT6LI.70252%26d%3D70252%26bmt%3D0&t=1790193481&ymreqid=eaffd96d-01d9-fe2a-1cd2-ac0001016700&sig=mkLVkHpLhiTbMyMgrCYPTQ--~D" width="1" height="1" alt="">
+  
+  
+</div>
+
+</html>
+</div></div></div></div></div></div></div></div></div>
+        </body>
+        </html>
