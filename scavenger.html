@@ -4,89 +4,192 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Diana's 41st Birthday Scavenger Hunt 🎀</title>
-<meta name="color-scheme" content="light only">
-<meta name="theme-color" content="#fff3f9">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAMSElEQVR4nO3d25MVxR0H8G+PC4hEYhIrf4OYVB4Sl13utwICu1wE1NJcqigJaiqk8hAUKlEQBCUqluYiEBOjlkkoue1CQGDBgBAKlk1VSP4CL5W3lOEpKvrLw5zLzJyes3vO/Kb7N2d+3wdrdjg1Z7r748z0261znlmz7l1qLQF8jZWpXKQ2LtevX7/86dOnr7lqAOhb0X9WrVpVKlVWr16lHwK/oa0DwK9YsWLl6dOn9RfgP8QngN9YuXKlxgvwfXPmzNGYAX7HrFmzNGaAX+RyOY0Z4Nfy8vI0ZoBfmzZtGnyBnq7uDoVCoVKp1Ov1arVaKpVaWlrQ7dq165///Oevf/1r0tsOAAAAAJgm8n8AiKgOAsddicwAAAAASUVORK5CYII=" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Diana's Hunt">
+<meta name="theme-color" content="#ff4fa3">
 <style>
 :root{
-  color-scheme: light;
   --hot:#ff4fa3; --hot-dark:#e0308a; --bubble:#ffd6ec; --lav:#b9a2ff; --lav-dark:#8f6cf0;
-  --gold:#ffcd3c; --cream:#fff3f9; --ink:#4a2a45; --card:#ffffff; --shadow:rgba(224,48,138,.18);
+  --gold:#ffcd3c; --cream:#fff3f9; --ink:#4a2a45; --ink2:#6b4a66; --ink3:#8a6d85; --card:#ffffff; --shadow:rgba(224,48,138,.18);
   padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
 }
 *{box-sizing:border-box;}
-body{margin:0;background:var(--cream);
+html{scroll-padding-top:env(safe-area-inset-top,0px);}
+body{margin:0;background:var(--cream);position:relative;
   background-image:radial-gradient(circle at 15% 8%, #ffe3f4 0%, transparent 45%),
                     radial-gradient(circle at 85% 20%, #e9defd 0%, transparent 40%);
-  color:var(--ink); font-family:'Quicksand',sans-serif; overflow-x:hidden;}
-h1,h2,h3,.disco{font-family:'Fredoka',sans-serif;}
+  color:var(--ink); font-family:'Quicksand',sans-serif; overflow-x:hidden;
+  font-weight:500; line-height:1.55; letter-spacing:.15px; -webkit-font-smoothing:antialiased;}
+h1,h2,h3,.disco{font-family:'Fredoka',sans-serif; font-weight:600;}
+p{line-height:1.55;}
+.deal .reward, .deal details, .catcard, .album p.sub, #catToast .msg, footer{color:var(--ink2);}
+.deal .biz{letter-spacing:.1px;}
+
+/* --- floating glam blobs behind everything --- */
+.orbs{position:fixed;inset:0;overflow:hidden;z-index:0;pointer-events:none;}
+.orb{position:absolute;border-radius:50%;filter:blur(30px);opacity:.45;animation:drift 22s ease-in-out infinite;}
+.orb.o1{width:260px;height:260px;background:var(--hot);top:-60px;left:-60px;animation-duration:26s;}
+.orb.o2{width:220px;height:220px;background:var(--lav);top:40%;right:-80px;animation-duration:19s;animation-delay:-4s;}
+.orb.o3{width:200px;height:200px;background:var(--gold);bottom:-60px;left:20%;animation-duration:24s;animation-delay:-9s;}
+@keyframes drift{0%,100%{transform:translate(0,0) scale(1);}33%{transform:translate(30px,-20px) scale(1.08);}66%{transform:translate(-20px,25px) scale(.94);}}
+.sparkles{position:fixed;inset:0;z-index:1;pointer-events:none;
+  background-image:radial-gradient(2px 2px at 10% 20%, rgba(255,255,255,.9), transparent),
+                    radial-gradient(2px 2px at 80% 10%, rgba(255,255,255,.8), transparent),
+                    radial-gradient(1.5px 1.5px at 60% 70%, rgba(255,255,255,.8), transparent),
+                    radial-gradient(2px 2px at 30% 85%, rgba(255,255,255,.8), transparent),
+                    radial-gradient(1.5px 1.5px at 90% 60%, rgba(255,255,255,.8), transparent);
+  animation:twinkle 4s ease-in-out infinite;}
+@keyframes twinkle{0%,100%{opacity:.4;}50%{opacity:1;}}
+
 .confetti{position:fixed;top:-10vh;font-size:20px;pointer-events:none;z-index:5;
   animation:fall linear infinite;}
 @keyframes fall{to{transform:translateY(112vh) rotate(360deg);}}
-header{text-align:center;padding:34px 16px 18px;position:relative;z-index:2;}
-.disco{font-size:2.6rem;display:inline-block;animation:spin 5s linear infinite;}
+
+header{text-align:center;padding:34px 16px 10px;position:relative;z-index:2;}
+.hero-card{max-width:600px;margin:0 auto;padding:34px 26px 30px;border-radius:32px;position:relative;overflow:hidden;
+  background:rgba(255,255,255,.72);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border:2px solid var(--bubble);box-shadow:0 16px 40px var(--shadow), inset 0 0 0 2px rgba(255,255,255,.7);}
+.hero-card::before{content:"";position:absolute;inset:-30%;z-index:-1;
+  background:radial-gradient(circle at 25% 20%, rgba(255,205,60,.3), transparent 55%),
+             radial-gradient(circle at 80% 85%, rgba(185,162,255,.3), transparent 55%);
+  animation:heroGlow 11s ease-in-out infinite;}
+@keyframes heroGlow{0%,100%{transform:rotate(0deg) scale(1);}50%{transform:rotate(10deg) scale(1.08);}}
+.disco{font-size:2.6rem;display:inline-block;animation:spin 5s linear infinite;filter:drop-shadow(0 4px 10px var(--shadow));}
 @keyframes spin{to{transform:rotate(360deg);}}
-h1{font-size:1.7rem;margin:.3em 0 .1em;color:var(--hot-dark);}
-header p{margin:.2em auto;max-width:480px;font-weight:600;}
-.catrow{display:flex;gap:12px;max-width:640px;margin:18px auto;padding:0 16px;flex-wrap:wrap;justify-content:center;}
+h1{font-size:1.8rem;margin:.32em 0 .16em;color:var(--hot-dark);line-height:1.25;
+  background:linear-gradient(90deg,var(--hot-dark),var(--lav-dark),var(--hot-dark));
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  background-size:200% auto;animation:shine 6s linear infinite;}
+@keyframes shine{to{background-position:200% center;}}
+header p{margin:.2em auto 0;max-width:440px;font-weight:600;position:relative;z-index:2;color:var(--ink2);}
+
+.catrow{display:flex;gap:12px;max-width:640px;margin:18px auto;padding:0 16px;flex-wrap:wrap;justify-content:center;position:relative;z-index:2;}
 .catcard{background:var(--card);border-radius:20px;padding:14px 16px;box-shadow:0 6px 18px var(--shadow);
-  flex:1 1 260px;border:2px dashed var(--bubble);}
+  flex:1 1 260px;border:2px dashed var(--bubble);transition:transform .25s;}
+.catcard:hover{transform:translateY(-3px) rotate(-.5deg);}
 .catcard b{color:var(--hot-dark);}
 .catcard .emoji{font-size:1.5rem;margin-right:6px;}
-.progress-wrap{max-width:640px;margin:0 auto 10px;padding:0 16px;text-align:center;}
-.bar{height:16px;border-radius:10px;background:#f4d9ec;overflow:hidden;border:2px solid var(--hot);}
-.bar-fill{height:100%;background:linear-gradient(90deg,var(--hot),var(--gold));width:0%;transition:width .4s;}
+
+.progress-wrap{max-width:640px;margin:0 auto 10px;padding:0 16px;text-align:center;position:relative;z-index:2;}
+.bar{height:18px;border-radius:10px;background:#f4d9ec;overflow:visible;border:2px solid var(--hot);position:relative;}
+.bar-fill{height:100%;border-radius:8px;background:linear-gradient(90deg,var(--hot),var(--gold));width:0%;transition:width .5s;position:relative;overflow:hidden;}
+.bar-fill::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,.55) 50%,transparent 70%);
+  background-size:200% 100%;animation:shimmer 2.2s linear infinite;}
+@keyframes shimmer{to{background-position:-200% 0;}}
+.bar-paw{position:absolute;top:50%;transform:translate(-50%,-50%);font-size:.95rem;transition:left .5s;filter:drop-shadow(0 1px 2px rgba(0,0,0,.25));}
 .progress-wrap span{font-weight:700;color:var(--hot-dark);}
-nav.tabs{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:18px auto;max-width:900px;padding:0 12px;}
+
+nav.tabs{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:18px auto;max-width:900px;padding:0 12px;position:relative;z-index:2;}
 nav.tabs button{border:2px solid var(--hot);background:#fff;color:var(--hot-dark);border-radius:999px;
-  padding:8px 16px;font-family:'Quicksand';font-weight:700;cursor:pointer;font-size:.85rem;}
-nav.tabs button.active,nav.tabs button:hover{background:var(--hot);color:#fff;}
-main{max-width:900px;margin:0 auto;padding:0 14px 60px;}
+  padding:8px 16px;font-family:'Quicksand';font-weight:700;cursor:pointer;font-size:.85rem;transition:.2s;}
+nav.tabs button.active,nav.tabs button:hover{background:var(--hot);color:#fff;transform:translateY(-1px);}
+
+main{max-width:900px;margin:0 auto;padding:0 14px 60px;position:relative;z-index:2;}
 .category{margin-top:28px;}
 .category h2{color:var(--lav-dark);font-size:1.25rem;border-bottom:3px solid var(--bubble);padding-bottom:6px;}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px;margin-top:12px;}
+
 .deal{background:var(--card);border-radius:18px;padding:14px 14px 12px;box-shadow:0 4px 14px var(--shadow);
-  border-left:8px solid var(--gold); position:relative;}
+  border-left:8px solid var(--gold); position:relative;overflow:hidden;transition:transform .2s, box-shadow .2s;}
+.deal:hover{transform:translateY(-4px);box-shadow:0 10px 24px var(--shadow);}
+.deal::after{content:"";position:absolute;top:-14px;right:-14px;width:38px;height:38px;background:var(--gold);
+  transform:rotate(45deg);box-shadow:0 3px 6px rgba(0,0,0,.15);}
+.deal.urgent::after{background:#ff4d4d;}
+.deal.soon::after{background:var(--hot);}
 .deal.urgent{border-left-color:#ff4d4d;}
 .deal.soon{border-left-color:var(--hot);}
-.deal.done{opacity:.55;}
+.deal.done{opacity:.6;}
+.deal.done::before{content:"✓";position:absolute;top:10px;right:10px;background:#3ba55d;color:#fff;
+  width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;z-index:1;}
 .deal .top{display:flex;align-items:flex-start;gap:10px;}
 .deal input[type=checkbox]{width:22px;height:22px;accent-color:var(--hot);margin-top:2px;flex-shrink:0;}
 .deal .biz{font-weight:700;font-size:1.02rem;}
 .deal .reward{font-size:.88rem;margin:6px 0 4px;}
 .deal .exp{font-size:.78rem;font-weight:700;display:inline-block;margin-top:2px;padding:2px 8px;border-radius:8px;background:var(--bubble);color:var(--hot-dark);}
 .deal .exp.urgent{background:#ffd6d6;color:#c62828;}
-.deal details{margin-top:6px;font-size:.78rem;color:#7a5a74;}
+.deal details{margin-top:6px;font-size:.78rem;color:var(--ink3);}
 .deal details summary{cursor:pointer;font-weight:700;color:var(--lav-dark);}
 .deal .btnrow{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px;}
 .deal .btnrow a,.deal .btnrow button{font-size:.75rem;text-decoration:none;background:var(--lav);color:#fff;
-  padding:6px 10px;border-radius:999px;border:none;font-family:'Quicksand';font-weight:700;cursor:pointer;}
+  padding:6px 10px;border-radius:999px;border:none;font-family:'Quicksand';font-weight:700;cursor:pointer;transition:transform .15s;}
+.deal .btnrow a:hover{transform:translateY(-2px);}
 .deal .btnrow a.map{background:#3ba55d;}
 .deal .btnrow a.call{background:#3389e0;}
-.deal .hours{font-size:.72rem;color:#8a6d85;margin-top:4px;}
+.deal .hours{font-size:.72rem;color:var(--ink3);margin-top:4px;}
 .oot-banner{background:var(--lav);color:#fff;padding:10px 16px;border-radius:14px;margin-top:20px;font-weight:700;text-align:center;}
-.album{max-width:900px;margin:30px auto;padding:0 14px 40px;}
-.album h2{text-align:center;color:var(--hot-dark);}
-.albumgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px;margin-top:14px;}
-.panini{aspect-ratio:3/4;border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;
-  text-align:center;padding:8px;font-size:.72rem;font-weight:700;box-shadow:0 4px 10px var(--shadow);}
-.panini.locked{background:repeating-linear-gradient(45deg,#eee,#eee 8px,#e4e4e4 8px,#e4e4e4 16px);color:#aaa;}
-.panini.unlocked{background:linear-gradient(160deg,var(--gold),var(--hot));color:#fff;}
+
+/* --- scrapbook album showcase --- */
+.album{max-width:940px;margin:44px auto 0;padding:34px 18px 46px;position:relative;z-index:2;border-radius:28px;
+  background:linear-gradient(160deg,#fff 0%,#fff3f9 100%);
+  box-shadow:0 14px 40px var(--shadow), inset 0 0 0 2px var(--bubble);}
+.album h2{text-align:center;color:var(--hot-dark);position:relative;display:inline-block;margin:0 auto 6px;}
+.album-heading-wrap{text-align:center;position:relative;}
+.tape{position:absolute;top:-14px;left:50%;transform:translateX(-50%) rotate(-3deg);width:110px;height:26px;
+  background:rgba(255,205,60,.75);border:1px solid rgba(255,255,255,.6);}
+.album p.sub{text-align:center;font-size:.85rem;color:var(--ink3);margin-top:0;}
+.albumgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:16px;margin-top:18px;}
+.panini{aspect-ratio:3/4;border-radius:6px;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:10px 8px 14px;font-size:.72rem;font-weight:700;
+  box-shadow:0 6px 14px rgba(0,0,0,.15);transition:transform .25s, box-shadow .25s;background:#fff;}
+.panini:nth-child(4n+1){transform:rotate(-3deg);}
+.panini:nth-child(4n+2){transform:rotate(2deg);}
+.panini:nth-child(4n+3){transform:rotate(-1.5deg);}
+.panini:nth-child(4n+4){transform:rotate(3deg);}
+.panini:hover{transform:rotate(0) scale(1.06);box-shadow:0 12px 22px rgba(0,0,0,.22);z-index:3;}
+.panini.locked{background:repeating-linear-gradient(45deg,#eee,#eee 8px,#e4e4e4 8px,#e4e4e4 16px);color:#aaa;border:4px solid #fff;}
+.panini.unlocked{background:linear-gradient(160deg,var(--gold),var(--hot));color:#fff;border:4px solid #fff;}
 .panini .pemoji{font-size:1.8rem;}
-footer{text-align:center;padding:30px 16px;font-size:.8rem;color:#a17a99;}
-.resetbtn{display:block;margin:20px auto 0;background:none;border:2px solid var(--hot);color:var(--hot-dark);
+footer{text-align:center;padding:30px 16px;font-size:.8rem;color:var(--ink3);position:relative;z-index:2;}
+.resetbtn{display:block;margin:26px auto 0;background:none;border:2px solid var(--hot);color:var(--hot-dark);
   padding:8px 18px;border-radius:999px;font-weight:700;cursor:pointer;font-family:'Quicksand';}
+
+/* --- cat reaction toast --- */
+#catToast{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom,0px));transform:translate(-50%,140%);
+  max-width:min(360px,88vw);background:#fff;border-radius:18px;padding:12px 14px;box-shadow:0 10px 30px rgba(0,0,0,.25);
+  display:flex;gap:10px;align-items:flex-start;z-index:20;transition:transform .4s cubic-bezier(.34,1.56,.64,1);border:2px solid var(--bubble);}
+#catToast.show{transform:translate(-50%,0);}
+#catToast .avatar{font-size:1.8rem;flex-shrink:0;}
+#catToast .name{font-weight:700;color:var(--hot-dark);font-size:.82rem;margin-bottom:2px;}
+#catToast .msg{font-size:.82rem;line-height:1.3;}
+#catToast.finale{border-color:var(--gold);}
+
+/* --- album completion celebration --- */
+.replaybtn{display:none;margin:14px auto 0;background:linear-gradient(90deg,var(--hot),var(--lav));color:#fff;
+  border:none;padding:9px 18px;border-radius:999px;font-weight:700;font-family:'Quicksand';cursor:pointer;box-shadow:0 6px 14px var(--shadow);}
+#celebrateOverlay{position:fixed;inset:0;background:rgba(40,15,35,.6);z-index:60;display:flex;align-items:center;justify-content:center;
+  opacity:0;pointer-events:none;transition:opacity .3s;padding:20px;}
+#celebrateOverlay.show{opacity:1;pointer-events:auto;}
+.cel-card{background:#fff;border-radius:28px;padding:34px 26px;max-width:380px;text-align:center;
+  box-shadow:0 20px 50px rgba(0,0,0,.35);transform:scale(.85);transition:transform .35s cubic-bezier(.34,1.56,.64,1);border:3px solid var(--gold);}
+#celebrateOverlay.show .cel-card{transform:scale(1);}
+.cel-cats{font-size:3rem;animation:celBounce 1s ease-in-out infinite;}
+@keyframes celBounce{0%,100%{transform:translateY(0);}50%{transform:translateY(-12px);}}
+.cel-card h2{color:var(--hot-dark);margin:.4em 0 .3em;}
+.cel-card p{font-size:.9rem;color:var(--ink2);}
+.cel-hint{margin-top:14px;font-size:.72rem;color:var(--ink3);font-weight:700;}
+
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--cream:#241323;--card:#3a1f38;--ink:#ffe3f4;--ink2:#e9c9e0;--ink3:#cfa4c4;}
+  .album{background:linear-gradient(160deg,#3a1f38 0%,#2a1628 100%);}
+  #catToast{background:#3a1f38;color:var(--ink);}
+}
 </style>
 </head>
 <body>
+<div class="orbs"><div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div></div>
+<div class="sparkles"></div>
 <div id="confettiLayer"></div>
 
 <header>
-  <span class="disco">🪩</span>
-  <h1>Diana's 41st Birthday Scavenger Hunt</h1>
-  <p>Your birthday came and went, but the free stuff is just getting started. Redeem, tap, collect &amp; win.</p>
+  <div class="hero-card">
+    <span class="disco">🪩</span>
+    <h1>Diana's 41st Birthday Scavenger Hunt</h1>
+    <p>Your birthday came and went, but the free stuff is just getting started. Redeem, tap, collect &amp; win.</p>
+  </div>
 </header>
 
 <div class="catrow">
@@ -95,7 +198,7 @@ footer{text-align:center;padding:30px 16px;font-size:.8rem;color:#a17a99;}
 </div>
 
 <div class="progress-wrap">
-  <div class="bar"><div class="bar-fill" id="barFill"></div></div>
+  <div class="bar"><div class="bar-fill" id="barFill"><span class="bar-paw" id="barPaw" style="left:100%;">🐾</span></div></div>
   <p><span id="collectedCount">0</span> / <span id="totalCount">0</span> deals collected — <span id="pctText">0%</span> of the hunt complete 🎀</p>
 </div>
 
@@ -104,14 +207,21 @@ footer{text-align:center;padding:30px 16px;font-size:.8rem;color:#a17a99;}
 <main id="main"></main>
 
 <section class="album" id="albumSection">
-  <h2>🖼️ Panini Album — Bakersfield Crew</h2>
+  <div class="album-heading-wrap"><div class="tape"></div><h2>🖼️ Panini Album — Bakersfield Crew</h2></div>
+  <p class="sub">Every redeemed deal earns you a collectible card. Tick a box, unlock a panini.</p>
   <div class="albumgrid" id="albumHome"></div>
-  <h2 style="margin-top:34px;">🧳 Bonus Album — The Out-of-Towners</h2>
+  <button class="replaybtn" id="replayHomeBtn">🎬 Replay the surprise</button>
+  <div class="album-heading-wrap" style="margin-top:34px;"><div class="tape"></div><h2>🧳 Bonus Album — The Out-of-Towners</h2></div>
   <div class="albumgrid" id="albumOOT"></div>
+  <button class="replaybtn" id="replayOotBtn">🎬 Replay the surprise</button>
   <button class="resetbtn" id="resetBtn">Reset all progress</button>
 </section>
 
 <footer>Made with glitter, chaos, and two cats supervising. Progress saves right here on this device. Happy 41st, Diana. 🎉</footer>
+
+<div id="catToast"><span class="avatar" id="toastAvatar">🐈</span><div><div class="name" id="toastName">Duchess</div><div class="msg" id="toastMsg"></div></div></div>
+
+<div id="celebrateOverlay"><div class="cel-card" id="celebrateContent"></div></div>
 
 <script>
 const DATA = [
@@ -151,7 +261,8 @@ const DATA = [
 {id:"bajafresh",cat:"food",biz:"Baja Fresh",emoji:"🌯",reward:"$10 birthday reward.",fine:"Check Club Baja account. Remainder forfeited if your check is under $10.",exp:"2026-10-28",link:"https://chocodisiac.github.io/birthday-rewards/bajafresh.html",addr:"9000 Ming Ave Ste 2, Bakersfield, CA 93311",phone:"6616652252",hours:"Daily 11AM–8PM",card:"Fantas-Taco Day"},
 {id:"benihana",cat:"dessert",biz:"Benihana",emoji:"🍱",reward:"$30 birthday reward (requires $30 purchase first).",fine:"Certificate must be printed with barcode + valid ID. Dinner Mon–Thu only.",exp:"2026-10-06",link:"https://chocodisiac.github.io/birthday-rewards/benihana.html",oot:true,mapsQuery:"Benihana near Bakersfield CA",card:"Hibachi High Roller"},
 {id:"johnnyrockets",cat:"dessert",biz:"Johnny Rockets",emoji:"🥤",reward:"Free Regular Shake with an entrée purchase.",fine:"Mention the promo in-store or use code BIRTHDAY online. Valid 30 days.",exp:null,expNote:"No issue date given — treat as ~30 days from when you got the email.",link:"https://chocodisiac.github.io/birthday-rewards/johnnyrockets.html",oot:true,mapsQuery:"Johnny Rockets near Bakersfield CA",card:"Shake Rattle & Roll"},
-{id:"julius",cat:"dessert",biz:"Mystery Scratcher (\"Julius\")",emoji:"🎰",reward:"A scratch-to-reveal surprise — brand wasn't confirmed in the email, just a reveal link.",fine:"Open the link and scratch to see what you won.",exp:null,link:"https://chocodisiac.github.io/birthday-rewards/julius.html",oot:true,mapsQuery:"Orange Julius near Bakersfield CA",card:"The Scratch-Off Enigma"},
+{id:"julius",cat:"dessert",biz:"Orange Julius",emoji:"🎰",reward:"A scratch-to-reveal surprise — Orange Julius keeps the actual prize a secret until you scratch it off.",fine:"Open the link and scratch to see what you won.",exp:null,link:"https://chocodisiac.github.io/birthday-rewards/julius.html",oot:true,mapsQuery:"Orange Julius near Bakersfield CA",card:"The Scratch-Off Enigma"},
+{id:"sephora",cat:"beauty",biz:"Sephora",emoji:"💋",reward:"Choice of a mini gift set from Tower 28, Glossier, Dr. Dennis Gross, or Dae.",fine:"Beauty Insiders can redeem one birthday gift per year, in Sephora US/Canada stores, on sephora.com/sephora.ca, at Sephora at Kohl's, or kohls.com. Online redemption on sephora.com/sephora.ca requires a $25+ purchase (pre-tax/shipping, after discounts). Gift selection may vary in-store vs. online. Provided as-is; substitutions may occur; cannot be returned or exchanged.",exp:null,note:"Redeem 2 weeks before/after your birthday, or any time during your birthday month. While supplies last.",link:"https://chocodisiac.github.io/birthday-rewards/sephora.html",mapsQuery:"Sephora near Bakersfield CA",card:"Beauty Insider Royalty"},
 {id:"torrid",cat:"clothes",biz:"Torrid",emoji:"👗",reward:"$10 birthday reward.",fine:"Ask an associate in-store, or select at checkout online.",exp:"2026-10-01",link:"https://chocodisiac.github.io/birthday-rewards/torrid.html",addr:"2701 Ming Ave, Space 162, Bakersfield, CA 93304",phone:"6618320295",hours:"Mon–Thu 10AM–8PM · Fri–Sat 10AM–9PM",card:"Ten Dollars of Treat Yourself"},
 {id:"carls",cat:"food",biz:"Carl's Jr.",emoji:"🍔",reward:"Free birthday item (burger, sandwich, shake & more) with a $5+ app purchase.",fine:"One per account, valid ~14 days from when it was issued. Not for delivery.",exp:null,expNote:"No issue date shown — check the app for your exact countdown.",link:"https://chocodisiac.github.io/birthday-rewards/carls.html",addr:"4520 Coffee Rd, Bakersfield, CA 93308",phone:"6615879085",hours:"Mon–Thu 6AM–12AM · Fri–Sat 6AM–1AM",card:"Star-Studded Cheeseburger"},
 {id:"mcd",cat:"food",biz:"McDonald's",emoji:"🍟",reward:"Free gift, pick one (fries, nuggets, coffee & more).",fine:"Unwrap it in the MyMcDonald's app, no purchase needed.",exp:"2026-09-28",link:"https://chocodisiac.github.io/birthday-rewards/mcd.html",addr:"5410 Stockdale Hwy, Bakersfield, CA 93309",phone:"6613252263",hours:"Daily 5AM–11PM",card:"Golden Arches, Golden Gift"},
@@ -227,6 +338,11 @@ function render(){
       done[id] = e.target.checked;
       save(); updateProgress(); renderAlbums();
       e.target.closest('.deal').classList.toggle('done', e.target.checked);
+      if(e.target.checked){
+        const item = DATA.find(d=>d.id===id);
+        showCatToast(item);
+      }
+      checkAlbumCompletion();
     });
   });
   updateProgress();
@@ -244,7 +360,7 @@ function dealHtml(item){
     '<div class="top"><input type="checkbox" data-id="'+item.id+'" '+checked+'>'+
     '<div><div class="biz">'+item.emoji+' '+item.biz+'</div>'+
     '<div class="reward">'+item.reward+'</div>'+expBadge(item)+
-    (item.expNote?'<div style="font-size:.72rem;color:#a17a99;margin-top:3px;">'+item.expNote+'</div>':'')+
+    (item.expNote?'<div style="font-size:.72rem;color:var(--ink3);margin-top:3px;">'+item.expNote+'</div>':'')+
     '</div></div>'+
     '<details><summary>Fine print</summary>'+item.fine+(item.note?'<br>'+item.note:'')+'</details>'+
     '<div class="btnrow">'+btns+'</div>'+
@@ -260,6 +376,7 @@ function updateProgress(){
   const pct = Math.round(100*collected/total);
   document.getElementById('pctText').textContent = pct+'%';
   document.getElementById('barFill').style.width = pct+'%';
+  document.getElementById('barPaw').style.left = pct+'%';
 }
 
 function paniniHtml(item){
@@ -271,7 +388,39 @@ function paniniHtml(item){
 function renderAlbums(){
   document.getElementById('albumHome').innerHTML = DATA.filter(d=>!d.oot).map(paniniHtml).join('');
   document.getElementById('albumOOT').innerHTML = DATA.filter(d=>d.oot).map(paniniHtml).join('');
+  document.getElementById('replayHomeBtn').style.display = albumComplete(false) ? 'block' : 'none';
+  document.getElementById('replayOotBtn').style.display = albumComplete(true) ? 'block' : 'none';
 }
+
+function albumComplete(oot){
+  const items = DATA.filter(d=>!!d.oot===oot);
+  return items.length>0 && items.every(d=>done[d.id]);
+}
+let prevHomeComplete = false, prevOotComplete = false;
+function checkAlbumCompletion(){
+  const nowHome = albumComplete(false);
+  const nowOot = albumComplete(true);
+  if(nowHome && !prevHomeComplete) celebrateAlbum('home');
+  else if(nowOot && !prevOotComplete) celebrateAlbum('oot');
+  prevHomeComplete = nowHome; prevOotComplete = nowOot;
+}
+function celebrateAlbum(which){
+  const isHome = which==='home';
+  document.getElementById('celebrateContent').innerHTML =
+    '<div class="cel-cats">🐈🐈\u200d⬛</div>'+
+    '<h2>'+(isHome?'Bakersfield Crew — Complete!':'Out-of-Towners — Complete!')+'</h2>'+
+    '<p>'+(isHome?
+      "Every local panini collected. Duchess has abandoned the desk to personally supervise this achievement. Marie is mid-victory-zoomie and cannot be reasoned with.":
+      "Every out-of-town panini collected! Marie is already plotting the next road trip. Duchess is reviewing mileage reimbursement policy.")+
+    '</p><p class="cel-hint">Tap anywhere to close</p>';
+  spawnConfetti(50, true);
+  document.getElementById('celebrateOverlay').classList.add('show');
+}
+document.getElementById('celebrateOverlay').addEventListener('click', ()=>{
+  document.getElementById('celebrateOverlay').classList.remove('show');
+});
+document.getElementById('replayHomeBtn').addEventListener('click', ()=>celebrateAlbum('home'));
+document.getElementById('replayOotBtn').addEventListener('click', ()=>celebrateAlbum('oot'));
 
 document.getElementById('tabNav').innerHTML = Object.keys(CATS).map(k=>'<button data-target="cat-'+k+'">'+CATS[k]+'</button>').join('')+'<button data-target="cat-oot">🧳 Out-of-Towners</button><button data-target="albumSection">🖼️ Album</button>';
 document.getElementById('tabNav').addEventListener('click', e=>{
@@ -286,22 +435,81 @@ document.getElementById('resetBtn').addEventListener('click', ()=>{
   }
 });
 
-// confetti rain
+// --- confetti rain ---
 const emojis = ['🎉','🎀','✨','💖','🐈','🐈‍⬛','🪩','🎂','💕','⭐'];
 const layer = document.getElementById('confettiLayer');
-for(let i=0;i<26;i++){
-  const s = document.createElement('span');
-  s.className='confetti';
-  s.textContent = emojis[Math.floor(Math.random()*emojis.length)];
-  s.style.left = (Math.random()*100)+'vw';
-  s.style.animationDuration = (8+Math.random()*10)+'s';
-  s.style.animationDelay = (Math.random()*12)+'s';
-  s.style.opacity = 0.55+Math.random()*0.4;
-  s.style.fontSize = (14+Math.random()*14)+'px';
-  layer.appendChild(s);
+function spawnConfetti(count, fast){
+  for(let i=0;i<count;i++){
+    const s = document.createElement('span');
+    s.className='confetti';
+    s.textContent = emojis[Math.floor(Math.random()*emojis.length)];
+    s.style.left = (Math.random()*100)+'vw';
+    s.style.animationDuration = (fast?(2.5+Math.random()*2):(8+Math.random()*10))+'s';
+    s.style.animationDelay = (fast?0:(Math.random()*12))+'s';
+    s.style.opacity = 0.55+Math.random()*0.4;
+    s.style.fontSize = (14+Math.random()*14)+'px';
+    layer.appendChild(s);
+    if(fast) setTimeout(()=>s.remove(), 6000);
+  }
+}
+spawnConfetti(26, false);
+
+// --- Duchess & Marie reaction toast ---
+const DUCHESS_LINES = [
+  "Another one handled. I shall allow myself a small stretch of pride.",
+  "Acceptable work. I'll be returning to the desk now, thank you.",
+  "One does not simply skip free treats. Noted and approved.",
+  "I have reviewed this conquest. It meets my exacting standards.",
+  "Splendid. Now if you'll excuse me, the sunbeam is calling.",
+  "Diligent. Composed. Correct. As I would have done it."
+];
+const MARIE_LINES = [
+  "WE DID IT?? WE DID IT!!! TANK ENERGY ACTIVATED 🐾",
+  "MROW!!! Another treat secured, I am SO proud of you!!",
+  "Free stuff obtained!! I would high-five you but I have paws!!",
+  "YES YES YES!! Sweetest victory, tiniest kitten, BIGGEST heart!!",
+  "I am vibrating with joy. This is the best day of my nine lives!!",
+  "TANK CONFIRMED. TANK APPROVES. TANK IS SO EXCITED."
+];
+const FINALE_LINES = "Every single deal, collected. Duchess has left her sunbeam AND the desk to acknowledge this. Marie has not stopped vibrating in four minutes. Happy 41st, Diana — you earned every bite of it. 🎂🐾";
+
+let toastTimer = null;
+function showCatToast(item){
+  const total = DATA.length;
+  const collected = Object.values(done).filter(Boolean).length;
+  const toast = document.getElementById('catToast');
+  const avatarEl = document.getElementById('toastAvatar');
+  const nameEl = document.getElementById('toastName');
+  const msgEl = document.getElementById('toastMsg');
+
+  if(collected === total){
+    avatarEl.textContent = '🐈🐈\u200d⬛';
+    nameEl.textContent = 'Duchess & Marie';
+    msgEl.textContent = FINALE_LINES;
+    toast.classList.add('finale');
+    spawnConfetti(40, true);
+  } else {
+    const isMarieCat = item && (item.cat==='food' || item.cat==='dessert');
+    const useMarie = isMarieCat ? Math.random()<0.7 : Math.random()<0.3;
+    toast.classList.remove('finale');
+    if(useMarie){
+      avatarEl.textContent = '🐈\u200d⬛';
+      nameEl.textContent = 'Marie';
+      msgEl.textContent = MARIE_LINES[Math.floor(Math.random()*MARIE_LINES.length)];
+    } else {
+      avatarEl.textContent = '🐈';
+      nameEl.textContent = 'Duchess';
+      msgEl.textContent = DUCHESS_LINES[Math.floor(Math.random()*DUCHESS_LINES.length)];
+    }
+  }
+  toast.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(()=>toast.classList.remove('show'), collected===total ? 6000 : 3600);
 }
 
 render();
+prevHomeComplete = albumComplete(false);
+prevOotComplete = albumComplete(true);
 </script>
 </body>
 </html>
