@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Diana's 41st Birthday Scavenger Hunt 🎀</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAMSElEQVR4nO3d25MVxR0H8G+PC4hEYhIrf4OYVB4Sl13utwICu1wE1NJcqigJaiqk8hAUKlEQBCUqluYiEBOjlkkoue1CQGDBgBAKlk1VSP4CL5W3lOEpKvrLw5zLzJyes3vO/Kb7N2d+3wdrdjg1Z7r748z0261znlmz7l1qLQF8jZWpXKQ2LtevX7/86dOnr7lqAOhb0X9WrVpVKlVWr16lHwK/oa0DwK9YsWLl6dOn9RfgP8QngN9YuXKlxgvwfXPmzNGYAX7HrFmzNGaAX+RyOY0Z4Nfy8vI0ZoBfmzZtGnyBnq7uDoVCoVKp1Ov1arVaKpVaWlrQ7dq165///Oevf/1r0tsOAAAAAJgm8n8AiKgOAsddicwAAAAASUVORK5CYII=" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Diana's Hunt">
+<meta name="theme-color" content="#ff4fa3">
+<style>
+:root{
+  --hot:#ff4fa3; --hot-dark:#e0308a; --bubble:#ffd6ec; --lav:#b9a2ff; --lav-dark:#8f6cf0;
+  --gold:#ffcd3c; --cream:#fff3f9; --ink:#4a2a45; --card:#ffffff; --shadow:rgba(224,48,138,.18);
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*{box-sizing:border-box;}
+html{scroll-padding-top:env(safe-area-inset-top,0px);}
+body{margin:0;background:var(--cream);position:relative;
+  background-image:radial-gradient(circle at 15% 8%, #ffe3f4 0%, transparent 45%),
+                    radial-gradient(circle at 85% 20%, #e9defd 0%, transparent 40%);
+  color:var(--ink); font-family:'Quicksand',sans-serif; overflow-x:hidden;
+  font-weight:500; line-height:1.55; letter-spacing:.15px; -webkit-font-smoothing:antialiased;}
+h1,h2,h3,.disco{font-family:'Fredoka',sans-serif; font-weight:600;}
+p{line-height:1.55;}
+.deal .reward, .deal details, .catcard, .album p.sub, #catToast .msg, footer{color:#6b4a66;}
+.deal .biz{letter-spacing:.1px;}
+
+/* --- floating glam blobs behind everything --- */
+.orbs{position:fixed;inset:0;overflow:hidden;z-index:0;pointer-events:none;}
+.orb{position:absolute;border-radius:50%;filter:blur(30px);opacity:.45;animation:drift 22s ease-in-out infinite;}
+.orb.o1{width:260px;height:260px;background:var(--hot);top:-60px;left:-60px;animation-duration:26s;}
+.orb.o2{width:220px;height:220px;background:var(--lav);top:40%;right:-80px;animation-duration:19s;animation-delay:-4s;}
+.orb.o3{width:200px;height:200px;background:var(--gold);bottom:-60px;left:20%;animation-duration:24s;animation-delay:-9s;}
+@keyframes drift{0%,100%{transform:translate(0,0) scale(1);}33%{transform:translate(30px,-20px) scale(1.08);}66%{transform:translate(-20px,25px) scale(.94);}}
+.sparkles{position:fixed;inset:0;z-index:1;pointer-events:none;
+  background-image:radial-gradient(2px 2px at 10% 20%, rgba(255,255,255,.9), transparent),
+                    radial-gradient(2px 2px at 80% 10%, rgba(255,255,255,.8), transparent),
+                    radial-gradient(1.5px 1.5px at 60% 70%, rgba(255,255,255,.8), transparent),
+                    radial-gradient(2px 2px at 30% 85%, rgba(255,255,255,.8), transparent),
+                    radial-gradient(1.5px 1.5px at 90% 60%, rgba(255,255,255,.8), transparent);
+  animation:twinkle 4s ease-in-out infinite;}
+@keyframes twinkle{0%,100%{opacity:.4;}50%{opacity:1;}}
+
+.confetti{position:fixed;top:-10vh;font-size:20px;pointer-events:none;z-index:5;
+  animation:fall linear infinite;}
+@keyframes fall{to{transform:translateY(112vh) rotate(360deg);}}
+
+header{text-align:center;padding:34px 16px 10px;position:relative;z-index:2;}
+.hero-card{max-width:600px;margin:0 auto;padding:34px 26px 30px;border-radius:32px;position:relative;overflow:hidden;
+  background:rgba(255,255,255,.72);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border:2px solid var(--bubble);box-shadow:0 16px 40px var(--shadow), inset 0 0 0 2px rgba(255,255,255,.7);}
+.hero-card::before{content:"";position:absolute;inset:-30%;z-index:-1;
+  background:radial-gradient(circle at 25% 20%, rgba(255,205,60,.3), transparent 55%),
+             radial-gradient(circle at 80% 85%, rgba(185,162,255,.3), transparent 55%);
+  animation:heroGlow 11s ease-in-out infinite;}
+@keyframes heroGlow{0%,100%{transform:rotate(0deg) scale(1);}50%{transform:rotate(10deg) scale(1.08);}}
+.disco{font-size:2.6rem;display:inline-block;animation:spin 5s linear infinite;filter:drop-shadow(0 4px 10px var(--shadow));}
+@keyframes spin{to{transform:rotate(360deg);}}
+h1{font-size:1.8rem;margin:.32em 0 .16em;color:var(--hot-dark);line-height:1.25;
+  background:linear-gradient(90deg,var(--hot-dark),var(--lav-dark),var(--hot-dark));
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  background-size:200% auto;animation:shine 6s linear infinite;}
+@keyframes shine{to{background-position:200% center;}}
+header p{margin:.2em auto 0;max-width:440px;font-weight:600;position:relative;z-index:2;color:#6b4a66;}
+
+.catrow{display:flex;gap:12px;max-width:640px;margin:18px auto;padding:0 16px;flex-wrap:wrap;justify-content:center;position:relative;z-index:2;}
+.catcard{background:var(--card);border-radius:20px;padding:14px 16px;box-shadow:0 6px 18px var(--shadow);
+  flex:1 1 260px;border:2px dashed var(--bubble);transition:transform .25s;}
+.catcard:hover{transform:translateY(-3px) rotate(-.5deg);}
+.catcard b{color:var(--hot-dark);}
+.catcard .emoji{font-size:1.5rem;margin-right:6px;}
+
+.progress-wrap{max-width:640px;margin:0 auto 10px;padding:0 16px;text-align:center;position:relative;z-index:2;}
+.bar{height:18px;border-radius:10px;background:#f4d9ec;overflow:visible;border:2px solid var(--hot);position:relative;}
+.bar-fill{height:100%;border-radius:8px;background:linear-gradient(90deg,var(--hot),var(--gold));width:0%;transition:width .5s;position:relative;overflow:hidden;}
+.bar-fill::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,.55) 50%,transparent 70%);
+  background-size:200% 100%;animation:shimmer 2.2s linear infinite;}
+@keyframes shimmer{to{background-position:-200% 0;}}
+.bar-paw{position:absolute;top:50%;transform:translate(-50%,-50%);font-size:.95rem;transition:left .5s;filter:drop-shadow(0 1px 2px rgba(0,0,0,.25));}
+.progress-wrap span{font-weight:700;color:var(--hot-dark);}
+
+nav.tabs{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:18px auto;max-width:900px;padding:0 12px;position:relative;z-index:2;}
+nav.tabs button{border:2px solid var(--hot);background:#fff;color:var(--hot-dark);border-radius:999px;
+  padding:8px 16px;font-family:'Quicksand';font-weight:700;cursor:pointer;font-size:.85rem;transition:.2s;}
+nav.tabs button.active,nav.tabs button:hover{background:var(--hot);color:#fff;transform:translateY(-1px);}
+
+main{max-width:900px;margin:0 auto;padding:0 14px 60px;position:relative;z-index:2;}
+.category{margin-top:28px;}
+.category h2{color:var(--lav-dark);font-size:1.25rem;border-bottom:3px solid var(--bubble);padding-bottom:6px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px;margin-top:12px;}
+
+.deal{background:var(--card);border-radius:18px;padding:14px 14px 12px;box-shadow:0 4px 14px var(--shadow);
+  border-left:8px solid var(--gold); position:relative;overflow:hidden;transition:transform .2s, box-shadow .2s;}
+.deal:hover{transform:translateY(-4px);box-shadow:0 10px 24px var(--shadow);}
+.deal::after{content:"";position:absolute;top:-14px;right:-14px;width:38px;height:38px;background:var(--gold);
+  transform:rotate(45deg);box-shadow:0 3px 6px rgba(0,0,0,.15);}
+.deal.urgent::after{background:#ff4d4d;}
+.deal.soon::after{background:var(--hot);}
+.deal.urgent{border-left-color:#ff4d4d;}
+.deal.soon{border-left-color:var(--hot);}
+.deal.done{opacity:.6;}
+.deal.done::before{content:"✓";position:absolute;top:10px;right:10px;background:#3ba55d;color:#fff;
+  width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;z-index:1;}
+.deal .top{display:flex;align-items:flex-start;gap:10px;}
+.deal input[type=checkbox]{width:22px;height:22px;accent-color:var(--hot);margin-top:2px;flex-shrink:0;}
+.deal .biz{font-weight:700;font-size:1.02rem;}
+.deal .reward{font-size:.88rem;margin:6px 0 4px;}
+.deal .exp{font-size:.78rem;font-weight:700;display:inline-block;margin-top:2px;padding:2px 8px;border-radius:8px;background:var(--bubble);color:var(--hot-dark);}
+.deal .exp.urgent{background:#ffd6d6;color:#c62828;}
+.deal details{margin-top:6px;font-size:.78rem;color:#7a5a74;}
+.deal details summary{cursor:pointer;font-weight:700;color:var(--lav-dark);}
+.deal .btnrow{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px;}
+.deal .btnrow a,.deal .btnrow button{font-size:.75rem;text-decoration:none;background:var(--lav);color:#fff;
+  padding:6px 10px;border-radius:999px;border:none;font-family:'Quicksand';font-weight:700;cursor:pointer;transition:transform .15s;}
+.deal .btnrow a:hover{transform:translateY(-2px);}
+.deal .btnrow a.map{background:#3ba55d;}
+.deal .btnrow a.call{background:#3389e0;}
+.deal .hours{font-size:.72rem;color:#8a6d85;margin-top:4px;}
+.oot-banner{background:var(--lav);color:#fff;padding:10px 16px;border-radius:14px;margin-top:20px;font-weight:700;text-align:center;}
+
+/* --- scrapbook album showcase --- */
+.album{max-width:940px;margin:44px auto 0;padding:34px 18px 46px;position:relative;z-index:2;border-radius:28px;
+  background:linear-gradient(160deg,#fff 0%,#fff3f9 100%);
+  box-shadow:0 14px 40px var(--shadow), inset 0 0 0 2px var(--bubble);}
+.album h2{text-align:center;color:var(--hot-dark);position:relative;display:inline-block;margin:0 auto 6px;}
+.album-heading-wrap{text-align:center;position:relative;}
+.tape{position:absolute;top:-14px;left:50%;transform:translateX(-50%) rotate(-3deg);width:110px;height:26px;
+  background:rgba(255,205,60,.75);border:1px solid rgba(255,255,255,.6);}
+.album p.sub{text-align:center;font-size:.85rem;color:#a17a99;margin-top:0;}
+.albumgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:16px;margin-top:18px;}
+.panini{aspect-ratio:3/4;border-radius:6px;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:10px 8px 14px;font-size:.72rem;font-weight:700;
+  box-shadow:0 6px 14px rgba(0,0,0,.15);transition:transform .25s, box-shadow .25s;background:#fff;}
+.panini:nth-child(4n+1){transform:rotate(-3deg);}
+.panini:nth-child(4n+2){transform:rotate(2deg);}
+.panini:nth-child(4n+3){transform:rotate(-1.5deg);}
+.panini:nth-child(4n+4){transform:rotate(3deg);}
+.panini:hover{transform:rotate(0) scale(1.06);box-shadow:0 12px 22px rgba(0,0,0,.22);z-index:3;}
+.panini.locked{background:repeating-linear-gradient(45deg,#eee,#eee 8px,#e4e4e4 8px,#e4e4e4 16px);color:#aaa;border:4px solid #fff;}
+.panini.unlocked{background:linear-gradient(160deg,var(--gold),var(--hot));color:#fff;border:4px solid #fff;}
+.panini .pemoji{font-size:1.8rem;}
+footer{text-align:center;padding:30px 16px;font-size:.8rem;color:#a17a99;position:relative;z-index:2;}
+.resetbtn{display:block;margin:26px auto 0;background:none;border:2px solid var(--hot);color:var(--hot-dark);
+  padding:8px 18px;border-radius:999px;font-weight:700;cursor:pointer;font-family:'Quicksand';}
+
+/* --- cat reaction toast --- */
+#catToast{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom,0px));transform:translate(-50%,140%);
+  max-width:min(360px,88vw);background:#fff;border-radius:18px;padding:12px 14px;box-shadow:0 10px 30px rgba(0,0,0,.25);
+  display:flex;gap:10px;align-items:flex-start;z-index:20;transition:transform .4s cubic-bezier(.34,1.56,.64,1);border:2px solid var(--bubble);}
+#catToast.show{transform:translate(-50%,0);}
+#catToast .avatar{font-size:1.8rem;flex-shrink:0;}
+#catToast .name{font-weight:700;color:var(--hot-dark);font-size:.82rem;margin-bottom:2px;}
+#catToast .msg{font-size:.82rem;line-height:1.3;}
+#catToast.finale{border-color:var(--gold);}
+
+/* --- album completion celebration --- */
+.replaybtn{display:none;margin:14px auto 0;background:linear-gradient(90deg,var(--hot),var(--lav));color:#fff;
+  border:none;padding:9px 18px;border-radius:999px;font-weight:700;font-family:'Quicksand';cursor:pointer;box-shadow:0 6px 14px var(--shadow);}
+#celebrateOverlay{position:fixed;inset:0;background:rgba(40,15,35,.6);z-index:60;display:flex;align-items:center;justify-content:center;
+  opacity:0;pointer-events:none;transition:opacity .3s;padding:20px;}
+#celebrateOverlay.show{opacity:1;pointer-events:auto;}
+.cel-card{background:#fff;border-radius:28px;padding:34px 26px;max-width:380px;text-align:center;
+  box-shadow:0 20px 50px rgba(0,0,0,.35);transform:scale(.85);transition:transform .35s cubic-bezier(.34,1.56,.64,1);border:3px solid var(--gold);}
+#celebrateOverlay.show .cel-card{transform:scale(1);}
+.cel-cats{font-size:3rem;animation:celBounce 1s ease-in-out infinite;}
+@keyframes celBounce{0%,100%{transform:translateY(0);}50%{transform:translateY(-12px);}}
+.cel-card h2{color:var(--hot-dark);margin:.4em 0 .3em;}
+.cel-card p{font-size:.9rem;color:#6b4a66;}
+.cel-hint{margin-top:14px;font-size:.72rem;color:#a17a99;font-weight:700;}
+
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--cream:#241323;--card:#3a1f38;--ink:#ffe3f4;}
+  .album{background:linear-gradient(160deg,#3a1f38 0%,#2a1628 100%);}
+  #catToast{background:#3a1f38;color:var(--ink);}
+}
+</style>
+</head>
+<body>
+<div class="orbs"><div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div></div>
+<div class="sparkles"></div>
+<div id="confettiLayer"></div>
+
+<header>
+  <div class="hero-card">
+    <span class="disco">🪩</span>
+    <h1>Diana's 41st Birthday Scavenger Hunt</h1>
+    <p>Your birthday came and went, but the free stuff is just getting started. Redeem, tap, collect &amp; win.</p>
+  </div>
+</header>
+
+<div class="catrow">
+  <div class="catcard"><span class="emoji">🐈</span><b>Duchess says:</b> "Forty-one free treats to redeem, and not one of them requires me to move from this sunbeam. Diana, I've reviewed the itinerary. It's acceptable — barely." <i>(She is currently sprawled across your husband's desk like she pays the mortgage.)</i></div>
+  <div class="catcard"><span class="emoji">🐈‍⬛</span><b>Marie says:</b> "FREE FOOD?? FREE FOOD?!?! I am but a small tender tank of a kitten and I would like ALL of it, immediately, please and thank you mrow." <i>(Sweetest soul alive. Also could probably break down a door.)</i></div>
+</div>
+
+<div class="progress-wrap">
+  <div class="bar"><div class="bar-fill" id="barFill"><span class="bar-paw" id="barPaw" style="left:100%;">🐾</span></div></div>
+  <p><span id="collectedCount">0</span> / <span id="totalCount">0</span> deals collected — <span id="pctText">0%</span> of the hunt complete 🎀</p>
+</div>
+
+<nav class="tabs" id="tabNav"></nav>
+
+<main id="main"></main>
+
+<section class="album" id="albumSection">
+  <div class="album-heading-wrap"><div class="tape"></div><h2>🖼️ Panini Album — Bakersfield Crew</h2></div>
+  <p class="sub">Every redeemed deal earns you a collectible card. Tick a box, unlock a panini.</p>
+  <div class="albumgrid" id="albumHome"></div>
+  <button class="replaybtn" id="replayHomeBtn">🎬 Replay the surprise</button>
+  <div class="album-heading-wrap" style="margin-top:34px;"><div class="tape"></div><h2>🧳 Bonus Album — The Out-of-Towners</h2></div>
+  <div class="albumgrid" id="albumOOT"></div>
+  <button class="replaybtn" id="replayOotBtn">🎬 Replay the surprise</button>
+  <button class="resetbtn" id="resetBtn">Reset all progress</button>
+</section>
+
+<footer>Made with glitter, chaos, and two cats supervising. Progress saves right here on this device. Happy 41st, Diana. 🎉</footer>
+
+<div id="catToast"><span class="avatar" id="toastAvatar">🐈</span><div><div class="name" id="toastName">Duchess</div><div class="msg" id="toastMsg"></div></div></div>
+
+<div id="celebrateOverlay"><div class="cel-card" id="celebrateContent"></div></div>
+
+<script>
+const DATA = [
+{id:"panera",cat:"food",biz:"Panera Bread",emoji:"🥐",reward:"Free Birthday Bakery Treat with a purchase.",fine:"MyPanera members only. Select the reward at checkout — it won't apply automatically. Participating US cafes.",exp:"2026-09-27",link:"https://chocodisiac.github.io/birthday-rewards/panera.html",addr:"10900 Stockdale Hwy Suite 100, Bakersfield, CA 93311",phone:"6616630355",hours:"Stockdale: 6AM–9PM · California Ave: 6AM–10PM",card:"The Bread Whisperer"},
+{id:"dennys",cat:"food",biz:"Denny's",emoji:"🥞",reward:"Free Everyday Value Slam®.",fine:"Dine-in only. One coupon per order. No substitutions, can't combine with other offers.",exp:"2026-10-14",link:"https://chocodisiac.github.io/birthday-rewards/dennys.html",addr:"2851 White Lane, Bakersfield, CA 93304",phone:null,mapsQuery:"Denny's Bakersfield CA",hours:"Most locations open 24 hours",card:"Grand Slam Diplomat"},
+{id:"target",cat:"clothes",biz:"Target",emoji:"🎯",reward:"5% off a qualifying shopping trip, any time in the next 30 days.",fine:"Find it in the Target Circle Bonus section of the app, or Target.com/Circle.",exp:"2026-10-21",expNote:"Calculated: 30 days from your Sept 21 email.",link:"https://chocodisiac.github.io/birthday-rewards/target.html",addr:"2901 Ming Ave, Bakersfield, CA 93304",phone:"6616172000",hours:"Open until 11:00 PM",card:"5% Off, 100% Chaos"},
+{id:"bbw",cat:"beauty",biz:"Bath & Body Works",emoji:"🧴",reward:"Free birthday gift (up to $9.95 value) with any purchase.",fine:"Show your Rewards barcode in app or online. One item per reward, up to 8 per transaction.",exp:"2026-10-21",expNote:"Calculated: 30 days from your Sept 21 email — double-check the Rewards tab in-app.",link:"https://chocodisiac.github.io/birthday-rewards/bbw.html",addr:"10730 Stockdale Hwy Spc L1-B, Bakersfield, CA 93312",phone:"6612822098",hours:"Mon–Sat 10AM–9PM, Sun 11AM–6PM",card:"Smells Like Free Spirit"},
+{id:"subway",cat:"food",biz:"Subway",emoji:"🥪",reward:"Free Birthday Cookie.",fine:"Sub Club members. One use, excludes Footlong Cookies. Participating restaurants only.",exp:"2026-10-05",link:"https://chocodisiac.github.io/birthday-rewards/subway.html",addr:"4106 California Ave Suite 2, Bakersfield, CA 93309",phone:"6613230057",hours:"Open 24 hours (call ahead late night)",card:"Cookie Monster's Cousin"},
+{id:"nift",cat:"home",biz:"Nift (via Afterpay)",emoji:"🎁",reward:"$30 mystery birthday gift — wine, clothing, food delivery & more.",fine:"Pick your gift at GoNift.com with code TM2DK8. Non-transferable, one per person.",exp:"2026-10-21",link:"https://chocodisiac.github.io/birthday-rewards/nift.html",mapsQuery:null,note:"Online only — no storefront, just pick a partner gift.",card:"Mystery Box Energy"},
+{id:"cvs",cat:"health",biz:"CVS",emoji:"💊",reward:"$3 ExtraBucks Rewards.",fine:"Loaded automatically to your ExtraCare card. Excludes sale items.",exp:"2026-10-19",link:"https://chocodisiac.github.io/birthday-rewards/cvs.html",addr:"5184 Stockdale Hwy, Bakersfield, CA 93309",phone:"6616332066",hours:"Store 6AM–12AM · Pharmacy hours vary, call ahead",card:"$3 of Pure Power"},
+{id:"chipotle",cat:"food",biz:"Chipotle",emoji:"🌯",reward:"Free chips, guac, queso, or a drink.",fine:"See full terms at chipotle.com/rewards-terms.",exp:"2026-10-20",expNote:"Calculated: 30 days from your Sept 20 email.",link:"https://chocodisiac.github.io/birthday-rewards/chipotle.html",addr:"4950 Stockdale Hwy, Bakersfield, CA 93309",phone:"6613350400",hours:"Daily 10AM–11PM",card:"Guac Star General"},
+{id:"applebees",cat:"food",biz:"Applebee's",emoji:"🍰",reward:"Free Dessert with a $15 purchase.",fine:"Code CKWG1MDPFA. One-time use. Tax, gratuity & alcohol excluded.",exp:"2026-10-12",link:"https://chocodisiac.github.io/birthday-rewards/applebees.html",addr:"9000 Ming Ave Ste M, Bakersfield, CA 93311",phone:"6616640974",hours:"Mon–Thu 11AM–12AM · Fri–Sat 11AM–1AM",card:"Neighborhood Dessert Diplomat"},
+{id:"worldmarket",cat:"home",biz:"World Market",emoji:"🛍️",reward:"15% off entire purchase, plus a $5 bonus reward coupon (valid to 10/31).",fine:"Code WME3655137156. Excludes alcohol & gift cards. One-time use.",exp:"2026-10-08",link:"https://chocodisiac.github.io/birthday-rewards/worldmarket.html",addr:"9240 Rosedale Hwy, Bakersfield, CA 93312",phone:"6615871620",hours:"Mon–Wed 10AM–8PM · Thu–Fri 10AM–9PM",card:"Global Bargain Hunter"},
+{id:"mariecallenders",cat:"dessert",biz:"Marie Callender's",emoji:"🥧",reward:"$5 off two entrées + 2 free slices of pie.",fine:"Excludes Kids Eat Free, Crave & Save, Happy Hour menus, and whole pies to go.",exp:"2026-09-28",link:"https://chocodisiac.github.io/birthday-rewards/mariecallenders.html",addr:"3801 California Ave, Bakersfield, CA 93309",phone:"6618630305",hours:"Mon–Sat 8AM–9PM · Sun 9AM–9PM",card:"Pie Royalty"},
+{id:"hardrock",cat:"dessert",biz:"Hard Rock Cafe",emoji:"🍫",reward:"Free Hot Fudge Brownie.",fine:"Sign into your Unity account and enter the promo code at checkout. Valid through Sept 30.",exp:"2026-09-30",link:"https://chocodisiac.github.io/birthday-rewards/hardrock.html",addr:"1777 Garone Farm Rd, Bakersfield, CA 93313 (Mettler, just south of town)",phone:"8337937625",hours:"Cafe daily 11AM–10PM",card:"Brownie Rockstar"},
+{id:"olivegarden",cat:"dessert",biz:"Olive Garden",emoji:"🍝",reward:"Free Birthday Dessert with any adult entrée.",fine:"Code 440-5WT-F4X-MH. One per check, up to $11.49 value.",exp:"2026-09-27",link:"https://chocodisiac.github.io/birthday-rewards/olivegarden.html",addr:"1701 New Stine Rd, Bakersfield, CA 93309",phone:"6618321278",hours:"Mon–Thu 11AM–10PM · Fri–Sat 11AM–11PM",card:"Endless Dessert Ambassador"},
+{id:"ulta",cat:"beauty",biz:"Ulta Beauty",emoji:"💄",reward:"Choice of beauty gift: mascara, blush, or a hair mask/oil sample.",fine:"One-time coupon, show barcode in-store or add the gift online with a qualifying purchase.",exp:"2026-09-30",link:"https://chocodisiac.github.io/birthday-rewards/ulta.html",addr:"9000 Ming Ave Ste L2, Bakersfield, CA 93311",phone:"6616641402",hours:"Mon–Wed 10AM–8PM · Thu–Fri 10AM–9PM",card:"Glow-Up Goblin"},
+{id:"catholicgifts",cat:"home",biz:"Catholic Gifts",emoji:"✝️",reward:"Free shipping on orders $49+.",fine:"Code CWBDFYDIJ2RA at checkout. Online orders only, continental US.",exp:null,link:"https://chocodisiac.github.io/birthday-rewards/catholicgifts.html",note:"Online only — no expiration listed, so no rush.",card:"Blessed & Shipped Free"},
+{id:"kiwi",cat:"travel",biz:"Kiwi.com",emoji:"✈️",reward:"$23 off a future trip ($230+ booking).",fine:"Code TNLCEQFBOR at checkout.",exp:"2026-10-21",link:"https://chocodisiac.github.io/birthday-rewards/kiwi.html",note:"Online travel booking — redeem at kiwi.com.",card:"Wanderlust Coupon"},
+{id:"delwiener",cat:"food",biz:"Wienerschnitzel",emoji:"🌭",reward:"Free Corn Dog.",fine:"Print or show the email on your phone. One-time use, participating locations only.",exp:"2026-09-28",link:"https://chocodisiac.github.io/birthday-rewards/delwiener.html",addr:"4044 Ming Ave, Bakersfield, CA 93309",phone:"6613975351",hours:"Daily 10AM–12AM",card:"Corn Dog Connoisseur"},
+{id:"lanebryant",cat:"clothes",biz:"Lane Bryant",emoji:"👗",reward:"$20 off a $20.01+ purchase.",fine:"Valid in-store or online. Balance not refunded if you use less than $20.",exp:"2026-09-30",link:"https://chocodisiac.github.io/birthday-rewards/lanebryant.html",addr:"9370 Rosedale Highway, Bakersfield, CA 93312",phone:"6616953349",hours:"Mon–Thu 10AM–8PM · Fri–Sat 10AM–7PM",card:"Twenty Bucks of Confidence"},
+{id:"cinnabon",cat:"dessert",biz:"Cinnabon",emoji:"☕",reward:"Free Small Cold Brew.",fine:"Single use, apply reward at checkout. Not valid with other offers or delivery.",exp:"2026-09-28",expNote:"Calculated: 14 days from issue on the 14th.",link:"https://chocodisiac.github.io/birthday-rewards/cinnabon.html",addr:"2701 Ming Ave #0148, Bakersfield, CA 93304",phone:"6618318809",hours:"Mon–Sat 10AM–9PM · Sun 11AM–7PM",card:"Cold Brew Royalty"},
+{id:"chilis",cat:"dessert",biz:"Chili's",emoji:"🍮",reward:"Free Dessert (hi, Peanut Butter Pie).",fine:"My Chili's members. Requires a $5 minimum purchase.",exp:"2026-09-28",link:"https://chocodisiac.github.io/birthday-rewards/chilis.html",addr:"8950 Rosedale Hwy, Bakersfield, CA 93312",phone:"6615885872",hours:"Sun–Thu 11AM–10PM · Fri–Sat 11AM–11PM",card:"Baby Back Bestie"},
+{id:"raisingcanes",cat:"food",biz:"Raising Cane's",emoji:"🥤",reward:"Free 22oz Drink.",fine:"⚠️ Loaded to your Caniac Club card — removed if unused within 7 days!",exp:"2026-09-29",expNote:"Calculated: 15 days from 9/14 — but see the 7-day warning below.",link:"https://chocodisiac.github.io/birthday-rewards/raisingcanes.html",addr:"4025 California Ave, Bakersfield, CA 93309",phone:"6618630135",hours:"Mon–Thu & Sun 9AM–1AM · Fri–Sat 9AM–3:30AM",card:"22oz of Chaos"},
+{id:"delyeah",cat:"dessert",biz:"Del Taco",emoji:"🥤",reward:"Free Regular Sized Shake.",fine:"One offer per guest, not valid with other offers.",exp:"2026-09-28",expNote:"Calculated: 14 days from 9/14.",link:"https://chocodisiac.github.io/birthday-rewards/delyeah.html",addr:"4250 Ming Ave, Bakersfield, CA 93309",phone:"6613970060",hours:"Daily 6:30AM–2AM",card:"Shake Shakedown"},
+{id:"yardhouse",cat:"dessert",biz:"Yard House",emoji:"🍮",reward:"Free Dessert.",fine:"Code 020-77A-84S-8Q. Dine-in only.",exp:"2026-10-10",link:"https://chocodisiac.github.io/birthday-rewards/yardhouse.html",addr:"10308 Stockdale Hwy, Bakersfield, CA 93311",phone:"6616641014",hours:"Mon–Thu 11AM–12AM · Fri–Sat 11AM–12:30AM",card:"100 Taps, One Dessert"},
+{id:"campero",cat:"food",biz:"Pollo Campero",emoji:"🍗",reward:"Free 2-Piece Meal.",fine:"Redeem online at checkout, or show the QR code in-app in person.",exp:null,note:"No expiration listed — but don't sit on fried chicken forever.",link:"https://chocodisiac.github.io/birthday-rewards/campero.html",addr:"3217 Ming Ave, Bakersfield, CA 93304",phone:"8332267376",hours:"Daily 9AM–10PM",card:"Fried & Fabulous"},
+{id:"longhorn",cat:"dessert",biz:"LongHorn Steakhouse",emoji:"🥩",reward:"Free Dessert with an adult entrée.",fine:"Code BD1-3DA-TXC-5D, print or show your server. Up to $13 value.",exp:"2026-10-06",link:"https://chocodisiac.github.io/birthday-rewards/longhorn.html",addr:"8850 Rosedale Hwy, Bakersfield, CA 93312",phone:"6616954241",hours:"Mon–Thu 11AM–10PM · Fri–Sat 11AM–11PM",card:"Steakhouse Sugar Rush"},
+{id:"cheesecakefactory",cat:"dessert",biz:"The Cheesecake Factory",emoji:"🍰",reward:"Free slice of cheesecake or layer cake with any purchase.",fine:"Tell your server or apply in-app before payment; also works via a linked DoorDash order.",exp:"2026-09-28",link:"https://chocodisiac.github.io/birthday-rewards/cheesecakefactory.html",oot:true,mapsQuery:"Cheesecake Factory near Bakersfield CA",card:"Out-of-Town Cheesecake Champion"},
+{id:"buffalo",cat:"food",biz:"Buffalo Wild Wings",emoji:"🍗",reward:"6 Free Wings.",fine:"Activate the offer in the B-Dubs App rewards tab.",exp:null,note:"No expiration found — activate it before you forget, though!",link:"https://chocodisiac.github.io/birthday-rewards/buffalo.html",addr:"5677 Gosford Road, Bakersfield, CA 93313",phone:"6616644550",hours:"Mon–Wed 10:30AM–12AM · Thu–Sat 10:30AM–2AM",card:"Wing Woman"},
+{id:"hallmark",cat:"home",biz:"Hallmark",emoji:"💌",reward:"Free birthday gift + $4 Bonus Crown Credit.",fine:"Hallmark+ members. Code 68644 in-store, or use online at Hallmark.com.",exp:"2026-10-21",link:"https://chocodisiac.github.io/birthday-rewards/hallmark.html",addr:"Town & Country Village, 8200 Stockdale Hwy Ste F3, Bakersfield, CA 93311",phone:"6618347467",hours:"Mon–Fri 10AM–7PM · Sat 10AM–6PM",card:"Sentimental & Subsidized"},
+{id:"einstein",cat:"food",biz:"Einstein Bros. Bagels",emoji:"🥯",reward:"Free Egg Sandwich with any purchase.",fine:"Redeem in bakery, online, or in-app when signed in. Excludes modifiers & gourmet bagels.",exp:"2026-10-05",link:"https://chocodisiac.github.io/birthday-rewards/einstein.html",oot:true,mapsQuery:"Einstein Bros Bagels near Bakersfield CA",card:"Bagel Genius"},
+{id:"baskin",cat:"dessert",biz:"Baskin-Robbins",emoji:"🍦",reward:"Free 4oz Scoop.",fine:"Redeem in the BR App. Excludes waffle cones & toppings.",exp:"2026-10-01",expNote:"Calculated: 10 days from 9/21.",link:"https://chocodisiac.github.io/birthday-rewards/baskin.html",addr:"5460 Stockdale Hwy, Bakersfield, CA 93309",phone:"6613234392",hours:"Daily 11AM–10PM",card:"Scoop Dreams"},
+{id:"rubios",cat:"food",biz:"Rubio's",emoji:"🌮",reward:"Free entrée with any entrée purchase.",fine:"Excludes tasting plates, kids meals & third-party delivery. Dine-in/pickup only.",exp:"2026-10-07",expNote:"Calculated: 21 days from 9/16.",link:"https://chocodisiac.github.io/birthday-rewards/rubios.html",addr:"9200 Rosedale Hwy Ste 200, Bakersfield, CA 93312",phone:"6615872490",hours:"Sun–Wed 10AM–9PM · Thu–Sat 10AM–9:30PM",card:"Taco Tuesday Everyday"},
+{id:"buca",cat:"food",biz:"Buca di Beppo",emoji:"🍝",reward:"Free Colossal Brownie Sundae + $20 off $40+ purchase.",fine:"Excludes alcohol, gift cards & Best of Buca. Dine-in or to-go.",exp:"2026-10-12",link:"https://chocodisiac.github.io/birthday-rewards/buca.html",oot:true,mapsQuery:"Buca di Beppo near Bakersfield CA",card:"Family-Size Sundae Boss"},
+{id:"yogurtland",cat:"dessert",biz:"Yogurtland",emoji:"🍧",reward:"Free cup of froyo (up to $5 off).",fine:"Food/beverage items only, not valid with delivery or other offers.",exp:"2026-10-12",link:"https://chocodisiac.github.io/birthday-rewards/yogurtland.html",addr:"10930 Stockdale Hwy, Bakersfield, CA 93311",phone:"6613817565",hours:"Daily 11AM–11PM",card:"Froyo Royalty"},
+{id:"bajafresh",cat:"food",biz:"Baja Fresh",emoji:"🌯",reward:"$10 birthday reward.",fine:"Check Club Baja account. Remainder forfeited if your check is under $10.",exp:"2026-10-28",link:"https://chocodisiac.github.io/birthday-rewards/bajafresh.html",addr:"9000 Ming Ave Ste 2, Bakersfield, CA 93311",phone:"6616652252",hours:"Daily 11AM–8PM",card:"Fantas-Taco Day"},
+{id:"benihana",cat:"dessert",biz:"Benihana",emoji:"🍱",reward:"$30 birthday reward (requires $30 purchase first).",fine:"Certificate must be printed with barcode + valid ID. Dinner Mon–Thu only.",exp:"2026-10-06",link:"https://chocodisiac.github.io/birthday-rewards/benihana.html",oot:true,mapsQuery:"Benihana near Bakersfield CA",card:"Hibachi High Roller"},
+{id:"johnnyrockets",cat:"dessert",biz:"Johnny Rockets",emoji:"🥤",reward:"Free Regular Shake with an entrée purchase.",fine:"Mention the promo in-store or use code BIRTHDAY online. Valid 30 days.",exp:null,expNote:"No issue date given — treat as ~30 days from when you got the email.",link:"https://chocodisiac.github.io/birthday-rewards/johnnyrockets.html",oot:true,mapsQuery:"Johnny Rockets near Bakersfield CA",card:"Shake Rattle & Roll"},
+{id:"julius",cat:"dessert",biz:"Orange Julius",emoji:"🎰",reward:"A scratch-to-reveal surprise — Orange Julius keeps the actual prize a secret until you scratch it off.",fine:"Open the link and scratch to see what you won.",exp:null,link:"https://chocodisiac.github.io/birthday-rewards/julius.html",oot:true,mapsQuery:"Orange Julius near Bakersfield CA",card:"The Scratch-Off Enigma"},
+{id:"sephora",cat:"beauty",biz:"Sephora",emoji:"💋",reward:"Choice of a mini gift set from Tower 28, Glossier, Dr. Dennis Gross, or Dae.",fine:"Beauty Insiders can redeem one birthday gift per year, in Sephora US/Canada stores, on sephora.com/sephora.ca, at Sephora at Kohl's, or kohls.com. Online redemption on sephora.com/sephora.ca requires a $25+ purchase (pre-tax/shipping, after discounts). Gift selection may vary in-store vs. online. Provided as-is; substitutions may occur; cannot be returned or exchanged.",exp:null,note:"Redeem 2 weeks before/after your birthday, or any time during your birthday month. While supplies last.",link:"https://chocodisiac.github.io/birthday-rewards/sephora.html",mapsQuery:"Sephora near Bakersfield CA",card:"Beauty Insider Royalty"},
+{id:"torrid",cat:"clothes",biz:"Torrid",emoji:"👗",reward:"$10 birthday reward.",fine:"Ask an associate in-store, or select at checkout online.",exp:"2026-10-01",link:"https://chocodisiac.github.io/birthday-rewards/torrid.html",addr:"2701 Ming Ave, Space 162, Bakersfield, CA 93304",phone:"6618320295",hours:"Mon–Thu 10AM–8PM · Fri–Sat 10AM–9PM",card:"Ten Dollars of Treat Yourself"},
+{id:"carls",cat:"food",biz:"Carl's Jr.",emoji:"🍔",reward:"Free birthday item (burger, sandwich, shake & more) with a $5+ app purchase.",fine:"One per account, valid ~14 days from when it was issued. Not for delivery.",exp:null,expNote:"No issue date shown — check the app for your exact countdown.",link:"https://chocodisiac.github.io/birthday-rewards/carls.html",addr:"4520 Coffee Rd, Bakersfield, CA 93308",phone:"6615879085",hours:"Mon–Thu 6AM–12AM · Fri–Sat 6AM–1AM",card:"Star-Studded Cheeseburger"},
+{id:"mcd",cat:"food",biz:"McDonald's",emoji:"🍟",reward:"Free gift, pick one (fries, nuggets, coffee & more).",fine:"Unwrap it in the MyMcDonald's app, no purchase needed.",exp:"2026-09-28",link:"https://chocodisiac.github.io/birthday-rewards/mcd.html",addr:"5410 Stockdale Hwy, Bakersfield, CA 93309",phone:"6613252263",hours:"Daily 5AM–11PM",card:"Golden Arches, Golden Gift"},
+{id:"annies",cat:"food",biz:"Auntie Anne's",emoji:"🥨",reward:"Free pretzel (Original, Sweet Almond, or Cinnamon Sugar).",fine:"Apply the reward at checkout via your Rewards account.",exp:"2026-10-21",expNote:"Calculated: 30 days from your Sept 21 email.",link:"https://chocodisiac.github.io/birthday-rewards/annies.html",addr:"2701 Ming Ave, Space 198, Bakersfield, CA 93304",phone:"6618323249",hours:"Mon–Thu 10AM–8PM · Fri–Sat 10AM–9PM",card:"Pretzel Princess"},
+{id:"panda",cat:"food",biz:"Panda Express",emoji:"🥡",reward:"Free small entrée, appetizer, or side.",fine:"Applies automatically with a qualifying purchase in-store, online, or app.",exp:null,note:"No expiration listed and no address on file — check the app for your nearest spot.",link:"https://chocodisiac.github.io/birthday-rewards/panda.html",mapsQuery:"Panda Express near Bakersfield CA",card:"Fortune Favors the Birthday Girl"},
+{id:"bk",cat:"food",biz:"Burger King",emoji:"👑",reward:"Free item of choice + double Crowns all birthday month.",fine:"Auto-activates on the 1st of your birthday month if registered 7+ days ahead.",exp:"2026-09-30",expNote:"Runs through the end of your birthday month.",link:"https://chocodisiac.github.io/birthday-rewards/bk.html",addr:"8200 Stockdale Hwy, Bakersfield, CA 93311",phone:"6618362541",hours:"Mon–Sat 6AM–12AM · Sun 7AM–12AM",card:"Crown Double XP"}
+];
+
+const CATS = {food:"🍔 Food & Fast Eats",dessert:"🍩 Desserts & Sweets",beauty:"💄 Beauty & Self-Care",clothes:"👗 Clothing & Closet",home:"🎁 Home, Gifts & Extras",health:"💊 Health & Pharmacy",travel:"✈️ Travel"};
+
+let done = {};
+try{ done = JSON.parse(localStorage.getItem('dianaHunt')||'{}'); }catch(e){ done = {}; }
+function save(){ try{ localStorage.setItem('dianaHunt', JSON.stringify(done)); }catch(e){} }
+
+function daysLeft(exp){
+  if(!exp) return null;
+  const today = new Date(); today.setHours(0,0,0,0);
+  const d = new Date(exp+"T00:00:00");
+  return Math.round((d-today)/86400000);
+}
+function expBadge(item){
+  if(!item.exp) return '<span class="exp">No fixed date</span>';
+  const dl = daysLeft(item.exp);
+  const cls = dl<0?'urgent':(dl<=7?'urgent':'');
+  const label = dl<0?'Expired':(dl===0?'Expires today!':(dl+' day'+(dl===1?'':'s')+' left'));
+  return '<span class="exp '+cls+'">'+label+'</span>';
+}
+function cardClass(item){
+  if(!item.exp) return '';
+  const dl = daysLeft(item.exp);
+  if(dl<=5) return 'urgent';
+  if(dl<=12) return 'soon';
+  return '';
+}
+function mapsLink(item){
+  const q = item.addr ? item.addr : (item.mapsQuery||'');
+  if(!q) return null;
+  return 'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(q);
+}
+
+function render(){
+  const main = document.getElementById('main');
+  main.innerHTML = '';
+  const homeItems = DATA.filter(d=>!d.oot);
+  const ootItems = DATA.filter(d=>d.oot);
+  const byCat = {};
+  homeItems.forEach(it=>{ (byCat[it.cat]=byCat[it.cat]||[]).push(it); });
+  Object.keys(CATS).forEach(catKey=>{
+    if(!byCat[catKey]) return;
+    const items = byCat[catKey].slice().sort((a,b)=>{
+      if(a.exp===b.exp) return 0;
+      if(!a.exp) return 1; if(!b.exp) return -1;
+      return a.exp.localeCompare(b.exp);
+    });
+    const sec = document.createElement('div');
+    sec.className='category'; sec.id='cat-'+catKey;
+    sec.innerHTML = '<h2>'+CATS[catKey]+'</h2><div class="grid">'+items.map(dealHtml).join('')+'</div>';
+    main.appendChild(sec);
+  });
+  const ootSorted = ootItems.slice().sort((a,b)=>{
+    if(a.exp===b.exp) return 0;
+    if(!a.exp) return 1; if(!b.exp) return -1;
+    return a.exp.localeCompare(b.exp);
+  });
+  const ootSec = document.createElement('div');
+  ootSec.className='category'; ootSec.id='cat-oot';
+  ootSec.innerHTML = '<div class="oot-banner">🧳 The Out-of-Towners — worth planning a trip for, not a detour</div><div class="grid" style="margin-top:14px;">'+ootSorted.map(dealHtml).join('')+'</div>';
+  main.appendChild(ootSec);
+
+  document.querySelectorAll('.deal input[type=checkbox]').forEach(cb=>{
+    cb.addEventListener('change', e=>{
+      const id = e.target.dataset.id;
+      done[id] = e.target.checked;
+      save(); updateProgress(); renderAlbums();
+      e.target.closest('.deal').classList.toggle('done', e.target.checked);
+      if(e.target.checked){
+        const item = DATA.find(d=>d.id===id);
+        showCatToast(item);
+      }
+      checkAlbumCompletion();
+    });
+  });
+  updateProgress();
+  renderAlbums();
+}
+
+function dealHtml(item){
+  const checked = done[item.id] ? 'checked' : '';
+  const doneClass = done[item.id] ? 'done' : '';
+  const map = mapsLink(item);
+  let btns = '<a class="btnrow-link" href="'+item.link+'" target="_blank" rel="noopener" style="background:var(--hot-dark);color:#fff;text-decoration:none;font-size:.75rem;padding:6px 10px;border-radius:999px;font-weight:700;">🔗 Open Deal</a>';
+  if(map) btns += '<a class="map" href="'+map+'" target="_blank" rel="noopener">📍 Get Me There</a>';
+  if(item.phone) btns += '<a class="call" href="tel:'+item.phone+'">📞 Call</a>';
+  return '<div class="deal '+cardClass(item)+' '+doneClass+'">'+
+    '<div class="top"><input type="checkbox" data-id="'+item.id+'" '+checked+'>'+
+    '<div><div class="biz">'+item.emoji+' '+item.biz+'</div>'+
+    '<div class="reward">'+item.reward+'</div>'+expBadge(item)+
+    (item.expNote?'<div style="font-size:.72rem;color:#a17a99;margin-top:3px;">'+item.expNote+'</div>':'')+
+    '</div></div>'+
+    '<details><summary>Fine print</summary>'+item.fine+(item.note?'<br>'+item.note:'')+'</details>'+
+    '<div class="btnrow">'+btns+'</div>'+
+    (item.addr?'<div class="hours">📍 '+item.addr+(item.hours?' · '+item.hours:'')+'</div>':(item.hours?'<div class="hours">🕐 '+item.hours+'</div>':''))+
+    '</div>';
+}
+
+function updateProgress(){
+  const total = DATA.length;
+  const collected = Object.values(done).filter(Boolean).length;
+  document.getElementById('collectedCount').textContent = collected;
+  document.getElementById('totalCount').textContent = total;
+  const pct = Math.round(100*collected/total);
+  document.getElementById('pctText').textContent = pct+'%';
+  document.getElementById('barFill').style.width = pct+'%';
+  document.getElementById('barPaw').style.left = pct+'%';
+}
+
+function paniniHtml(item){
+  const unlocked = !!done[item.id];
+  return '<div class="panini '+(unlocked?'unlocked':'locked')+'">'+
+    (unlocked?'<span class="pemoji">'+item.emoji+'</span><div>'+item.card+'</div><div style="font-weight:500;font-size:.65rem;margin-top:4px;">'+item.biz+'</div>':'<span class="pemoji">❔</span><div>???</div>')+
+    '</div>';
+}
+function renderAlbums(){
+  document.getElementById('albumHome').innerHTML = DATA.filter(d=>!d.oot).map(paniniHtml).join('');
+  document.getElementById('albumOOT').innerHTML = DATA.filter(d=>d.oot).map(paniniHtml).join('');
+  document.getElementById('replayHomeBtn').style.display = albumComplete(false) ? 'block' : 'none';
+  document.getElementById('replayOotBtn').style.display = albumComplete(true) ? 'block' : 'none';
+}
+
+function albumComplete(oot){
+  const items = DATA.filter(d=>!!d.oot===oot);
+  return items.length>0 && items.every(d=>done[d.id]);
+}
+let prevHomeComplete = false, prevOotComplete = false;
+function checkAlbumCompletion(){
+  const nowHome = albumComplete(false);
+  const nowOot = albumComplete(true);
+  if(nowHome && !prevHomeComplete) celebrateAlbum('home');
+  else if(nowOot && !prevOotComplete) celebrateAlbum('oot');
+  prevHomeComplete = nowHome; prevOotComplete = nowOot;
+}
+function celebrateAlbum(which){
+  const isHome = which==='home';
+  document.getElementById('celebrateContent').innerHTML =
+    '<div class="cel-cats">🐈🐈\u200d⬛</div>'+
+    '<h2>'+(isHome?'Bakersfield Crew — Complete!':'Out-of-Towners — Complete!')+'</h2>'+
+    '<p>'+(isHome?
+      "Every local panini collected. Duchess has abandoned the desk to personally supervise this achievement. Marie is mid-victory-zoomie and cannot be reasoned with.":
+      "Every out-of-town panini collected! Marie is already plotting the next road trip. Duchess is reviewing mileage reimbursement policy.")+
+    '</p><p class="cel-hint">Tap anywhere to close</p>';
+  spawnConfetti(50, true);
+  document.getElementById('celebrateOverlay').classList.add('show');
+}
+document.getElementById('celebrateOverlay').addEventListener('click', ()=>{
+  document.getElementById('celebrateOverlay').classList.remove('show');
+});
+document.getElementById('replayHomeBtn').addEventListener('click', ()=>celebrateAlbum('home'));
+document.getElementById('replayOotBtn').addEventListener('click', ()=>celebrateAlbum('oot'));
+
+document.getElementById('tabNav').innerHTML = Object.keys(CATS).map(k=>'<button data-target="cat-'+k+'">'+CATS[k]+'</button>').join('')+'<button data-target="cat-oot">🧳 Out-of-Towners</button><button data-target="albumSection">🖼️ Album</button>';
+document.getElementById('tabNav').addEventListener('click', e=>{
+  if(e.target.tagName!=='BUTTON') return;
+  const el = document.getElementById(e.target.dataset.target);
+  if(el) el.scrollIntoView({behavior:'smooth', block:'start'});
+});
+
+document.getElementById('resetBtn').addEventListener('click', ()=>{
+  if(confirm('Reset all your collected deals? This clears progress on this device.')){
+    done = {}; save(); render();
+  }
+});
+
+// --- confetti rain ---
+const emojis = ['🎉','🎀','✨','💖','🐈','🐈‍⬛','🪩','🎂','💕','⭐'];
+const layer = document.getElementById('confettiLayer');
+function spawnConfetti(count, fast){
+  for(let i=0;i<count;i++){
+    const s = document.createElement('span');
+    s.className='confetti';
+    s.textContent = emojis[Math.floor(Math.random()*emojis.length)];
+    s.style.left = (Math.random()*100)+'vw';
+    s.style.animationDuration = (fast?(2.5+Math.random()*2):(8+Math.random()*10))+'s';
+    s.style.animationDelay = (fast?0:(Math.random()*12))+'s';
+    s.style.opacity = 0.55+Math.random()*0.4;
+    s.style.fontSize = (14+Math.random()*14)+'px';
+    layer.appendChild(s);
+    if(fast) setTimeout(()=>s.remove(), 6000);
+  }
+}
+spawnConfetti(26, false);
+
+// --- Duchess & Marie reaction toast ---
+const DUCHESS_LINES = [
+  "Another one handled. I shall allow myself a small stretch of pride.",
+  "Acceptable work. I'll be returning to the desk now, thank you.",
+  "One does not simply skip free treats. Noted and approved.",
+  "I have reviewed this conquest. It meets my exacting standards.",
+  "Splendid. Now if you'll excuse me, the sunbeam is calling.",
+  "Diligent. Composed. Correct. As I would have done it."
+];
+const MARIE_LINES = [
+  "WE DID IT?? WE DID IT!!! TANK ENERGY ACTIVATED 🐾",
+  "MROW!!! Another treat secured, I am SO proud of you!!",
+  "Free stuff obtained!! I would high-five you but I have paws!!",
+  "YES YES YES!! Sweetest victory, tiniest kitten, BIGGEST heart!!",
+  "I am vibrating with joy. This is the best day of my nine lives!!",
+  "TANK CONFIRMED. TANK APPROVES. TANK IS SO EXCITED."
+];
+const FINALE_LINES = "Every single deal, collected. Duchess has left her sunbeam AND the desk to acknowledge this. Marie has not stopped vibrating in four minutes. Happy 41st, Diana — you earned every bite of it. 🎂🐾";
+
+let toastTimer = null;
+function showCatToast(item){
+  const total = DATA.length;
+  const collected = Object.values(done).filter(Boolean).length;
+  const toast = document.getElementById('catToast');
+  const avatarEl = document.getElementById('toastAvatar');
+  const nameEl = document.getElementById('toastName');
+  const msgEl = document.getElementById('toastMsg');
+
+  if(collected === total){
+    avatarEl.textContent = '🐈🐈\u200d⬛';
+    nameEl.textContent = 'Duchess & Marie';
+    msgEl.textContent = FINALE_LINES;
+    toast.classList.add('finale');
+    spawnConfetti(40, true);
+  } else {
+    const isMarieCat = item && (item.cat==='food' || item.cat==='dessert');
+    const useMarie = isMarieCat ? Math.random()<0.7 : Math.random()<0.3;
+    toast.classList.remove('finale');
+    if(useMarie){
+      avatarEl.textContent = '🐈\u200d⬛';
+      nameEl.textContent = 'Marie';
+      msgEl.textContent = MARIE_LINES[Math.floor(Math.random()*MARIE_LINES.length)];
+    } else {
+      avatarEl.textContent = '🐈';
+      nameEl.textContent = 'Duchess';
+      msgEl.textContent = DUCHESS_LINES[Math.floor(Math.random()*DUCHESS_LINES.length)];
+    }
+  }
+  toast.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(()=>toast.classList.remove('show'), collected===total ? 6000 : 3600);
+}
+
+render();
+prevHomeComplete = albumComplete(false);
+prevOotComplete = albumComplete(true);
+</script>
+</body>
+</html>
